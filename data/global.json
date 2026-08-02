@@ -1,0 +1,3109 @@
+{
+ "id": "global",
+ "accent": "global",
+ "title": "Global History 9R",
+ "subtitle": "One year of world history, from human origins to 1750",
+ "note": "Aligned to the New York State Grade 9 Global History and Geography Key Ideas 9.1 to 9.10. Review material only, no test content.",
+ "specimen": "map",
+ "units": [
+  {
+   "id": "00",
+   "title": "Course Launch",
+   "blurb": "Opens the course with what history is, how historians read and question evidence, and a world map you build from memory.",
+   "weight": "NYS 9.0",
+   "topics": [
+    {
+     "code": "9.0",
+     "title": "Course orientation / cumulative Regents review (no single Key Idea)",
+     "lessons": [
+      {
+       "n": 1,
+       "title": "What is History?",
+       "date": "2026-09-01",
+       "overview": "If a stranger described your ordinary morning, would you even recognize yourself — and what does that teach a historian about reading any source?",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 2,
+       "title": "Thinking Like a Historian",
+       "date": "2026-09-02",
+       "overview": "When two sources disagree, how does a historian decide which one to trust — and can the SAME source be trustworthy for one question and useless for another?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "When Anu the Sublime, King of the Anunaki, and Bel, the lord of Heaven and earth… called by name me, Hammurabi, the exalted prince, who feared God, to bring about the rule of righteousness in the land… so that the strong should not harm the weak.",
+         "credit": ""
+        }
+       ],
+       "source": {
+        "title": "When Anu the Sublime, King of the Anunaki, and Bel, the lord of Heaven and earth… called by name me, Hammurabi, the ...",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 3,
+       "title": "World Map from Memory",
+       "date": "2026-09-03",
+       "overview": "When you draw the world from memory, whose world do you draw — and who decided what the map in your head would include and leave out?",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 4,
+       "title": "Historical Case Files",
+       "date": "2026-09-04",
+       "overview": "A man died in the Alps 5,300 years ago and left no words — so how can a historian say what killed him, and how sure are we allowed to be?",
+       "objectives": [],
+       "essentialQuestions": []
+      }
+     ],
+     "vocab": [],
+     "misconceptions": []
+    }
+   ],
+   "counts": {
+    "topics": 1,
+    "lessons": 4,
+    "terms": 0
+   }
+  },
+  {
+   "id": "01",
+   "title": "Human Origins and the Neolithic Gamble",
+   "blurb": "Follows human origins and migration out of Africa, then the Neolithic Revolution and the tradeoffs that came with farming and settled life.",
+   "weight": "NYS 9.1",
+   "topics": [
+    {
+     "code": "9.1",
+     "title": "Development of Civilization",
+     "lessons": [
+      {
+       "n": 1,
+       "title": "Human Origins, Evolution, and Why Humans Survived",
+       "date": "2026-09-08",
+       "overview": "From a 3-million-year-old skeleton with no words, what can we honestly PROVE about our earliest ancestors — and where exactly does the evidence run out?",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 2,
+       "title": "Migration Out of Africa and the Geography of Survival",
+       "date": "2026-09-09",
+       "overview": "If every human alive descends from Africa, how do fossils AND genes let us reconstruct the ORDER in which our ancestors filled the Earth?",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 3,
+       "title": "Paleolithic Life: Tools, Fire, Cave Art, Kinship, and Risk",
+       "date": "2026-09-11",
+       "overview": "Bones and tools prove early humans survived — but what does a painted bull or a carved figure prove that bones never could?",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 4,
+       "title": "Forager Society Simulation",
+       "date": "2026-09-14",
+       "overview": "Foragers had no farms, no houses, and no stores — so when the season turned against them, what kept the band alive, and why was MOVING the answer for 90% of human history?",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 5,
+       "title": "The Neolithic Revolution as a Turning Point",
+       "date": "2026-09-15",
+       "overview": "When humans started farming, what chain of changes did one choice set off — and was settling down our greatest step forward or, as Jared Diamond says, “the worst mistake” we ever made?",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 6,
+       "title": "Farming, Domestication, Surplus",
+       "date": "2026-09-16",
+       "overview": "Once a village grew MORE food than it could eat, who decided where the extra went — and how did that single question create the first rich, the first powerful, and the first rulers?",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 7,
+       "title": "Tradeoffs of Farming",
+       "date": "2026-09-17",
+       "overview": "Skeletons keep the receipts. Using measured evidence — height, dental disease, anemia, and life expectancy — did the Neolithic Revolution make the average person BETTER off or WORSE off, and if it was so bad, why did farming still spread to every continent?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "Figures from Jared Diamond's analysis of ~800 skeletons at Dickson Mounds, Illinois (foragers vs. later maize farmers).",
+         "credit": "— Jared Diamond, “The Worst Mistake in the History of the Human Race,” Discover Magazine, May 1987."
+        }
+       ],
+       "source": {
+        "title": "— Jared Diamond, “The Worst Mistake in the History of the Human Race,” Discover Magazine, May 1987.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 8,
+       "title": "Çatalhöyük + Evidence Problem of Early Villages",
+       "date": "2026-09-18",
+       "overview": "Çatalhöyük held ~8,000 people 9,000 years ago — but had no streets, no palace, and buried its dead under the floor. Using the archaeological evidence, was it a CITY or just a very big VILLAGE?",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 10,
+       "title": "CRQ Workshop — Turning Point Evidence and Explanation",
+       "date": "2026-09-22",
+       "overview": "A CRQ is surgery, not composition. How do you take a failing 1/5 response on the Neolithic Revolution and operate on it — transplanting context and evidence — until it scores a full 5/5?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“To the steward of the temple: received 300 measures of barley from the field of Lugal-Anna, to be stored in the granary for distribution to workers building the canal.”",
+         "credit": "— Sumerian cuneiform tablet, c. 2050 BCE."
+        },
+        {
+         "text": "“The Neolithic Revolution, beginning around 10,000 BCE, marked humanity's transition from food-gathering to food-producing society. Through domestication of plants and animals, humans could produce more food than they consumed, enabling permanent settlement, specialized labor, organized government, and complex civilization.”",
+         "credit": "— Adapted from a high school world history textbook, 2018."
+        },
+        {
+         "text": "“The Neolithic Revolution was very important and it changed everything for people. People started to farm and that made life much better. They could grow food, so they did not have to move around. This is why it led to civilization.”",
+         "credit": ""
+        }
+       ],
+       "source": {
+        "title": "— Sumerian cuneiform tablet, c. 2050 BCE.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 11,
+       "title": "Civilization Design Challenge + Unit Review",
+       "date": "2026-09-23",
+       "overview": "Can you build a civilization that survives the test? Design an original Neolithic-to-Bronze-Age society, then defend it against the same SEVEN criteria that define Sumer, Egypt, and the Indus Valley.",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 12,
+       "title": "Thursday Unit Test",
+       "date": "2026-09-24",
+       "overview": "Show what you know. On the Unit 1 Test — 20 multiple-choice, one CRQ, and two short responses — prove your mastery of human origins, the Out-of-Africa migration, the Neolithic Revolution, and the criteria of civilization.",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 112,
+       "title": "Paleolithic Life Tools Fire Cave Art Kinship and Risk",
+       "date": "2026-09-10",
+       "overview": "The Ice Age was lethal — cold, predators, hunger, and lost knowledge. Which Paleolithic adaptation — stone tools, fire, art, or kinship — did the most to keep our ancestors alive, and how do we know?",
+       "objectives": [],
+       "essentialQuestions": []
+      }
+     ],
+     "vocab": [],
+     "misconceptions": []
+    }
+   ],
+   "counts": {
+    "topics": 1,
+    "lessons": 12,
+    "terms": 0
+   }
+  },
+  {
+   "id": "02",
+   "title": "River Worlds Cities Law Writing and State Power",
+   "blurb": "Looks at the four river valley civilizations and how irrigation, cities, writing, law, and religion built the first states.",
+   "weight": "NYS 9.1",
+   "topics": [
+    {
+     "code": "9.1",
+     "title": "Development of Civilization",
+     "lessons": [
+      {
+       "n": 1,
+       "title": "Why Rivers Made Civilization Possible",
+       "date": "2026-09-25",
+       "overview": "Why did the world's first cities all rise beside rivers — and what did the river demand in return?",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 2,
+       "title": "Mesopotamia: Irrigation, City-States, and Sumer",
+       "date": "2026-09-28",
+       "overview": "How did taming two violent rivers turn Sumerian villages into the world's first cities — and who ended up in charge?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "After the kingship descended from heaven, the kingship was in Eridu. In Eridu, Alulim became king; he ruled for 28,800 years. Alalngar ruled for 36,000 years. Two kings; they ruled for 64,800 years.",
+         "credit": "— The Sumerian King List, composed in Sumer, recopied c. 2100–1800 BCE (trans. ETCSL, Oxford)"
+        },
+        {
+         "text": "Then Eridu fell and the kingship was taken to Bad-tibira… In 5 cities 8 kings ruled for 241,200 years. Then the flood swept over.",
+         "credit": "— The Sumerian King List, composed in Sumer, recopied c. 2100–1800 BCE (trans. ETCSL, Oxford)"
+        },
+        {
+         "text": "After the flood had swept over, and the kingship had descended from heaven, the kingship was in Kish… Then Kish was defeated and the kingship was taken to Unug [Uruk].",
+         "credit": "— The Sumerian King List, composed in Sumer, recopied c. 2100–1800 BCE (trans. ETCSL, Oxford)"
+        }
+       ],
+       "source": {
+        "title": "— The Sumerian King List, composed in Sumer, recopied c. 2100–1800 BCE (trans. ETCSL, Oxford)",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 3,
+       "title": "Sumerian Writing: Cuneiform and Record-Keeping",
+       "date": "2026-09-29",
+       "overview": "Why was writing invented — and who got more powerful the moment the first scribe pressed a stylus into clay?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "The earliest writing from Sumer was not poetry or prayer but BOOKKEEPING. One of the oldest known tablets, pressed into wet clay at Uruk around 3100 BCE, is an account record. Its pictographic signs and number-marks tally quantities of grain.",
+         "credit": "— early Sumerian administrative tablets, Uruk, c. 3100–3000 BCE (translations after standard scholarly readings)"
+        },
+        {
+         "text": "A typical entry reads, in translation: “29,086 measures barley — 37 months — [official] Kushim.” The name “Kushim” may be the title of the accountant responsible — possibly the first individual name ever recorded in human history.",
+         "credit": "— early Sumerian administrative tablets, Uruk, c. 3100–3000 BCE (translations after standard scholarly readings)"
+        },
+        {
+         "text": "Other early tablets list rations of grain and beer issued to named groups of workers, and the amounts of land or animals owed to the temple. Writing began as a way for a complex city to remember WHO OWED WHAT.",
+         "credit": "— early Sumerian administrative tablets, Uruk, c. 3100–3000 BCE (translations after standard scholarly readings)"
+        }
+       ],
+       "source": {
+        "title": "— early Sumerian administrative tablets, Uruk, c. 3100–3000 BCE (translations after standard scholarly readings)",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 4,
+       "title": "Hammurabi's Code and the Origins of Written Law",
+       "date": "2026-09-30",
+       "overview": "Did Hammurabi’s Code deliver equal justice — or did it use written law to protect power?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "If a builder build a house for some one, and does not construct it properly, and the house which he built fall in and kill its owner, then that builder shall be put to death.",
+         "credit": ""
+        },
+        {
+         "text": "If a man has accused another of laying a kispu (spell) upon him, but has not proved it, the accused shall go to the sacred river, he shall plunge into the sacred river, and if the river shall conquer him, he that accused him shall take possession of his house. If the sacred river shall show his innocence and he is saved, his accuser shall be put to death.",
+         "credit": ""
+        },
+        {
+         "text": "If a man has borne false witness in a trial, or has not established the statement that he has made, if that case be a capital trial (a trial where the punishment is death), that man shall be put to death.",
+         "credit": ""
+        },
+        {
+         "text": "If a man has lost property and some of it be detected in the possession of another, and the holder has said, “A man sold it to me, I bought it in the presence of witnesses”; and if the claimant has said, “I can bring witnesses who know it to be property lost by me”; then the alleged buyer on his part shall produce the man who sold it to him and the witnesses before whom he bought it; the claimant ...",
+         "credit": ""
+        }
+       ],
+       "source": {
+        "title": "If a builder build a house for some one, and does not construct it properly, and the house which he built fall in and ...",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 5,
+       "title": "Mesopotamian Religion: Polytheism and Society",
+       "date": "2026-10-01",
+       "overview": "What does humanity's first great story fear — and what does Mesopotamia's geography have to do with it?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "Gilgamesh said: ‘Despair is in my heart, and my face is the face of one who has made a long journey… Enkidu my brother whom I loved, the end of mortality has overtaken him. I wept for him seven days and nights… Because of my brother I am afraid of death… do not let me see the face of death which I dread so much.’",
+         "credit": ""
+        },
+        {
+         "text": "She (Siduri) answered: ‘Gilgamesh, where are you hurrying to? You will never find the life for which you are looking. When the gods created man they allotted to him death, but life they retained in their own keeping. As for you, Gilgamesh, fill your belly with good things; day and night, dance and be merry… cherish the little child that holds your hand, and make your wife happy in your embrace ...",
+         "credit": ""
+        },
+        {
+         "text": "But Gilgamesh said: ‘How can I be silent, how can I rest, when Enkidu whom I love is dust, and I too shall die and be laid in the earth forever.’",
+         "credit": ""
+        }
+       ],
+       "source": {
+        "title": "Gilgamesh said: ‘Despair is in my heart, and my face is the face of one who has made a long journey… Enkidu my brother ...",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 6,
+       "title": "Egypt — The Gift of the Nile",
+       "date": "2026-10-02",
+       "overview": "Same river, two witnesses — what can an insider's hymn and an outsider's travel report each PROVE about the Nile?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "For any one who sees Egypt, without having heard a word about it before, must perceive, if he has only common powers of observation, that the Egypt to which the Greeks go in their ships is an acquired country, the gift of the river.",
+         "credit": "— Herodotus, The Histories, Book 2.5 (trans. George Rawlinson). A Greek visitor, c. 450 BCE"
+        },
+        {
+         "text": "[Herodotus explains that the black, fertile soil of the Nile valley was carried down and deposited by the river's yearly flood, building up the very land on which Egypt's farms and cities stood — so that the land itself, and the wealth that grew from it, was made by the Nile.]",
+         "credit": "— Herodotus, The Histories, Book 2.5 (trans. George Rawlinson). A Greek visitor, c. 450 BCE"
+        },
+        {
+         "text": "“Hail to thee, O Nile! Who manifests thyself over this land, and comes to give life to Egypt!”",
+         "credit": "— Hymn to the Nile (to the flood-god Hapi), New Kingdom copy of a Middle Kingdom hymn, c. 2100–1200 BCE (trans. after Thatcher, 1907)"
+        },
+        {
+         "text": "[The hymn goes on to praise the river for watering the fields, giving drink to the herds, and bringing the grain that feeds every temple and family — and to warn what happens when the flood runs low: faces waste away, and the whole land trembles.]",
+         "credit": "— Hymn to the Nile (to the flood-god Hapi), New Kingdom copy of a Middle Kingdom hymn, c. 2100–1200 BCE (trans. after Thatcher, 1907)"
+        }
+       ],
+       "source": {
+        "title": "— Herodotus, The Histories, Book 2.5 (trans. George Rawlinson). A Greek visitor, c. 450 BCE",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 7,
+       "title": "Old Kingdom and the Pyramids",
+       "date": "2026-10-05",
+       "overview": "Herodotus says 100,000 enslaved men built the Great Pyramid under the whip. Do the numbers — and the workers' own paperwork — agree?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "Cheops [Khufu]… ordered all the Egyptians to work for him. Some were forced to drag blocks of stone… others received the blocks after they had been conveyed… and dragged them to the place called the Libyan hills. A hundred thousand men labored constantly, and were relieved every three months by a fresh group.",
+         "credit": "— Herodotus, The Histories 2.124–125 (trans. George Rawlinson), written c. 430 BCE — about 2,100 years AFTER the pyramid was built"
+        },
+        {
+         "text": "It took ten years' oppression of the people to make the causeway for the conveyance of the stones… The pyramid itself was twenty years in building. It is a square, eight hundred feet each way, and the height the same, built entirely of polished stone, fitted together with the utmost care.",
+         "credit": "— Herodotus, The Histories 2.124–125 (trans. George Rawlinson), written c. 430 BCE — about 2,100 years AFTER the pyramid was built"
+        },
+        {
+         "text": "“Day 25: Inspector Merer spends the day with his phyle [work gang] hauling stones in Tura South; spends the night at Tura South.”",
+         "credit": "— the Diary of Merer, found at Wadi al-Jarf in 2013: the actual logbook of a boat crew delivering limestone for Khufu's pyramid, c. 2560 BCE (trans. after P. Tallet)"
+        }
+       ],
+       "source": {
+        "title": "— Herodotus, The Histories 2.124–125 (trans. George Rawlinson), written c. 430 BCE — about 2,100 years AFTER the pyramid was built",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 8,
+       "title": "Egyptian Religion and the Afterlife",
+       "date": "2026-10-06",
+       "overview": "Babylon polices you with an executioner. Egypt polices you with a feather. Which law reaches further?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "Spoken by the dead before Osiris and the forty-two judges in the Hall of the Two Truths, as the heart is weighed against the feather of Ma'at (truth):",
+         "credit": "— The Egyptian Book of the Dead, Spell 125, the “Negative Confession” (Papyrus of Ani; classroom translation after E. A. Wallis Budge). New Kingdom, c. 1550 BCE"
+        },
+        {
+         "text": "‘Hail to you, great god, Lord of the Two Truths… I have not done wrong. I have not robbed. I have not killed people. I have not stolen the offerings of the gods. I have not told lies. I have not caused anyone to weep. I have not committed adultery. I have not cheated with the scales [weights]. I have not taken milk from the mouths of children. I have not held back the water [of the flood] in its ...",
+         "credit": "— The Egyptian Book of the Dead, Spell 125, the “Negative Confession” (Papyrus of Ani; classroom translation after E. A. Wallis Budge). New Kingdom, c. 1550 BCE"
+        },
+        {
+         "text": "If a builder build a house for some one, and does not construct it properly, and the house which he built fall in and kill its owner, then that builder shall be put to death.",
+         "credit": "— Code of Hammurabi, Babylon, c. 1754 BCE (trans. L. W. King)"
+        },
+        {
+         "text": "If a man has borne false witness in a trial, or has not established the statement that he has made, if that case be a capital trial (a trial where the punishment is death), that man shall be put to death.",
+         "credit": "— Code of Hammurabi, Babylon, c. 1754 BCE (trans. L. W. King)"
+        }
+       ],
+       "source": {
+        "title": "— The Egyptian Book of the Dead, Spell 125, the “Negative Confession” (Papyrus of Ani; classroom translation after E. A. Wallis Budge). New Kingdom, c. 1550 BCE",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 9,
+       "title": "Hieroglyphs and the Rosetta Stone",
+       "date": "2026-10-07",
+       "overview": "For 1,400 years nobody on earth could read Egypt. How did one broken stone — and two royal names — switch the voice back on?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "From the decree honoring King Ptolemy V: ‘In the reign of the young one who has succeeded his father in the kingship, lord of diadems, most glorious, who has established Egypt and is pious towards the gods, triumphant over his enemies…’",
+         "credit": "— The Rosetta Stone (Decree of Memphis), 196 BCE, Greek section, scholarly translation"
+        },
+        {
+         "text": "Closing instruction: ‘This decree shall be inscribed on a stela of hard stone in sacred [hieroglyphic] and native [demotic] and Greek characters and set up in each of the first, second, and third [rank] temples beside the image of the ever-living king.’",
+         "credit": "— The Rosetta Stone (Decree of Memphis), 196 BCE, Greek section, scholarly translation"
+        }
+       ],
+       "source": {
+        "title": "— The Rosetta Stone (Decree of Memphis), 196 BCE, Greek section, scholarly translation",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 10,
+       "title": "Indus Valley Civilization — Mohenjo-Daro and Harappa",
+       "date": "2026-10-08",
+       "overview": "Mohenjo-Daro organized millions of people — and left no palace, no royal tomb, and no readable word. Who ran this city?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "Excavated evidence from the Indus cities of Harappa and Mohenjo-Daro (c. 2600–1900 BCE):",
+         "credit": "— the classroom “Harappan Inferences” evidence list (findings A–F) plus two further well-documented finds (G–H)"
+        }
+       ],
+       "source": {
+        "title": "— the classroom “Harappan Inferences” evidence list (findings A–F) plus two further well-documented finds (G–H)",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 11,
+       "title": "Shang Dynasty China — Yellow River and Oracle Bones",
+       "date": "2026-10-09",
+       "overview": "On a Shang oracle bone, who asks the question, who reads the answer — and why does that one detail explain the king's power?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "A complete oracle-bone divination records the date, the diviner, the question (‘charge’), the king's reading of the cracks, and later what actually happened (‘verification’):",
+         "credit": "— Shang dynasty oracle-bone inscriptions, Anyang, c. 1200 BCE (scholarly translation, after D. N. Keightley)"
+        },
+        {
+         "text": "‘On the day renzi [day 49], cracks were made and the diviner asked: “We will hunt at Wu; going and coming back, there will be no disaster.” The king read the cracks and said: “Auspicious.”’",
+         "credit": "— Shang dynasty oracle-bone inscriptions, Anyang, c. 1200 BCE (scholarly translation, after D. N. Keightley)"
+        },
+        {
+         "text": "Verification (added later): ‘We caught one wild buffalo, one tiger, and seven foxes.’",
+         "credit": "— Shang dynasty oracle-bone inscriptions, Anyang, c. 1200 BCE (scholarly translation, after D. N. Keightley)"
+        },
+        {
+         "text": "Other Shang bones ask the ancestors and the high god Di about the harvest, rain, war, and illness — for example, ‘We will receive a millet harvest,’ set against ‘We will not receive a millet harvest.’",
+         "credit": "— Shang dynasty oracle-bone inscriptions, Anyang, c. 1200 BCE (scholarly translation, after D. N. Keightley)"
+        }
+       ],
+       "source": {
+        "title": "— Shang dynasty oracle-bone inscriptions, Anyang, c. 1200 BCE (scholarly translation, after D. N. Keightley)",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 12,
+       "title": "Comparing the Four River Valley Civilizations",
+       "date": "2026-10-13",
+       "overview": "Four rivers, four civilizations, one problem. Which solved it best — and what pattern do all four share?",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 13,
+       "title": "CRQ Workshop — River Valleys as Evidence Problems",
+       "date": "2026-10-14",
+       "overview": "Two documents, three questions, twenty points. How does a professional take a CRQ apart?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“If a man has put out the eye of another man, his eye shall be put out. If a man knock out the teeth of his equal, his teeth shall be knocked out. If he knock out the teeth of a freed man, he shall pay one third of a gold mina. If a man strikes the body of a man who is higher in rank than he is, he shall receive sixty lashes with an ox-whip in public.”",
+         "credit": "— Hammurabi's Code, c. 1750 BCE, Babylon (excerpted)"
+        },
+        {
+         "text": "“Hammurabi (c. 1810–1750 BCE) was the sixth king of the First Babylonian dynasty. He is best known for promulgating the Code of Hammurabi — among the earliest and most complete written legal codes in human history. The Code was inscribed on a 7-foot basalt stele and erected in a public space in Babylon for all to see. It addressed contract law, family law, property law, and criminal punishment — ...",
+         "credit": "— Adapted from a high school world history textbook, 2019"
+        }
+       ],
+       "source": {
+        "title": "— Hammurabi's Code, c. 1750 BCE, Babylon (excerpted)",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 14,
+       "title": "Unit 02 Review and Test Day",
+       "date": "2026-10-15",
+       "overview": "Sweep the four classic Unit 2 traps — then show what three weeks of river worlds taught you.",
+       "objectives": [],
+       "essentialQuestions": []
+      }
+     ],
+     "vocab": [
+      {
+       "term": "Early Polytheism and other Belief Systems",
+       "def": "Two Examples of how Belief Systems Affected Gender Roles"
+      }
+     ],
+     "misconceptions": []
+    }
+   ],
+   "counts": {
+    "topics": 1,
+    "lessons": 14,
+    "terms": 1
+   }
+  },
+  {
+   "id": "03",
+   "title": "Belief Systems and Social Order",
+   "blurb": "Compares Hinduism, Buddhism, Confucianism, Daoism, Legalism, Judaism, Christianity, and Islam, and how each shaped social and political order.",
+   "weight": "NYS 9.2",
+   "topics": [
+    {
+     "code": "9.2",
+     "title": "Belief Systems: Rise and Impact",
+     "lessons": [
+      {
+       "n": 1,
+       "title": "What is a Belief System and Why It Matters",
+       "date": "2026-10-16",
+       "overview": "Most order in history was kept without police. What is a belief system — and how can a historian study one fairly?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "1. All that we are is the result of what we have thought: it is founded on our thoughts, it is made up of our thoughts. If a man speaks or acts with an evil thought, pain follows him, as the wheel follows the foot of the ox that draws the carriage.",
+         "credit": "— The Dhammapada, verses 1 and 5, trans. F. Max Müller, Sacred Books of the East, Vol. 10 (1881). Sayings attributed to the Buddha, compiled in India by c. 300 BCE."
+        },
+        {
+         "text": "5. For hatred does not cease by hatred at any time: hatred ceases by love, this is an old rule.",
+         "credit": "— The Dhammapada, verses 1 and 5, trans. F. Max Müller, Sacred Books of the East, Vol. 10 (1881). Sayings attributed to the Buddha, compiled in India by c. 300 BCE."
+        }
+       ],
+       "source": {
+        "title": "— The Dhammapada, verses 1 and 5, trans. F. Max Müller, Sacred Books of the East, Vol. 10 (1881). Sayings attributed to the Buddha, compiled in India by c. 300 BCE.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 2,
+       "title": "Hinduism — Origins, Vedas, and the Caste System",
+       "date": "2026-10-19",
+       "overview": "How did one Vedic hymn turn a social hierarchy into sacred, unquestionable order — and who benefited from writing it?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "11. When they divided Purusha [the cosmic being] how many portions did they make? What do they call his mouth, his arms? What do they call his thighs and feet? 12. The Brahman [priest] was his mouth, of both his arms was the Rajanya [warrior-ruler] made. His thighs became the Vaisya [merchant-farmer], from his feet the Sudra [laborer] was produced. 13. The Moon was gendered from his mind, and ...",
+         "credit": "— Rig Veda, Book 10, Hymn 90 (the “Purusha Sukta”), vv. 11–13, trans. R. T. H. Griffith (1896). Composed in northern India c. 1500–1200 BCE — the oldest of Hinduism's sacred Vedas."
+        },
+        {
+         "text": "87. In order to protect this universe He, the most resplendent one, assigned separate (duties and) occupations to those who sprang from his mouth, arms, thighs, and feet. 88. To Brahmanas he assigned teaching and studying (the Veda), sacrificing for their own benefit and for others, giving and accepting (of alms). 89. The Kshatriya he commanded to protect the people, to bestow gifts, to offer ...",
+         "credit": "— The Laws of Manu 1.87–91, trans. G. Bühler (1886). A Hindu law code compiled c. 200 BCE–200 CE — centuries AFTER the hymn, turning its image into job descriptions."
+        }
+       ],
+       "source": {
+        "title": "— Rig Veda, Book 10, Hymn 90 (the “Purusha Sukta”), vv. 11–13, trans. R. T. H. Griffith (1896). Composed in northern India c. 1500–1200 BCE — the oldest of Hinduism's sacred Vedas.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 3,
+       "title": "Hinduism — Beliefs, Practices, and Pluralism",
+       "date": "2026-10-20",
+       "overview": "Yesterday's ladder had no police force. What engine — dharma, karma, rebirth — kept everyone on their rungs?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "Nay, but as when one layeth / His worn-out robes away, / And, taking new ones, sayeth, / “These will I wear to-day!” / So putteth by the spirit / Lightly its garb of flesh, / And passeth to inherit / A residence afresh.",
+         "credit": "— The Bhagavad Gita 2.22, trans. Sir Edwin Arnold, The Song Celestial (1885). The god Krishna teaches the warrior Arjuna about the soul (atman) and rebirth; part of the epic Mahabharata, c. 200 BCE–200 CE."
+        },
+        {
+         "text": "But thou, want not! ask not! Find full reward / Of doing right in right! Let right deeds be / Thy motive, not the fruit which comes from them.",
+         "credit": "— The Bhagavad Gita 2.47 (same translation): do your duty for its own sake, not for the reward."
+        }
+       ],
+       "source": {
+        "title": "— The Bhagavad Gita 2.22, trans. Sir Edwin Arnold, The Song Celestial (1885). The god Krishna teaches the warrior Arjuna about the soul (atman) and rebirth; part of the epic Mahabharata, c. 200 BCE–200 CE.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 4,
+       "title": "Buddhism — Origins, Siddhartha, and the Four Noble Truths",
+       "date": "2026-10-21",
+       "overview": "Why did a prince walk away from everything — and why was the sermon he preached structured like a doctor's diagnosis?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "The Noble Truth of suffering (dukkha): “Birth is suffering, aging is suffering, illness is suffering, death is suffering; union with what is displeasing is suffering; separation from what is pleasing is suffering; not to get what one wants is suffering.”",
+         "credit": ""
+        },
+        {
+         "text": "The Noble Truth of the origin of suffering: “It is this craving [thirst] which leads to re-becoming … craving for sensual pleasures, craving for becoming, craving for disbecoming.”",
+         "credit": ""
+        },
+        {
+         "text": "The Noble Truth of the cessation of suffering: “It is the remainderless fading away and cessation of that same craving, the giving up and relinquishing of it, freedom from it.”",
+         "credit": ""
+        },
+        {
+         "text": "The Noble Truth of the path: “It is this noble eightfold path; that is, right view, right intention, right speech, right action, right livelihood, right effort, right mindfulness, right concentration.”",
+         "credit": ""
+        }
+       ],
+       "source": {
+        "title": "The Noble Truth of suffering (dukkha): “Birth is suffering, aging is suffering, illness is suffering, death is ...",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 5,
+       "title": "Buddhism — The Eightfold Path and Spread",
+       "date": "2026-10-22",
+       "overview": "No printing press, no internet, no conquering army — how did one teaching travel 4,000 miles and last 1,000 years?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“Now it is conquest by Dhamma [moral law] that Beloved-of-the-Gods [Ashoka] considers to be the best conquest. And it has been won here, on the borders, even six hundred yojanas away, where the Greek king Antiochos rules, beyond there where the four kings named Ptolemy, Antigonos, Magas and Alexander rule.”",
+         "credit": "— the Edicts of King Ashoka, Rock Edict 13 and Pillar Edict 7, trans. Ven. S. Dhammika. Carved on rocks and pillars across Maurya India, c. 257–242 BCE."
+        },
+        {
+         "text": "“Along roads I have had banyan trees planted so that they can give shade to animals and men, and I have had mango groves planted. … I have had wells dug and rest-houses built. … I have done these things for this purpose, that the people might practice the Dhamma.”",
+         "credit": "— the Edicts of King Ashoka, Rock Edict 13 and Pillar Edict 7, trans. Ven. S. Dhammika. Carved on rocks and pillars across Maurya India, c. 257–242 BCE."
+        }
+       ],
+       "source": {
+        "title": "— the Edicts of King Ashoka, Rock Edict 13 and Pillar Edict 7, trans. Ven. S. Dhammika. Carved on rocks and pillars across Maurya India, c. 257–242 BCE.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 6,
+       "title": "Hinduism vs Buddhism — Comparison Workshop",
+       "date": "2026-10-23",
+       "overview": "Hinduism and Buddhism share karma, dharma, and rebirth. Is Buddhism a reform movement inside India's tradition — or a brand-new religion?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "183. Not to commit any sin, to do good, and to purify one's mind, that is the teaching of (all) the Awakened. 190–191. He who takes refuge with Buddha, the Law, and the Church; he who, with clear understanding, sees the four holy truths — namely, pain, the origin of pain, the destruction of pain, and the eightfold holy way that leads to the quieting of pain — [has found the safe refuge].",
+         "credit": "— The Dhammapada, verses 183 and 190–191, trans. F. Max Müller, Sacred Books of the East, Vol. 10 (1881)."
+        }
+       ],
+       "source": {
+        "title": "— The Dhammapada, verses 183 and 190–191, trans. F. Max Müller, Sacred Books of the East, Vol. 10 (1881).",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 7,
+       "title": "Confucius and Confucianism",
+       "date": "2026-10-26",
+       "overview": "China is tearing itself apart in civil war. Why does Confucius answer chaos with manners, family, and a well-behaved prince — and why did it work for 2,000 years?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "Book 15.23 — Tsze-kung [a student] asked, saying, “Is there one word which may serve as a rule of practice for all one's life?” The Master said, “Is not RECIPROCITY such a word? What you do not want done to yourself, do not do to others.”",
+         "credit": "— The Analects of Confucius, trans. James Legge (1861). The sayings of Confucius (Kong Fuzi, 551–479 BCE), gathered by his students in China."
+        },
+        {
+         "text": "Book 12.11 — [Asked about good government,] Confucius replied, “There is government, when the prince is prince, and the minister is minister; when the father is father, and the son is son.”",
+         "credit": "— The Analects of Confucius, trans. James Legge (1861). The sayings of Confucius (Kong Fuzi, 551–479 BCE), gathered by his students in China."
+        },
+        {
+         "text": "Book 12.7 — “The requisites of government are that there be sufficiency of food, sufficiency of military equipment, and the confidence of the people in their ruler.” [Asked what to give up first, the Master said the weapons, then even the food:] “…from of old, death has been the lot of all men; but if the people have no faith in their rulers, there is no standing for the state.”",
+         "credit": "— The Analects of Confucius, trans. James Legge (1861). The sayings of Confucius (Kong Fuzi, 551–479 BCE), gathered by his students in China."
+        },
+        {
+         "text": "Book 13.6 — The Master said, “When a prince's personal conduct is correct, his government is effective without the issuing of orders. If his personal conduct is not correct, he may issue orders, but they will not be followed.”",
+         "credit": "— The Analects of Confucius, trans. James Legge (1861). The sayings of Confucius (Kong Fuzi, 551–479 BCE), gathered by his students in China."
+        }
+       ],
+       "source": {
+        "title": "— The Analects of Confucius, trans. James Legge (1861). The sayings of Confucius (Kong Fuzi, 551–479 BCE), gathered by his students in China.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 8,
+       "title": "Daoism and the Tao",
+       "date": "2026-10-27",
+       "overview": "Same civil war, opposite answer: why does Laozi tell rulers to stop improving, stop ordering — stop FORCING?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "The Tao that can be trodden is not the enduring and unchanging Tao. The name that can be named is not the enduring and unchanging name. … Always without desire we must be found, if its deep mystery we would sound…",
+         "credit": "— Tao Te Ching (Daodejing), ch. 1, attributed to Laozi, trans. James Legge (1891). The foundational text of Daoism, from late Zhou China's age of disorder."
+        },
+        {
+         "text": "There is nothing in the world more soft and weak than water, and yet for attacking things that are firm and strong there is nothing that can take precedence of it… Every one in the world knows that the soft overcomes the hard, and the weak the strong, but no one is able to carry it out in practice.",
+         "credit": "— Tao Te Ching, chs. 78, 11, and 17 (same translation)."
+        },
+        {
+         "text": "The thirty spokes unite in the one nave; but it is on the empty space (for the axle), that the use of the wheel depends.",
+         "credit": "— Tao Te Ching, chs. 78, 11, and 17 (same translation)."
+        },
+        {
+         "text": "In the highest antiquity, (the people) did not know that there were (their rulers)… Their work was done and their undertakings were successful, while the people all said, “We are as we are, of ourselves!”",
+         "credit": "— Tao Te Ching, chs. 78, 11, and 17 (same translation)."
+        }
+       ],
+       "source": {
+        "title": "— Tao Te Ching (Daodejing), ch. 1, attributed to Laozi, trans. James Legge (1891). The foundational text of Daoism, from late Zhou China's age of disorder.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 9,
+       "title": "Legalism and Chinese Statecraft",
+       "date": "2026-10-28",
+       "overview": "The third teacher laughs at the first two. Why did Legalism win the whole war — and then destroy the dynasty that used it in fifteen years?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "Now, the relationship between superior and subordinate is not based on affection like that between father and son. So if one wishes to curb subordinates by acting righteously, the relationship will be flawed.",
+         "credit": "— Han Feizi, “The Five Vermin” (Wu Du), c. 233 BCE — the central text of Legalism (standard English translation, de Bary, Sources of Chinese Tradition)."
+        },
+        {
+         "text": "When a sage rules a state he does not count on people doing good of themselves, but rather takes measures to keep them from doing wrong. If he depended on people who do good of themselves, he could hardly find a few dozen in the whole realm; but if he uses methods to keep them from doing wrong, then everyone in the state can be made to act the same.",
+         "credit": "— Han Feizi, “The Five Vermin” (Wu Du), c. 233 BCE — the central text of Legalism (standard English translation, de Bary, Sources of Chinese Tradition)."
+        },
+        {
+         "text": "In governing it is better to disregard the small minority and make use of the bulk of the population. Thus the ruler should concentrate on laws rather than on moral influence. A ruler who knows the techniques is not swayed by accidental goodness but carries out policies that will assure success.",
+         "credit": "— Han Feizi, “The Five Vermin” (Wu Du), c. 233 BCE — the central text of Legalism (standard English translation, de Bary, Sources of Chinese Tradition)."
+        }
+       ],
+       "source": {
+        "title": "— Han Feizi, “The Five Vermin” (Wu Du), c. 233 BCE — the central text of Legalism (standard English translation, de Bary, Sources of Chinese Tradition).",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 10,
+       "title": "Judaism Origins, Abraham, and Monotheism",
+       "date": "2026-10-29",
+       "overview": "Hammurabi carved laws so people would obey a king. What changes when the law is a CONTRACT with God himself — agreed to by an entire people, forever?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "Now the LORD had said unto Abram, Get thee out of thy country, and from thy kindred, and from thy father's house, unto a land that I will shew thee: And I will make of thee a great nation, and I will bless thee, and make thy name great…",
+         "credit": "Moses with the Tablets of the Law, Rembrandt, 1659. Wikimedia Commons, public domain."
+        },
+        {
+         "text": "God says to Abraham, 'As for me, behold, my covenant is with thee, and thou shalt be a father of many nations… And I will establish my covenant between me and thee and thy seed after thee in their generations for an everlasting covenant, to be a God unto thee, and to thy seed after thee.'",
+         "credit": "Moses with the Tablets of the Law, Rembrandt, 1659. Wikimedia Commons, public domain."
+        },
+        {
+         "text": "'I am the Lord thy God… Thou shalt have no other gods before me. Thou shalt not make unto thee any graven image… Honor thy father and thy mother… Thou shalt not kill. Thou shalt not commit adultery. Thou shalt not steal. Thou shalt not bear false witness against thy neighbor.'",
+         "credit": "Moses with the Tablets of the Law, Rembrandt, 1659. Wikimedia Commons, public domain."
+        },
+        {
+         "text": "— The Hebrew Bible (Torah): Genesis 12 and 17; Exodus 20 (the Ten Commandments, given — the tradition records — to Moses at Mount Sinai). Public-domain English translation (KJV).",
+         "credit": "Moses with the Tablets of the Law, Rembrandt, 1659. Wikimedia Commons, public domain."
+        }
+       ],
+       "source": {
+        "title": "Moses with the Tablets of the Law, Rembrandt, 1659. Wikimedia Commons, public domain.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 11,
+       "title": "Judaism: Diaspora and Identity",
+       "date": "2026-10-30",
+       "overview": "In 70 CE Rome burned the Temple and scattered the people. The religion should have died. Why didn't it?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "Josephus records that the Roman commander Titus had tried to spare the Temple, but in the chaos of battle his soldiers set it ablaze.",
+         "credit": ""
+        },
+        {
+         "text": "Nor was there any commiseration of any age, or any reverence of gravity, but children, and old men, and profane persons, and priests were all slain in the same manner.",
+         "credit": "— Flavius Josephus, The Jewish War, Book VI (trans. Whiston). Josephus (c. 37–100 CE) was a Jewish commander captured by Rome who witnessed the war and wrote under Roman patronage."
+        },
+        {
+         "text": "The number of those that were carried captive during this whole war was collected to be ninety-seven thousand; as was the number of those that perished during the whole siege eleven hundred thousand.",
+         "credit": "— Flavius Josephus, The Jewish War, Book VI (trans. Whiston). Josephus (c. 37–100 CE) was a Jewish commander captured by Rome who witnessed the war and wrote under Roman patronage."
+        }
+       ],
+       "source": {
+        "title": "Josephus records that the Roman commander Titus had tried to spare the Temple, but in the chaos of battle his soldiers ...",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 12,
+       "title": "Christianity: Origins, Jesus, and the Roman Empire",
+       "date": "2026-11-02",
+       "overview": "In 30 CE Rome executed Jesus as a criminal. In 380 CE Rome made his faith the official religion of the empire. How does a persecuted movement end up wearing the crown?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "'Blessed are the poor in spirit: for theirs is the kingdom of heaven. Blessed are they that mourn: for they shall be comforted. Blessed are the meek: for they shall inherit the earth… Blessed are the merciful: for they shall obtain mercy. Blessed are the peacemakers: for they shall be called the children of God… Ye are the light of the world. A city that is set on a hill cannot be hid.'",
+         "credit": "— The Sermon on the Mount, Gospel of Matthew 5 (1st century CE), public-domain English translation."
+        },
+        {
+         "text": "The emperors resolved 'that no one whatsoever should be denied the opportunity to give his heart to the observance of the Christian religion, of that religion which he should think best for himself,' so that 'each one may have the free opportunity to worship as he pleases.'",
+         "credit": "— The Edict of Milan, 313 CE, issued by the Roman emperors Constantine and Licinius, granting toleration to Christians."
+        }
+       ],
+       "source": {
+        "title": "— The Sermon on the Mount, Gospel of Matthew 5 (1st century CE), public-domain English translation.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 13,
+       "title": "Islam: Revelation, Five Pillars, Community, and Expansion",
+       "date": "2026-11-04",
+       "overview": "In 610 CE Islam had one believer. By 750 CE it governed from Spain to India. What spread faster — the empire or the faith — and what held it together?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "'In the name of God, the Most Gracious, the Most Merciful. Praise be to God, Lord of the Worlds, the Most Gracious, the Most Merciful, Master of the Day of Judgment. You alone we worship, and You alone we ask for help. Guide us to the straight path — the path of those upon whom You have bestowed favor.'",
+         "credit": "— The Qur'an, Sura 1 (al-Fatiha, “The Opening”), respectful standard English rendering (after Pickthall/Yusuf Ali)."
+        },
+        {
+         "text": "'Islam is that you testify that there is no god but God and that Muhammad is the Messenger of God, and you establish prayer, pay the zakat [charity], observe the fast of Ramadan, and perform the pilgrimage to the House [Mecca] if you are able to make the journey.'",
+         "credit": "— The Hadith of Gabriel, recorded in Sahih Muslim, in which the Prophet Muhammad defines the Five Pillars of Islam."
+        }
+       ],
+       "source": {
+        "title": "— The Qur'an, Sura 1 (al-Fatiha, “The Opening”), respectful standard English rendering (after Pickthall/Yusuf Ali).",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 14,
+       "title": "Comparative Belief Systems — Same Human Problems, Different Answers",
+       "date": "2026-11-05",
+       "overview": "Seven belief systems, four continents, 2,500 years — and they never met in one room. Today they do. Where do they agree — and where can they not?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "Tzu-kung asked, 'Is there one word which may serve as a rule of practice for all one's life?' The Master [Confucius] said, 'Is not RECIPROCITY such a word? What you do not want done to yourself, do not do to others.'",
+         "credit": ""
+        },
+        {
+         "text": "(verse 5) 'For hatred does not cease by hatred at any time: hatred ceases by love, this is an old rule.' (verse 1) 'All that we are is the result of what we have thought: it is founded on our thoughts, it is made up of our thoughts.'",
+         "credit": ""
+        },
+        {
+         "text": "'Blessed are the merciful: for they shall obtain mercy. Blessed are the peacemakers: for they shall be called the children of God.'",
+         "credit": ""
+        }
+       ],
+       "source": {
+        "title": "Tzu-kung asked, 'Is there one word which may serve as a rule of practice for all one's life?' The Master [Confucius] ...",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 15,
+       "title": "Belief Systems and Political Power",
+       "date": "2026-11-06",
+       "overview": "Three rulers, three faiths, three continents — one identical move. What does a ruler GAIN by carving scripture into stone, and what does it cost the faith?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "'Heaven sees as my people see; Heaven hears as my people hear.' And: 'Great Heaven has no partial affections; it helps only the virtuous.' The Zhou taught that Heaven granted the right to rule (the 'Mandate of Heaven') only to a just ruler, and could take it away from a cruel one.",
+         "credit": "— The Mandate of Heaven (tianming), from the Book of Documents (Shujing) — the classic Chinese text used to justify dynastic rule."
+        },
+        {
+         "text": "The emperors resolved 'that no one whatsoever should be denied the opportunity to give his heart to the observance of the Christian religion… so that each one may have the free opportunity to worship as he pleases.'",
+         "credit": "— The Edict of Milan, 313 CE, issued by Constantine and Licinius (reprinted from Monday's lesson)."
+        },
+        {
+         "text": "Around the great shrine the caliph Abd al-Malik had inscribed verses of the Qur'an, including: 'O People of the Book! Do not exceed the limits in your religion… The Messiah, Jesus son of Mary, was only a messenger of God.' The monument proclaimed the new faith — and the caliph's authority — in the heart of a city holy to Jews and Christians.",
+         "credit": "— The founding inscription of the Dome of the Rock, Jerusalem, built by the Umayyad caliph Abd al-Malik, 691–692 CE."
+        }
+       ],
+       "source": {
+        "title": "— The Mandate of Heaven (tianming), from the Book of Documents (Shujing) — the classic Chinese text used to justify dynastic rule.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 16,
+       "title": "CRQ Workshop — Belief Systems and Social Order",
+       "date": "2026-11-09",
+       "overview": "You've judged kings and graded empires all unit. Today you grade ESSAY ANSWERS first — then write your own, knowing exactly what the grader knows.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "\"When Anu the Sublime, King of the gods, and Bel, the lord of Heaven and earth, who decreed the fate of the land, assigned to Marduk... they called by name me, Hammurabi, the exalted prince, who feared God, to bring about the rule of righteousness in the land, to destroy the wicked and the evil-doers...\"",
+         "credit": "— Prologue, Code of Hammurabi, c. 1750 BCE"
+        },
+        {
+         "text": "\"Across ancient civilizations, rulers used belief systems to legitimize their political authority and order their societies. From Hammurabi's claim of divine sanction in Babylon to Constantine's adoption of Christianity in Rome, religion provided rulers with moral authority and gave subjects a cosmic reason to obey.\"",
+         "credit": "— Adapted from a high school world history textbook, 2018"
+        },
+        {
+         "text": "(a) IDENTIFY · 5 pts — Based on Document 1, identify ONE way Hammurabi used a belief system to order Babylonian society. Be specific (one sentence).",
+         "credit": ""
+        },
+        {
+         "text": "(b) EXPLAIN · 5 pts — Using Document 1, explain HOW Hammurabi's claim of divine sanction would have shaped Babylonian society. Cite one specific detail from the document.",
+         "credit": ""
+        }
+       ],
+       "source": {
+        "title": "— Prologue, Code of Hammurabi, c. 1750 BCE",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 17,
+       "title": "Enduring Issues Writing Bridge — Belief Systems",
+       "date": "2026-11-10",
+       "overview": "The Regents will hand you five documents and ask for an enduring issue. Today you learn the assembly line: read with HAPP-E, pick the issue that survives the three-document test, build the intro with the template.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "\"…they called by name me, Hammurabi, the exalted prince, who feared God, to bring about the rule of righteousness in the land, to destroy the wicked and the evil-doers...\"",
+         "credit": "— Prologue, Code of Hammurabi, c. 1750 BCE"
+        },
+        {
+         "text": "'Blessed are the merciful: for they shall obtain mercy. Blessed are the peacemakers: for they shall be called the children of God.'",
+         "credit": "— The Sermon on the Mount, Gospel of Matthew 5, 1st century CE"
+        },
+        {
+         "text": "'O ye who believe! Be ye staunch in justice, witnesses for Allah, even though it be against yourselves or (your) parents or (your) kindred…'",
+         "credit": "— The Qur'an, 4:135 (trans. Pickthall), 7th century CE"
+        }
+       ],
+       "source": {
+        "title": "— Prologue, Code of Hammurabi, c. 1750 BCE",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 18,
+       "title": "Unit 03 Review and Thursday Test Day",
+       "date": "2026-11-12",
+       "overview": "Eight belief systems, one test. The test doesn't ask what you know — it asks if you can tell them APART.",
+       "objectives": [],
+       "essentialQuestions": []
+      }
+     ],
+     "vocab": [],
+     "misconceptions": []
+    }
+   ],
+   "counts": {
+    "topics": 1,
+    "lessons": 18,
+    "terms": 0
+   }
+  },
+  {
+   "id": "04",
+   "title": "Classical Power Citizenship Empire Golden Ages and Collapse",
+   "blurb": "Covers the classical world of Greece, Rome, Maurya and Gupta India, Qin and Han China, and the Maya, from golden ages to collapse.",
+   "weight": "NYS 9.3",
+   "topics": [
+    {
+     "code": "9.3",
+     "title": "Classical Civilizations: Expansion, Achievement, Decline",
+     "lessons": [
+      {
+       "n": 1,
+       "title": "Classical Civilization Map · Greece · Rome · Qin/Han · Maurya/Gupta · Maya",
+       "date": "2026-11-13",
+       "overview": "Seven classical civilizations rose on three continents with almost no contact — what pattern do they share, and could the people inside an empire ever see their own ending coming?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "On how Rome governed a vast empire: “You, who conduct public business throughout the whole civilized world exactly as if it were one city-state, appoint governors” to rule the provinces.",
+         "credit": "— Aelius Aristides, “The Roman Oration” (“To Rome”), delivered c. 143–155 CE, trans. James H. Oliver. Aristides was a Greek public speaker living under Roman rule who praised the empire at its height."
+        },
+        {
+         "text": "On its size: “The land you possess equals what the sun can pass over, and the sun does encompass your land.”",
+         "credit": "— Aelius Aristides, “The Roman Oration” (“To Rome”), delivered c. 143–155 CE, trans. James H. Oliver. Aristides was a Greek public speaker living under Roman rule who praised the empire at its height."
+        },
+        {
+         "text": "On peace across the empire (the Pax Romana): “The entire civilized world lays down the weapons that were its ancient burden and has turned to adornment.”",
+         "credit": "— Aelius Aristides, “The Roman Oration” (“To Rome”), delivered c. 143–155 CE, trans. James H. Oliver. Aristides was a Greek public speaker living under Roman rule who praised the empire at its height."
+        },
+        {
+         "text": "On who belonged: “You have divided humanity into Romans and non-Romans… in every city throughout the empire there are many who share citizenship with you.”",
+         "credit": "— Aelius Aristides, “The Roman Oration” (“To Rome”), delivered c. 143–155 CE, trans. James H. Oliver. Aristides was a Greek public speaker living under Roman rule who praised the empire at its height."
+        }
+       ],
+       "source": {
+        "title": "— Aelius Aristides, “The Roman Oration” (“To Rome”), delivered c. 143–155 CE, trans. James H. Oliver. Aristides was a Greek public speaker living under Roman rule who praised the empire at its height.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 2,
+       "title": "Greek Geography and the Polis System",
+       "date": "2026-11-16",
+       "overview": "Greece never became an empire — its mountains and seas broke it into 1,000+ tiny states. How did that 'failure' invent something bigger than empire: the citizen?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“When several villages are united in a single complete community, large enough to be nearly or quite self-sufficing, the STATE comes into existence, originating in the bare needs of life, and continuing in existence for the sake of a good life.”",
+         "credit": "— Aristotle, Politics, Book I, trans. Benjamin Jowett. Aristotle (384–322 BCE) was a Greek philosopher in Athens writing about the polis — the Greek city-state."
+        },
+        {
+         "text": "“Hence it is evident that the state is a creation of nature, and that man is by nature a POLITICAL ANIMAL.”",
+         "credit": "— Aristotle, Politics, Book I, trans. Benjamin Jowett. Aristotle (384–322 BCE) was a Greek philosopher in Athens writing about the polis — the Greek city-state."
+        },
+        {
+         "text": "Why? “Nature… makes nothing in vain, and man is the only animal whom she has endowed with the GIFT OF SPEECH.” While mere voice signals pleasure or pain, “the power of speech is intended to set forth the expedient and inexpedient, and therefore likewise the just and the unjust” — so only humans can build a community of laws.",
+         "credit": "— Aristotle, Politics, Book I, trans. Benjamin Jowett. Aristotle (384–322 BCE) was a Greek philosopher in Athens writing about the polis — the Greek city-state."
+        },
+        {
+         "text": "“But he who is unable to live in society, or who has no need because he is sufficient for himself, must be either a beast or a god: he is no part of a state.”",
+         "credit": "— Aristotle, Politics, Book I, trans. Benjamin Jowett. Aristotle (384–322 BCE) was a Greek philosopher in Athens writing about the polis — the Greek city-state."
+        }
+       ],
+       "source": {
+        "title": "— Aristotle, Politics, Book I, trans. Benjamin Jowett. Aristotle (384–322 BCE) was a Greek philosopher in Athens writing about the polis — the Greek city-state.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 3,
+       "title": "Athens and Sparta — Democracy vs Militarism",
+       "date": "2026-11-17",
+       "overview": "Athens and Sparta sit in the same mountains and answer the same question — what is a citizen FOR? — in opposite ways. Which would you choose… and who do you have to BE for your answer to hold?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "On taking the boys young: “As soon as they were seven years old they were to be enrolled in certain companies and classes, where they all lived under the same order and discipline.”",
+         "credit": "— Plutarch, Life of Lycurgus, trans. John Dryden. Plutarch (c. 46–120 CE) was a Greek biographer describing the laws the lawgiver Lycurgus was said to have given Sparta."
+        },
+        {
+         "text": "On what mattered in their schooling: “Reading and writing they gave them, just enough to serve their turn; their chief care was to make them good subjects, and to teach them to ENDURE PAIN and conquer in battle.”",
+         "credit": "— Plutarch, Life of Lycurgus, trans. John Dryden. Plutarch (c. 46–120 CE) was a Greek biographer describing the laws the lawgiver Lycurgus was said to have given Sparta."
+        },
+        {
+         "text": "On a harsh test of survival: the boys “stole, too, all other meat they could lay their hands on, looking out and watching all opportunities, when people were asleep or more careless than usual. If they were caught, they were not only punished with whipping, but hunger, too.”",
+         "credit": "— Plutarch, Life of Lycurgus, trans. John Dryden. Plutarch (c. 46–120 CE) was a Greek biographer describing the laws the lawgiver Lycurgus was said to have given Sparta."
+        },
+        {
+         "text": "[Plutarch explains that Spartan boys were trained this way to grow into hardy, daring, and self-reliant soldiers — taught that getting caught, not the stealing itself, was the disgrace. Sparta's whole society was organized to produce warriors.]",
+         "credit": "— Plutarch, Life of Lycurgus, trans. John Dryden. Plutarch (c. 46–120 CE) was a Greek biographer describing the laws the lawgiver Lycurgus was said to have given Sparta."
+        }
+       ],
+       "source": {
+        "title": "— Plutarch, Life of Lycurgus, trans. John Dryden. Plutarch (c. 46–120 CE) was a Greek biographer describing the laws the lawgiver Lycurgus was said to have given Sparta.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 4,
+       "title": "Greek Democracy — Who Gets a Voice?",
+       "date": "2026-11-18",
+       "overview": "Pericles tells a grieving Athens that its government “favours the many instead of the few.” Apply the Assembly's own door rules, do the math — and decide what “the many” really meant.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“Our constitution does not copy the laws of neighbouring states; we are rather a pattern to others than imitators ourselves. Its administration favours the many instead of the few; this is why it is called a DEMOCRACY.”",
+         "credit": "— Thucydides, History of the Peloponnesian War, Book 2.37 (Pericles' Funeral Oration), trans. Richard Crawley. The Athenian leader Pericles praises Athens' democracy in a funeral speech for the war dead, c. 431 BCE."
+        },
+        {
+         "text": "“If we look to the laws, they afford equal justice to all in their private differences; if no social standing, advancement in public life falls to reputation for capacity, class considerations not being allowed to interfere with merit; nor again does poverty bar the way.”",
+         "credit": "— Thucydides, History of the Peloponnesian War, Book 2.37 (Pericles' Funeral Oration), trans. Richard Crawley. The Athenian leader Pericles praises Athens' democracy in a funeral speech for the war dead, c. 431 BCE."
+        },
+        {
+         "text": "On taking part: Athenians regard a man who takes no interest in public affairs not as harmless but “as a USELESS character.”",
+         "credit": "— Thucydides, History of the Peloponnesian War, Book 2.37 (Pericles' Funeral Oration), trans. Richard Crawley. The Athenian leader Pericles praises Athens' democracy in a funeral speech for the war dead, c. 431 BCE."
+        },
+        {
+         "text": "On freedom and law together: “The freedom which we enjoy in our government extends also to our ordinary life.” Yet “all this ease in our private relations does not make us lawless as citizens,” for fear of disgrace teaches Athenians “to obey the magistrates and the laws.”",
+         "credit": "— Thucydides, History of the Peloponnesian War, Book 2.37 (Pericles' Funeral Oration), trans. Richard Crawley. The Athenian leader Pericles praises Athens' democracy in a funeral speech for the war dead, c. 431 BCE."
+        }
+       ],
+       "source": {
+        "title": "— Thucydides, History of the Peloponnesian War, Book 2.37 (Pericles' Funeral Oration), trans. Richard Crawley. The Athenian leader Pericles praises Athens' democracy in a funeral speech for the war dead, c. 431 BCE.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 5,
+       "title": "Persian and Peloponnesian Wars as Stress Tests",
+       "date": "2026-11-19",
+       "overview": "The polis system was stress-tested twice — once from outside (Persia), once from inside (the Peloponnesian War). Why did it pass the first test and fail the second — and who collected the wreckage?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "After years of war between Athens and Sparta, the powerful Athenian navy arrives at tiny, neutral Melos and demands surrender. When the Melians appeal to justice and fairness, the Athenians answer bluntly:",
+         "credit": "— Thucydides, History of the Peloponnesian War, Book 5 (the Melian Dialogue, 416 BCE), trans. Richard Crawley. During the Peloponnesian War, powerful Athens demands the surrender of the small neutral island of Melos."
+        },
+        {
+         "text": "“…since you know as well as we do that right, as the world goes, is only in question between equals in power, while THE STRONG DO WHAT THEY CAN AND THE WEAK SUFFER WHAT THEY MUST.”",
+         "credit": "— Thucydides, History of the Peloponnesian War, Book 5 (the Melian Dialogue, 416 BCE), trans. Richard Crawley. During the Peloponnesian War, powerful Athens demands the surrender of the small neutral island of Melos."
+        },
+        {
+         "text": "They claim this is simply how power works, for gods and humans alike: “Of the gods we believe, and of men we know, that by a necessary law of their nature they rule wherever they can.”",
+         "credit": "— Thucydides, History of the Peloponnesian War, Book 5 (the Melian Dialogue, 416 BCE), trans. Richard Crawley. During the Peloponnesian War, powerful Athens demands the surrender of the small neutral island of Melos."
+        },
+        {
+         "text": "[Melos refused to surrender. Athens besieged the island, then killed the men of military age and enslaved the women and children — the brutal logic of the dialogue carried out.]",
+         "credit": "— Thucydides, History of the Peloponnesian War, Book 5 (the Melian Dialogue, 416 BCE), trans. Richard Crawley. During the Peloponnesian War, powerful Athens demands the surrender of the small neutral island of Melos."
+        }
+       ],
+       "source": {
+        "title": "— Thucydides, History of the Peloponnesian War, Book 5 (the Melian Dialogue, 416 BCE), trans. Richard Crawley. During the Peloponnesian War, powerful Athens demands the surrender of the small neutral island of Melos.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 6,
+       "title": "Alexander the Great and Hellenistic Cultural Diffusion",
+       "date": "2026-11-20",
+       "overview": "Alexander's empire shattered within a generation of his death — but the CULTURE his conquests mixed ran for 300 years, from the Nile to the Indus. Which conquest was real?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“Meanwhile the generals of Darius (Darius III – Persian Emperor) had assembled a large force and set it in array at the crossing of the river Granicus… but most of the Macedonian officers were afraid of the depth of the river, and of the roughness and unevenness of the farther banks, up which they would have to climb while fighting.”",
+         "credit": "— Plutarch, an account of the life and conquests of Alexander of Macedon, c. 75 CE (classroom translation). This excerpt describes Alexander's first great victory over the Persians, at the Granicus River."
+        },
+        {
+         "text": "“However, he (Alexander) persisted in his attempt to cross, gained the opposite banks with difficulty and much ado, though they were moist and slippery with mud, and was at once compelled to fight and engage his assailants man by man, before his troops who were crossing could form into any order.”",
+         "credit": "— Plutarch, an account of the life and conquests of Alexander of Macedon, c. 75 CE (classroom translation). This excerpt describes Alexander's first great victory over the Persians, at the Granicus River."
+        },
+        {
+         "text": "“The enemy Persians, however, did not resist vigorously, nor for a long time, but fled in a riot… But he (Alexander), influenced by anger more than by reason, charged foremost upon them and lost his horse, which was smitten through the ribs with a sword.”",
+         "credit": "— Plutarch, an account of the life and conquests of Alexander of Macedon, c. 75 CE (classroom translation). This excerpt describes Alexander's first great victory over the Persians, at the Granicus River."
+        }
+       ],
+       "source": {
+        "title": "— Plutarch, an account of the life and conquests of Alexander of Macedon, c. 75 CE (classroom translation). This excerpt describes Alexander's first great victory over the Persians, at the Granicus River.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 7,
+       "title": "Roman Geography and the Republic",
+       "date": "2026-11-23",
+       "overview": "In 509 BCE Rome threw out its king and filed history's boldest patent: a SELF-BALANCING government. Do the claims check out against the spec and the prior art — and what condition breaks the machine?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“THE THREE kinds of government, monarchy, aristocracy and democracy, were all found united in the commonwealth of Rome.”",
+         "credit": "— Polybius, The Histories, Book 6, trans. Evelyn Shuckburgh. Polybius (c. 200–118 BCE) was a Greek historian who studied the Roman Republic and tried to explain why its government was so strong."
+        },
+        {
+         "text": "Looking at the power of the Consuls, the government 'appeared to be purely monarchical and regal'; looking at the Senate, 'it then seemed to wear the form of aristocracy'; and looking at the share given to the People, 'it could then scarcely fail to be denominated a popular state.'",
+         "credit": "— Polybius, The Histories, Book 6, trans. Evelyn Shuckburgh. Polybius (c. 200–118 BCE) was a Greek historian who studied the Roman Republic and tried to explain why its government was so strong."
+        },
+        {
+         "text": "On the Consuls: “The consuls, when they remain in Rome, before they lead out the armies into the field, are the masters of all public affairs.” To them belongs the power 'to appoint the military tribunes; to enroll the legions, and make the necessary levies.'",
+         "credit": "— Polybius, The Histories, Book 6, trans. Evelyn Shuckburgh. Polybius (c. 200–118 BCE) was a Greek historian who studied the Roman Republic and tried to explain why its government was so strong."
+        },
+        {
+         "text": "On balance: “While each of these separate parts is enabled either to assist or obstruct the rest, the government… is so well secured against every accident, that it seems scarcely possible to invent a more perfect system.”",
+         "credit": "— Polybius, The Histories, Book 6, trans. Evelyn Shuckburgh. Polybius (c. 200–118 BCE) was a Greek historian who studied the Roman Republic and tried to explain why its government was so strong."
+        }
+       ],
+       "source": {
+        "title": "— Polybius, The Histories, Book 6, trans. Evelyn Shuckburgh. Polybius (c. 200–118 BCE) was a Greek historian who studied the Roman Republic and tried to explain why its government was so strong.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 8,
+       "title": "Patricians, Plebeians, Citizenship, and the Twelve Tables",
+       "date": "2026-11-24",
+       "overview": "In 494 BCE Rome's plebeians walked out of the city — history's first recorded general strike. What did organized commoners win at the bargaining table, and why was a BARGAINED law code different from Hammurabi's handed-down one?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "TABLE I (court): “If anyone summons a man before the magistrate, he must go. If he does not go, let witnesses be called. Then only must he be taken by force.”",
+         "credit": "— The Twelve Tables, Rome, 451–450 BCE (trans. after O. J. Thatcher, The Library of Original Sources). The plebeians forced Rome to write down its laws so they could no longer be applied unfairly in secret."
+        },
+        {
+         "text": "TABLE III (debt): a debtor was given 30 days of grace after a judgment; then a creditor could lay hands on him and 'bind him either with a thong or with fetters' of not less than fifteen pounds.",
+         "credit": "— The Twelve Tables, Rome, 451–450 BCE (trans. after O. J. Thatcher, The Library of Original Sources). The plebeians forced Rome to write down its laws so they could no longer be applied unfairly in secret."
+        },
+        {
+         "text": "TABLE VIII (injury): “If one has maimed a limb and does not compromise with the injured person, let there be RETALIATION IN KIND.” But if one breaks the bone of a freeman, the fine is 300 coins; 'if of a slave, 150.'",
+         "credit": "— The Twelve Tables, Rome, 451–450 BCE (trans. after O. J. Thatcher, The Library of Original Sources). The plebeians forced Rome to write down its laws so they could no longer be applied unfairly in secret."
+        },
+        {
+         "text": "TABLE IX (rights): a citizen could be put to death only by the verdict of the greatest assembly — not by a single official's order.",
+         "credit": "— The Twelve Tables, Rome, 451–450 BCE (trans. after O. J. Thatcher, The Library of Original Sources). The plebeians forced Rome to write down its laws so they could no longer be applied unfairly in secret."
+        }
+       ],
+       "source": {
+        "title": "— The Twelve Tables, Rome, 451–450 BCE (trans. after O. J. Thatcher, The Library of Original Sources). The plebeians forced Rome to write down its laws so they could no longer be applied unfairly in secret.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 9,
+       "title": "Caesar, Augustus, and the End of the Republic",
+       "date": "2026-11-25",
+       "overview": "Augustus ended the republic while insisting — on bronze, across the empire — that he had restored it. Write the footnotes his monument needs, and decide: when did the republic actually die, and would a Roman have noticed?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“At the age of nineteen, on my own initiative and at my own expense, I raised an army with which I set free the state, which was oppressed by the tyranny of a faction.”",
+         "credit": "— Augustus, Res Gestae Divi Augusti (“The Deeds of the Divine Augustus”), the emperor's own first-person record, completed 14 CE and inscribed on bronze pillars and on temples across the empire (Ancyra copy). English after the standard translation. Augustus (born Octavian) ended Rome's civil wars and became its first emperor."
+        },
+        {
+         "text": "“In my sixth and seventh consulships [28–27 BCE], after I had put an end to the civil wars, having by universal consent become master of all affairs, I transferred the republic from my own power to the control of the Roman Senate and people.”",
+         "credit": "— Augustus, Res Gestae Divi Augusti (“The Deeds of the Divine Augustus”), the emperor's own first-person record, completed 14 CE and inscribed on bronze pillars and on temples across the empire (Ancyra copy). English after the standard translation. Augustus (born Octavian) ended Rome's civil wars and became its first emperor."
+        },
+        {
+         "text": "“For this service of mine I was named Augustus by decree of the Senate… After that time I excelled all others in influence [auctoritas], yet I had no more official power [potestas] than the others who were my colleagues in each office.”",
+         "credit": "— Augustus, Res Gestae Divi Augusti (“The Deeds of the Divine Augustus”), the emperor's own first-person record, completed 14 CE and inscribed on bronze pillars and on temples across the empire (Ancyra copy). English after the standard translation. Augustus (born Octavian) ended Rome's civil wars and became its first emperor."
+        },
+        {
+         "text": "“I had been consul thirteen times when I wrote this, and I was in the thirty-seventh year of my tribunician power.”",
+         "credit": "— Augustus, Res Gestae Divi Augusti (“The Deeds of the Divine Augustus”), the emperor's own first-person record, completed 14 CE and inscribed on bronze pillars and on temples across the empire (Ancyra copy). English after the standard translation. Augustus (born Octavian) ended Rome's civil wars and became its first emperor."
+        }
+       ],
+       "source": {
+        "title": "— Augustus, Res Gestae Divi Augusti (“The Deeds of the Divine Augustus”), the emperor's own first-person record, completed 14 CE and inscribed on bronze pillars and on temples across the empire (Ancyra copy). English after the standard translation. Augustus (born Octavian) ended Rome's civil wars and became its first emperor.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 10,
+       "title": "Roman Achievements and Engineering Power",
+       "date": "2026-11-30",
+       "overview": "Two hundred years of one-man peace built roads, aqueducts, and law that still stand. Inspect the bill: for each Roman public work, decide who paid, who benefited, and what the proud inscriptions leave out.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“For ninety-one years after the founding of the city the Romans were satisfied with the use of such waters as they drew from the Tiber, from wells, or from springs… But now nine aqueducts reach the city.”",
+         "credit": "— Sextus Julius Frontinus, On the Aqueducts of Rome (De aquaeductu urbis Romae), c. 97–98 CE, English after the C. E. Bennett (Loeb) translation. Frontinus was the Roman official (curator aquarum, water commissioner) placed in charge of the city's aqueducts by the emperor."
+        },
+        {
+         "text": "“I shall now state the measurements… of each, for this is a matter of great importance, since the supply must answer not only the public needs, but also the demands of private luxury [— the baths, the fountains, and the homes the water serves].”",
+         "credit": "— Sextus Julius Frontinus, On the Aqueducts of Rome (De aquaeductu urbis Romae), c. 97–98 CE, English after the C. E. Bennett (Loeb) translation. Frontinus was the Roman official (curator aquarum, water commissioner) placed in charge of the city's aqueducts by the emperor."
+        },
+        {
+         "text": "“With such an array of indispensable structures carrying so many waters, compare, if you will, the idle Pyramids, or the useless, though famous, works of the Greeks!”",
+         "credit": "— Sextus Julius Frontinus, On the Aqueducts of Rome (De aquaeductu urbis Romae), c. 97–98 CE, English after the C. E. Bennett (Loeb) translation. Frontinus was the Roman official (curator aquarum, water commissioner) placed in charge of the city's aqueducts by the emperor."
+        }
+       ],
+       "source": {
+        "title": "— Sextus Julius Frontinus, On the Aqueducts of Rome (De aquaeductu urbis Romae), c. 97–98 CE, English after the C. E. Bennett (Loeb) translation. Frontinus was the Roman official (curator aquarum, water commissioner) placed in charge of the city's aqueducts by the emperor.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 11,
+       "title": "The Fall of Rome — Multiple Causes and Historical Argument",
+       "date": "2026-12-01",
+       "overview": "The western Roman Empire fell by 476 CE — but historians still argue WHY, and no single cause is the whole story. Hold a tribunal: weigh the competing causes and write a ranked, multi-causal verdict.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“…By the middle of the second century, Italy [within the Roman Empire] was in a state of decline. By the time of the Emperor Diocletian, at the opening of the fourth century, decay was apparent throughout the empire. Trade had largely disappeared owing to the lack of customers, to piracy on the seas, and to insecurity of the roads on land. Generally speaking, purchasing power [the ability to buy ...",
+         "credit": "— Louis C. West, “The Economic Collapse of the Roman Empire,” The Classical Journal, November 1932. NOTE: this is a modern HISTORIAN'S analysis (a secondary source) used here as a document, in the Regents style. It describes the western Roman economy in the 3rd–4th centuries CE, around the reign of the emperor Diocletian."
+        }
+       ],
+       "source": {
+        "title": "— Louis C. West, “The Economic Collapse of the Roman Empire,” The Classical Journal, November 1932. NOTE: this is a modern HISTORIAN'S analysis (a secondary source) used here as a document, in the Regents style. It describes the western Roman economy in the 3rd–4th centuries CE, around the reign of the emperor Diocletian.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 12,
+       "title": "Maurya Empire and Ashoka — Buddhism and Moral Rule",
+       "date": "2026-12-02",
+       "overview": "Ashoka conquered Kalinga — then carved his REMORSE into stone across his empire. Reconstruct the boast a normal conqueror would have carved, set it beside what Ashoka actually wrote, and decide: was the remorse real, strategic, or both?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“When he had been consecrated eight years, [the country of] the Kalingas was conquered by Beloved-of-the-Gods [Ashoka]. One hundred and fifty thousand were deported, one hundred thousand were killed, and many more died [from other causes].",
+         "credit": "— Ashoka, Major Rock Edict 13, carved on rock c. 257 BCE, English after standard translations. “Beloved-of-the-Gods” (Devanampriya) is Ashoka's own title for himself. Ashoka was the third emperor of the Mauryan Empire, which unified most of the Indian subcontinent; the edict was carved soon after his conquest of Kalinga."
+        },
+        {
+         "text": "After the Kalingas had been conquered, Beloved-of-the-Gods came to feel a strong inclination towards the Dhamma [moral law]… For this is considered very painful and deplorable by Beloved-of-the-Gods: that, while one is conquering an unconquered country, slaughter, death, and the carrying away of the people are taking place there.",
+         "credit": "— Ashoka, Major Rock Edict 13, carved on rock c. 257 BCE, English after standard translations. “Beloved-of-the-Gods” (Devanampriya) is Ashoka's own title for himself. Ashoka was the third emperor of the Mauryan Empire, which unified most of the Indian subcontinent; the edict was carved soon after his conquest of Kalinga."
+        },
+        {
+         "text": "… Even the hundredth part or the thousandth part of all those people who were slain, who died, and who were carried away at that time would now be considered very deplorable by Beloved-of-the-Gods.”",
+         "credit": "— Ashoka, Major Rock Edict 13, carved on rock c. 257 BCE, English after standard translations. “Beloved-of-the-Gods” (Devanampriya) is Ashoka's own title for himself. Ashoka was the third emperor of the Mauryan Empire, which unified most of the Indian subcontinent; the edict was carved soon after his conquest of Kalinga."
+        }
+       ],
+       "source": {
+        "title": "— Ashoka, Major Rock Edict 13, carved on rock c. 257 BCE, English after standard translations. “Beloved-of-the-Gods” (Devanampriya) is Ashoka's own title for himself. Ashoka was the third emperor of the Mauryan Empire, which unified most of the Indian subcontinent; the edict was carved soon after his conquest of Kalinga.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 13,
+       "title": "Gupta India and the Golden Age",
+       "date": "2026-12-03",
+       "overview": "A Chinese monk walked across Gupta India around 400 CE and wrote that the people were “numerous and happy.” Run a corroboration desk: fact-check his glowing account and decide how strong it is as evidence for a golden age.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“The people are numerous and happy… The king governs without decapitation or [other] corporal punishments. Criminals are simply fined, lightly or heavily, according to the circumstances [of each case]. Even in cases of repeated attempts at wicked rebellion, they only have their right hands cut off. Throughout the country the people… do not keep pigs and fowls, and do not sell live cattle; in the ...",
+         "credit": "— Faxian (Fa-Hsien), A Record of Buddhist Kingdoms (Fo-kuo-chi), c. 399–414 CE, English after the James Legge translation. Faxian was a Chinese Buddhist monk who traveled across Gupta India on foot to collect Buddhist texts; this is his eyewitness account of “the Middle Kingdom” (Madhyadesha)."
+        }
+       ],
+       "source": {
+        "title": "— Faxian (Fa-Hsien), A Record of Buddhist Kingdoms (Fo-kuo-chi), c. 399–414 CE, English after the James Legge translation. Faxian was a Chinese Buddhist monk who traveled across Gupta India on foot to collect Buddhist texts; this is his eyewitness account of “the Middle Kingdom” (Madhyadesha).",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 14,
+       "title": "Qin Dynasty China — Legalism and the Costs of Unity",
+       "date": "2026-12-04",
+       "overview": "The Qin First Emperor unified China by force and Legalism — then his dynasty died in fifteen years. Run the autopsy: name the cause of death, weigh each policy's benefit and cost, and find the one policy that both BUILT and KILLED the dynasty.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“At present… the various schools of learning [scholars] use the past to criticize the present… and confuse the common people… Such being the case, if it is not prohibited, the imperial power will decline above and factions will form below.",
+         "credit": "— Sima Qian, Records of the Grand Historian (Shiji), c. 94 BCE, English after the Burton Watson translation. The Han historian records the memorial of Chancellor Li Si to Qin Shi Huang, the First Emperor, recommending the burning of books (213 BCE) — Legalism in action."
+        },
+        {
+         "text": "Therefore I [Li Si] request that all who possess the Songs [the Classic of Poetry], the Documents [the Classic of History], and the writings of the hundred schools of philosophy be ordered to take them to the officials and have them burned. Anyone who dares to discuss the Songs or the Documents [in private] shall be publicly executed… Anyone who uses the past to criticize the present shall be put ...",
+         "credit": "— Sima Qian, Records of the Grand Historian (Shiji), c. 94 BCE, English after the Burton Watson translation. The Han historian records the memorial of Chancellor Li Si to Qin Shi Huang, the First Emperor, recommending the burning of books (213 BCE) — Legalism in action."
+        },
+        {
+         "text": "Books on medicine, divination, agriculture, and forestry may be kept.” The First Emperor approved.",
+         "credit": "— Sima Qian, Records of the Grand Historian (Shiji), c. 94 BCE, English after the Burton Watson translation. The Han historian records the memorial of Chancellor Li Si to Qin Shi Huang, the First Emperor, recommending the burning of books (213 BCE) — Legalism in action."
+        }
+       ],
+       "source": {
+        "title": "— Sima Qian, Records of the Grand Historian (Shiji), c. 94 BCE, English after the Burton Watson translation. The Han historian records the memorial of Chancellor Li Si to Qin Shi Huang, the First Emperor, recommending the burning of books (213 BCE) — Legalism in action.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 15,
+       "title": "Han China — Confucian Bureaucracy and the Silk Road",
+       "date": "2026-12-07",
+       "overview": "The Han kept Qin's unified China but replaced FEAR with a Confucian civil service chosen by merit, and opened the Silk Road. Run the hiring committee: score four candidates on the Han rubric, rank them — and audit who the “merit” system still shut out.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“Zhang Qian was the first person to bring back a clear account of Dayuan [Ferghana, in Central Asia]. The emperor [Wu of Han] had sent out a summons for men capable of undertaking a mission to the west. Zhang Qian, who was a palace attendant at the time, answered the summons and was appointed as envoy. He set out… traveling west through the territory of the Xiongnu, who captured him and held him ...",
+         "credit": "— Sima Qian, Records of the Grand Historian (Shiji), c. 94 BCE, English after the Burton Watson translation, on the Han envoy Zhang Qian's mission to the Western Regions (138–126 BCE) under Emperor Wu. Zhang Qian's reports opened the routes later called the Silk Road."
+        },
+        {
+         "text": "Of Dayuan he reported: ‘The people live in houses in fortified cities, there being some seventy or more cities of various sizes in the region. They are settled on the land, cultivating the fields and growing rice and wheat. They also make wine out of grapes,’ and they prize swift horses said to ‘sweat blood.’ Dayuan had heard of the wealth of the Han empire and wished to establish communication ...",
+         "credit": "— Sima Qian, Records of the Grand Historian (Shiji), c. 94 BCE, English after the Burton Watson translation, on the Han envoy Zhang Qian's mission to the Western Regions (138–126 BCE) under Emperor Wu. Zhang Qian's reports opened the routes later called the Silk Road."
+        },
+        {
+         "text": "When Zhang Qian returned, the emperor learned of the rich lands, goods, and peoples to the west — knowledge that opened the trade routes later called the Silk Road.”",
+         "credit": "— Sima Qian, Records of the Grand Historian (Shiji), c. 94 BCE, English after the Burton Watson translation, on the Han envoy Zhang Qian's mission to the Western Regions (138–126 BCE) under Emperor Wu. Zhang Qian's reports opened the routes later called the Silk Road."
+        }
+       ],
+       "source": {
+        "title": "— Sima Qian, Records of the Grand Historian (Shiji), c. 94 BCE, English after the Burton Watson translation, on the Han envoy Zhang Qian's mission to the Western Regions (138–126 BCE) under Emperor Wu. Zhang Qian's reports opened the routes later called the Silk Road.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 16,
+       "title": "Maya City-States — Environment and Decline",
+       "date": "2026-12-08",
+       "overview": "The Maya built dozens of independent city-states and the most advanced writing in the Americas — then abandoned their great lowland cities around 800–900 CE. Be the forensic team: weigh the evidence (drought, deforestation, war) and rule a most-probable cause of collapse.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“This is the account of how all was in suspense, all calm, in silence; all motionless, still, and the expanse of the sky was empty. There is not yet one person, one animal, bird, fish, crab, tree, rock, hollow, canyon, meadow, or forest. Only the sky alone is there… Only the sea alone is pooled under all the sky… Then came the word. The Maker, Modeler, and the Sovereign Plumed Serpent… talked ...",
+         "credit": "— the Popol Vuh, the sacred creation book of the K'iche' Maya of highland Guatemala, English after the Dennis Tedlock translation. It was written down in the 1550s but preserves much older oral tradition; it tells how the gods made the world and, after several failures, made human beings from maize (corn)."
+        }
+       ],
+       "source": {
+        "title": "— the Popol Vuh, the sacred creation book of the K'iche' Maya of highland Guatemala, English after the Dennis Tedlock translation. It was written down in the 1550s but preserves much older oral tradition; it tells how the gods made the world and, after several failures, made human beings from maize (corn).",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 17,
+       "title": "Golden Age Exhibit Preparation",
+       "date": "2026-12-09",
+       "overview": "You are museum curators. Design an exhibit panel arguing that ONE classical golden age — Periclean Athens, the Pax Romana, Gupta India, or Han China — truly earned the name, using four artifacts (one per SPICE strand) and a thesis that also names its cost.",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 18,
+       "title": "Golden Age Exhibit Day Presentations",
+       "date": "2026-12-10",
+       "overview": "Opening night. Present your golden-age exhibit as a docent, field visitor questions in role, score every other exhibit on the evidence — then vote the “golden-est” classical age, decided by proof, not applause.",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 19,
+       "title": "Collapse Comparison · Why Civilizations Fall",
+       "date": "2026-12-11",
+       "overview": "Three classical empires died centuries and oceans apart — Western Rome, Han China, the Maya. Put all three on the autopsy table: find the diseases they SHARED and the one wound that killed each.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "ROME — Ammianus Marcellinus, a Roman soldier and historian, on the Battle of Adrianople (378 CE): “The barbarians [Goths], rushing on with their enormous host, beat down our horses and men… a soldier could hardly draw his sword… such clouds of dust arose that it was scarcely possible to see the sky… The plain was covered with corpses… Scarcely one third of the whole army escaped.” The emperor ...",
+         "credit": "The Roman Empire at its greatest extent. Map via Wikimedia Commons, used under its Commons license; re-verified 2026-06-13."
+        },
+        {
+         "text": "HAN CHINA — the historical record (184–220 CE): after generations of court corruption, heavy taxes, and famine, peasants launched the Yellow Turban Rebellion (184 CE), declaring that the Han emperors had lost the “Mandate of Heaven.” The generals who crushed the revolt became warlords who carved up the empire; in 220 CE the last Han emperor was pushed aside and China split into the Three Kingdoms.",
+         "credit": ""
+        },
+        {
+         "text": "THE MAYA — the archaeological record (c. 830–900 CE): across the southern lowlands, the great city-states stopped raising carved stone monuments; after about 830 CE almost no new dated inscriptions or large buildings appear. Cities such as Tikal and Copán lost most of their people and were abandoned to the forest — evidence pointing to drought, overpopulation, warfare, and environmental strain.",
+         "credit": ""
+        }
+       ],
+       "source": {
+        "title": "The Roman Empire at its greatest extent. Map via Wikimedia Commons, used under its Commons license; re-verified 2026-06-13.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 20,
+       "title": "Classical Source Synthesis and Regents Review Stations",
+       "date": "2026-12-14",
+       "overview": "On the Regents, every classical empire shows up as a quoted document you have never seen. Today you ID five “mystery documents” at speed — naming the civilization, the tell, and the theme.",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 21,
+       "title": "CRQ + Stimulus-MCQ Workshop · Classical",
+       "date": "2026-12-15",
+       "overview": "A stimulus multiple-choice question can be beaten by ELIMINATION — every wrong answer is one of five traps. A CRQ is a checklist, not an essay. Today we name the traps and decode the task.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“A citizen could be put to death only by the verdict of the greatest assembly — not by a single official's order.” — the Twelve Tables, Rome, 451–450 BCE",
+         "credit": ""
+        }
+       ],
+       "source": {
+        "title": "“A citizen could be put to death only by the verdict of the greatest assembly — not by a single official's order.” — ...",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 22,
+       "title": "Classical Unit Review Sprint",
+       "date": "2026-12-16",
+       "overview": "A relay only wins if every runner can run their leg. Today your team races four review legs — Map, Who-Said-It, Cause & Effect, Lightning — and finds the one leg YOU drop the baton on before tomorrow's test.",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 23,
+       "title": "Unit 04 Test Day + Post-Test Reflection",
+       "date": "2026-12-17",
+       "overview": "Clear the starting blocks: brain-dump what you know, self-check the skills you've practiced all week, then run the Unit 4 Test.",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 24,
+       "title": "Q2 CRQ Practice — Synthesizing Belief Systems and Classical Civilizations",
+       "date": "2026-12-18",
+       "overview": "A Q2 CRQ asks you to build a BRIDGE between two units — Belief Systems and Classical Power. Two piers, one span: connect a belief system to a power structure with cited evidence.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“Beloved-of-the-Gods… came to feel a strong inclination towards the Dhamma. He now teaches that the chief conquest is conquest by Dhamma — by moral example — not by the sword.”",
+         "credit": "— Ashoka, Rock Edict (Mauryan India, c. 257 BCE). BELIEF SYSTEM: Buddhism. [Unit 3]"
+        },
+        {
+         "text": "“I transferred the republic from my own power to the control of the Roman Senate and people… After this time I excelled all in authority, but I had no more official power than my colleagues.”",
+         "credit": "— Augustus, Res Gestae (Rome, 1st c. CE). POWER STRUCTURE: the Roman Empire / one-man rule. [Unit 4]"
+        }
+       ],
+       "source": {
+        "title": "— Ashoka, Rock Edict (Mauryan India, c. 257 BCE). BELIEF SYSTEM: Buddhism. [Unit 3]",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 25,
+       "title": "Q2 Empires and Belief Systems · Comparative Synthesis",
+       "date": "2026-12-21",
+       "overview": "Three emperors each “bought” the obedience of millions by making one belief system official. Total up the bill: what did each purchase cost, what did it buy — and whose legitimacy lasted longest?",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 26,
+       "title": "Mid-Year Reflection + CRQ Marathon",
+       "date": "2026-12-22",
+       "overview": "A pit stop is the few seconds that win the race. Rate your Q1–Q2 skills, run two timed CRQ laps, then re-rate — and see exactly how far you've come, and where to spend your last study hours before midterms.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“If a man put out the eye of another man, his eye shall be put out. If he put out the eye of a freed man, he shall pay one gold mina. If the eye of a man's slave, he shall pay one-half the slave's value.”",
+         "credit": "— Hammurabi's Code, Babylon, c. 1750 BCE (Q1, River Valleys)."
+        },
+        {
+         "text": "“Our constitution favours the many instead of the few; this is why it is called a democracy… nor again does poverty bar the way.”",
+         "credit": "— Pericles, Funeral Oration (Crawley), Athens c. 431 BCE (Q2, Classical Power)."
+        }
+       ],
+       "source": {
+        "title": "— Hammurabi's Code, Babylon, c. 1750 BCE (Q1, River Valleys).",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 27,
+       "title": "Year-in-Review Film + Holiday Wrap",
+       "date": "2026-12-23",
+       "overview": "Watch a semester of history get built in one sitting. Like a director's commentary, you'll name the THROUGH-LINE, caption three moments with the right Q1–Q2 concept, and write January's trailer.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "Concept bank: surplus · civilization · cultural diffusion · Mandate of Heaven · citizenship · rule of law · golden age · legitimacy · empire · collapse · belief system · interconnectedness.",
+         "credit": ""
+        }
+       ],
+       "source": {
+        "title": "Concept bank: surplus · civilization · cultural diffusion · Mandate of Heaven · citizenship · rule of law · golden age ...",
+        "author": "",
+        "year": ""
+       }
+      }
+     ],
+     "vocab": [
+      {
+       "term": "Fall of Rome",
+       "def": "The Beginning of the End"
+      }
+     ],
+     "misconceptions": []
+    }
+   ],
+   "counts": {
+    "topics": 1,
+    "lessons": 27,
+    "terms": 1
+   }
+  },
+  {
+   "id": "05",
+   "title": "Exchange Networks Trade Technology Travelers and Wealth",
+   "blurb": "Traces the trade networks that tied the postclassical world together, from the Silk Roads and Indian Ocean to trans Saharan gold and salt.",
+   "weight": "NYS 9.4",
+   "topics": [
+    {
+     "code": "9.4",
+     "title": "Rise of Transregional Trade Networks",
+     "lessons": [
+      {
+       "n": 1,
+       "title": "Postclassical World Map — Why Connections Accelerated",
+       "date": "2027-01-04",
+       "overview": "After 500 CE the world's trade routes lit up at once. Wire the FOUR “accelerators” that powered the postclassical boom — and decide which one did the most lifting.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“Commerce means the buying of merchandise and goods, storing them, and waiting until fluctuation of the market brings about an increase in the prices of these goods. This is called profit.",
+         "credit": "— Ibn Khaldun, The Muqaddimah: An Introduction to History (1377), Book One, ch. V, trans. Franz Rosenthal. Ibn Khaldun was a North African scholar and one of the first historians to analyze economics."
+        },
+        {
+         "text": "It is more advantageous and more profitable for the merchant's enterprise… if he brings goods from a country that is far away and where there is danger on the road. In such a case, the goods transported will be few and rare… When goods are few and rare, their prices go up.",
+         "credit": "— Ibn Khaldun, The Muqaddimah: An Introduction to History (1377), Book One, ch. V, trans. Franz Rosenthal. Ibn Khaldun was a North African scholar and one of the first historians to analyze economics."
+        },
+        {
+         "text": "Therefore, the merchants who dare to enter the Sudan country [West Africa, across the Sahara] are the most prosperous and wealthy of all people. The distance and the difficulty of the road they travel are great…”",
+         "credit": "— Ibn Khaldun, The Muqaddimah: An Introduction to History (1377), Book One, ch. V, trans. Franz Rosenthal. Ibn Khaldun was a North African scholar and one of the first historians to analyze economics."
+        }
+       ],
+       "source": {
+        "title": "— Ibn Khaldun, The Muqaddimah: An Introduction to History (1377), Book One, ch. V, trans. Franz Rosenthal. Ibn Khaldun was a North African scholar and one of the first historians to analyze economics.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 2,
+       "title": "Silk Roads — Goods, Ideas, Disease, and Power",
+       "date": "2027-01-05",
+       "overview": "Follow ONE bolt of silk from a worm in China to a noble in Venice. Mark where its price MULTIPLIES — and use the chain to explain why luxuries, not bulk goods, ruled the Silk Roads.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“Cascar [Kashgar] was in former days a kingdom, but now it is subject to the Great Khan. The people worship Mahommet [are Muslim]. There are a good number of towns and villages, but the greatest and finest is Cascar itself.",
+         "credit": "— Marco Polo, The Travels (The Description of the World), on the city of Cascar (Kashgar), trans. Henry Yule. Marco Polo, a Venetian merchant, traveled the Silk Roads c. 1271–1295."
+        },
+        {
+         "text": "The inhabitants live by trade and handicrafts; they have beautiful gardens and vineyards, and fine estates, and grow a great deal of cotton. From this country many merchants go forth about the world on trading journeys.",
+         "credit": "— Marco Polo, The Travels (The Description of the World), on the city of Cascar (Kashgar), trans. Henry Yule. Marco Polo, a Venetian merchant, traveled the Silk Roads c. 1271–1295."
+        },
+        {
+         "text": "There are in the country many Nestorian Christians, who have churches of their own. The people of the country have a peculiar language, and the territory extends for five days' journey.”",
+         "credit": "— Marco Polo, The Travels (The Description of the World), on the city of Cascar (Kashgar), trans. Henry Yule. Marco Polo, a Venetian merchant, traveled the Silk Roads c. 1271–1295."
+        }
+       ],
+       "source": {
+        "title": "— Marco Polo, The Travels (The Description of the World), on the city of Cascar (Kashgar), trans. Henry Yule. Marco Polo, a Venetian merchant, traveled the Silk Roads c. 1271–1295.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 3,
+       "title": "Indian Ocean Trade — Monsoons, Ships, Ports, and Diasporas",
+       "date": "2027-01-06",
+       "overview": "The monsoon winds reverse twice a year like clockwork. Read the wind calendar, schedule a legal round-trip voyage Calicut↔East Africa — and prove why one week's delay costs a merchant a whole year.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“Then come Naura and Tyndis, the first markets of Damirica [the Tamil coast], and then Muziris and Nelcynda, which are now of leading importance.",
+         "credit": "— The Periplus of the Erythraean Sea, an anonymous Greek-Egyptian merchant's guide to Indian Ocean trade, c. 50 CE, trans. Wilfred H. Schoff (1912). “Erythraean Sea” = the Indian Ocean and Red Sea."
+        },
+        {
+         "text": "Muziris… abounds in ships sent there with cargoes from Arabia, and by the Greeks; it is located on a river… They send large ships to these market-towns on account of the great quantity and bulk of pepper and malabathrum [a leaf spice].",
+         "credit": "— The Periplus of the Erythraean Sea, an anonymous Greek-Egyptian merchant's guide to Indian Ocean trade, c. 50 CE, trans. Wilfred H. Schoff (1912). “Erythraean Sea” = the Indian Ocean and Red Sea."
+        },
+        {
+         "text": "There are imported here… a great quantity of coin; topaz… coral, crude glass, copper, tin, lead; wine… There is exported pepper… great quantities of fine pearls, ivory, silk cloth… diamonds and sapphires, and tortoise-shell.”",
+         "credit": "— The Periplus of the Erythraean Sea, an anonymous Greek-Egyptian merchant's guide to Indian Ocean trade, c. 50 CE, trans. Wilfred H. Schoff (1912). “Erythraean Sea” = the Indian Ocean and Red Sea."
+        }
+       ],
+       "source": {
+        "title": "— The Periplus of the Erythraean Sea, an anonymous Greek-Egyptian merchant's guide to Indian Ocean trade, c. 50 CE, trans. Wilfred H. Schoff (1912). “Erythraean Sea” = the Indian Ocean and Red Sea.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 4,
+       "title": "Trans-Saharan Trade — Gold, Salt, Camels, and Islam",
+       "date": "2027-01-07",
+       "overview": "Stake a 100-camel salt caravan across the Sahara and keep the books. Using Ibn Battuta's own prices, compute whether the trip turns a profit — and decide whether it is worth the risk.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“After twenty-five days [from Sijilmasa] we reached Taghaza, an unattractive village, with the curious feature that its houses and mosques are built of blocks of salt, roofed with camel skins. There are no trees there, nothing but sand.",
+         "credit": "— Ibn Battuta, The Rihla (Travels), on the salt-mining town of Taghaza, crossed in 1352, trans. H.A.R. Gibb. Ibn Battuta was a Muslim legal scholar from Tangier (Morocco) who traveled for nearly thirty years."
+        },
+        {
+         "text": "In the sand is a salt mine; they dig for the salt, and find it in thick slabs… A camel will carry two of these slabs.",
+         "credit": "— Ibn Battuta, The Rihla (Travels), on the salt-mining town of Taghaza, crossed in 1352, trans. H.A.R. Gibb. Ibn Battuta was a Muslim legal scholar from Tangier (Morocco) who traveled for nearly thirty years."
+        },
+        {
+         "text": "At Iwalatan [Walata] a load of salt brings eight to ten mithqals [of gold]; in the town of Malli it sells for twenty to thirty, and sometimes as much as forty. The Negroes use salt as a medium of exchange, just as gold and silver is used.”",
+         "credit": "— Ibn Battuta, The Rihla (Travels), on the salt-mining town of Taghaza, crossed in 1352, trans. H.A.R. Gibb. Ibn Battuta was a Muslim legal scholar from Tangier (Morocco) who traveled for nearly thirty years."
+        }
+       ],
+       "source": {
+        "title": "— Ibn Battuta, The Rihla (Travels), on the salt-mining town of Taghaza, crossed in 1352, trans. H.A.R. Gibb. Ibn Battuta was a Muslim legal scholar from Tangier (Morocco) who traveled for nearly thirty years.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 5,
+       "title": "Mediterranean Networks and Byzantine Survival",
+       "date": "2027-01-08",
+       "overview": "Rome's west fell in 476; its east lived a THOUSAND more years from one city. Audit the four assets that kept Byzantium alive, score each by how load-bearing it was — and name the single keystone.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“The church has become a spectacle of marvellous beauty, overwhelming to those who see it, but to those who know it by hearsay altogether incredible. For it soars to a height to match the sky, and as if surging up from amongst the other buildings it stands on high and looks down upon the remainder of the city.",
+         "credit": "— Procopius of Caesarea, On Buildings (De Aedificiis), Book I, on the church of Hagia Sophia built by Emperor Justinian, c. 554 CE, trans. H.B. Dewing. Procopius was a Byzantine historian."
+        },
+        {
+         "text": "From the lightness of the building, it does not appear to rest upon a solid foundation, but to cover the place beneath as though it were suspended from heaven by the fabled golden chain.",
+         "credit": "— Procopius of Caesarea, On Buildings (De Aedificiis), Book I, on the church of Hagia Sophia built by Emperor Justinian, c. 554 CE, trans. H.B. Dewing. Procopius was a Byzantine historian."
+        },
+        {
+         "text": "Indeed one might say that its interior is not illuminated from without by the sun, but that the radiance comes into being within it, such an abundance of light bathes this shrine.”",
+         "credit": "— Procopius of Caesarea, On Buildings (De Aedificiis), Book I, on the church of Hagia Sophia built by Emperor Justinian, c. 554 CE, trans. H.B. Dewing. Procopius was a Byzantine historian."
+        }
+       ],
+       "source": {
+        "title": "— Procopius of Caesarea, On Buildings (De Aedificiis), Book I, on the church of Hagia Sophia built by Emperor Justinian, c. 554 CE, trans. H.B. Dewing. Procopius was a Byzantine historian.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 6,
+       "title": "Technologies of Travel — Compass, Astrolabe, Lateen Sail, Camel Saddle",
+       "date": "2027-01-11",
+       "overview": "Four small tools — the compass, astrolabe, lateen sail, and camel saddle — blew the trade networks wide open. Map where each was BORN, how it SPREAD, and which network it UNLOCKED.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“Magicians [fortune-tellers] rub the point of a needle with the lodestone [a naturally magnetic stone]; then it is able to point to the south. But it always inclines slightly to the east, and does not point directly at the south.",
+         "credit": "— Shen Kuo, Dream Pool Essays (Mengxi Bitan), China, 1088, trans. Joseph Needham. This is the earliest known written description of a magnetized compass needle."
+        },
+        {
+         "text": "It may be made to float on the surface of water, but it is then rather unsteady. It may be balanced on the fingernail, or on the rim of a cup… but these supports being hard and smooth, it is liable to fall off.",
+         "credit": "— Shen Kuo, Dream Pool Essays (Mengxi Bitan), China, 1088, trans. Joseph Needham. This is the earliest known written description of a magnetized compass needle."
+        },
+        {
+         "text": "It is best to suspend it by a single cocoon fibre of new silk… Then, hanging in the windless air, it will always point to the south. Among such needles there are some which, after being rubbed, point to the north. In my family we have needles of both kinds.”",
+         "credit": "— Shen Kuo, Dream Pool Essays (Mengxi Bitan), China, 1088, trans. Joseph Needham. This is the earliest known written description of a magnetized compass needle."
+        }
+       ],
+       "source": {
+        "title": "— Shen Kuo, Dream Pool Essays (Mengxi Bitan), China, 1088, trans. Joseph Needham. This is the earliest known written description of a magnetized compass needle.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 7,
+       "title": "Slavery Before the Atlantic · Forms, Routes, Limits of Comparison",
+       "date": "2027-01-12",
+       "overview": "Forms of unfree labor existed long before the Atlantic trade. Build precise definitions of THREE pre-Atlantic systems, then test the claim that “all slavery was the same.”",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“In the consulship of Gaius Curtius Justus and Julius Nauto [151 CE], on the second day of October.",
+         "credit": "— A Roman legal contract recording the sale of an enslaved girl, dated 2 October 151 CE, drawn up at the naval camp at Ravenna (preserved on a writing tablet; scholarly translation). Such deeds were ordinary legal paperwork across the Roman world."
+        },
+        {
+         "text": "I, Aeschines son of Aeschines, of Miletus, have written that I received from Titus Memmius Montanus, a soldier on the warship Augustus, 625 denarii [silver coins] as the price of a Marmarian girl, an experienced [‘veteran’] slave, whom I sold to him… and handed over after the inspection of the signed tablets was finished. Done at the camp of the praetorian fleet at Ravenna.",
+         "credit": "— A Roman legal contract recording the sale of an enslaved girl, dated 2 October 151 CE, drawn up at the naval camp at Ravenna (preserved on a writing tablet; scholarly translation). Such deeds were ordinary legal paperwork across the Roman world."
+        },
+        {
+         "text": "On the same day, I, Domitius Theophilus, have written that I was present as a witness, on behalf of Aeschines son of Aeschines, for the sale of the Marmarian girl described above. Done.”",
+         "credit": "— A Roman legal contract recording the sale of an enslaved girl, dated 2 October 151 CE, drawn up at the naval camp at Ravenna (preserved on a writing tablet; scholarly translation). Such deeds were ordinary legal paperwork across the Roman world."
+        }
+       ],
+       "source": {
+        "title": "— A Roman legal contract recording the sale of an enslaved girl, dated 2 October 151 CE, drawn up at the naval camp at Ravenna (preserved on a writing tablet; scholarly translation). Such deeds were ordinary legal paperwork across the Roman world.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 8,
+       "title": "Zheng He, Ibn Battuta, and Marco Polo as Evidence Problems",
+       "date": "2027-01-13",
+       "overview": "Three famous travelers described the medieval world. Put all three on the bench at once: which claims are CONFIRMED by a second witness, which rest on a SINGLE witness, and how reliable is each traveler?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "MARCO POLO on the Chinese city of Kinsay (Hangzhou), c. 1300 — a Venetian merchant's memoir, written down in prison: “The city of Kinsay… is beyond dispute the finest and the noblest in the world.” He claims it “hath an hundred miles of compass,” and that in it are “twelve thousand bridges of stone, for the most part so lofty that a great fleet could pass beneath them.”",
+         "credit": "Sources: (a) Marco Polo, The Travels (Il Milione), c. 1300, trans. Sir Henry Yule (1903); (b) Ibn Battuta, the Rihla, dictated 1355, trans. H. A. R. Gibb; (c) the Changle stone inscription of Zheng He's fleet, 1431, trans. J. J. L. Duyvendak. All public domain."
+        },
+        {
+         "text": "IBN BATTUTA, the Rihla (“Travels”), dictated from memory in 1355 after about 29 years on the road. He was commanded by his sultan to “dictate an account of the cities which he had seen in his travel, and of the interesting events which had clung to his memory,” and to “speak of those whom he had met of the rulers of countries… and of their pious saints.” A scribe wrote it down and polished the ...",
+         "credit": "Sources: (a) Marco Polo, The Travels (Il Milione), c. 1300, trans. Sir Henry Yule (1903); (b) Ibn Battuta, the Rihla, dictated 1355, trans. H. A. R. Gibb; (c) the Changle stone inscription of Zheng He's fleet, 1431, trans. J. J. L. Duyvendak. All public domain."
+        },
+        {
+         "text": "ZHENG HE's fleet, stone inscription set up in 1431 before the seventh voyage: “We have traversed more than one hundred thousand li of immense water spaces and have beheld in the ocean huge waves like mountains rising sky-high… while our sails, loftily unfurled like clouds day and night, continued their course [as rapid] as a star, traversing those savage waves as if we were treading a public ...",
+         "credit": "Sources: (a) Marco Polo, The Travels (Il Milione), c. 1300, trans. Sir Henry Yule (1903); (b) Ibn Battuta, the Rihla, dictated 1355, trans. H. A. R. Gibb; (c) the Changle stone inscription of Zheng He's fleet, 1431, trans. J. J. L. Duyvendak. All public domain."
+        }
+       ],
+       "source": {
+        "title": "Sources: (a) Marco Polo, The Travels (Il Milione), c. 1300, trans. Sir Henry Yule (1903); (b) Ibn Battuta, the Rihla, dictated 1355, trans. H. A. R. Gibb; (c) the Changle stone inscription of Zheng He's fleet, 1431, trans. J. J. L. Duyvendak. All public domain.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 9,
+       "title": "Indian Ocean Port-City Source Lab",
+       "date": "2027-01-14",
+       "overview": "One traveler, one port. Read Ibn Battuta on Kilwa line by line and seal each inference in an evidence “cartouche” — proving how monsoon trade carried not just goods but faith, language, and power to East Africa.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "Ibn Battuta, a Muslim traveler from Morocco, sailed down the East African (Swahili) coast and reached the trading city of Kilwa in 1331:",
+         "credit": "— Ibn Battuta, the Rihla (“Travels”), on his 1331 visit to Kilwa (in present-day Tanzania). Trans. G. S. P. Freeman-Grenville, The East African Coast: Select Documents (1975)."
+        },
+        {
+         "text": "“Kilwa is one of the most beautiful and well-constructed towns in the world. The whole of it is elegantly built.” Its inhabitants, he reports, are Zanj of very black complexion, and many had tattoo-like marks on their faces.",
+         "credit": "— Ibn Battuta, the Rihla (“Travels”), on his 1331 visit to Kilwa (in present-day Tanzania). Trans. G. S. P. Freeman-Grenville, The East African Coast: Select Documents (1975)."
+        },
+        {
+         "text": "“The Sultan at the time of my visit was Abu al-Muzaffar Hasan, surnamed Abu al-Mawahib [the Father of Gifts] on account of his numerous charitable gifts.” He adds that the sultan “frequently makes raids into the Zanj country [of the mainland], attacks them and carries off booty, of which he reserves a fifth, using it in the manner prescribed by the Koran.”",
+         "credit": "— Ibn Battuta, the Rihla (“Travels”), on his 1331 visit to Kilwa (in present-day Tanzania). Trans. G. S. P. Freeman-Grenville, The East African Coast: Select Documents (1975)."
+        }
+       ],
+       "source": {
+        "title": "— Ibn Battuta, the Rihla (“Travels”), on his 1331 visit to Kilwa (in present-day Tanzania). Trans. G. S. P. Freeman-Grenville, The East African Coast: Select Documents (1975).",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 10,
+       "title": "Trans-Saharan Merchant Diary + Map Lab",
+       "date": "2027-01-15",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 11,
+       "title": "Ghana and Mali · Trade, Islam, and Imperial Wealth",
+       "date": "2027-01-19",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 12,
+       "title": "Mansa Musa and the Problem of Wealth as Power",
+       "date": "2027-01-20",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 13,
+       "title": "Rise of the Ottoman Empire as Trade-Network Power",
+       "date": "2027-01-21",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 14,
+       "title": "Political State Comparison — Byzantium · Ghana · Mali · Ottomans",
+       "date": "2027-01-22",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 15,
+       "title": "Trade Network Simulation / Board Game",
+       "date": "2027-01-25",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 16,
+       "title": "CRQ Workshop — Exchange and Cultural Diffusion",
+       "date": "2027-01-26",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 17,
+       "title": "Exchange Networks Unit Review Sprint",
+       "date": "2027-01-27",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 18,
+       "title": "Unit 05 Test Day + Post-Test Reflection",
+       "date": "2027-01-28",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      }
+     ],
+     "vocab": [],
+     "misconceptions": []
+    }
+   ],
+   "counts": {
+    "topics": 1,
+    "lessons": 18,
+    "terms": 0
+   }
+  },
+  {
+   "id": "06",
+   "title": "Postclassical Power Faith Conflict and Disease",
+   "blurb": "Examines postclassical power and faith, including feudal Europe, Byzantium, the caliphates, Tang and Song China, the Mongols, and the Black Death.",
+   "weight": "NYS 9.5",
+   "topics": [
+    {
+     "code": "9.5",
+     "title": "Political Powers and Achievements",
+     "lessons": [
+      {
+       "n": 1,
+       "title": "After Rome — Why Western Europe and Byzantium Diverged",
+       "date": "2027-01-29",
+       "overview": "Rome falls — once. So why did the SAME collapse leave Western Europe in pieces but the Eastern (Byzantine) Empire standing for 1,000 more years? Trace the fork and explain the split.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "No one is to be found guilty merely because he was suspected of committing a crime. It is better for a guilty person to go unpunished than for an innocent person to be condemned. The person who accuses someone must prove that his charge is true. This is not the obligation of the person denying the charge. In a case of a major offense it makes a difference whether the crime was committed ...",
+         "credit": "— Adapted from the Code of Justinian (Corpus Juris Civilis, “Body of Civil Law”), issued by the Byzantine emperor Justinian I, c. 529–534 CE. Built on older Roman law, it was the legal foundation of the Byzantine Empire for centuries."
+        }
+       ],
+       "source": {
+        "title": "— Adapted from the Code of Justinian (Corpus Juris Civilis, “Body of Civil Law”), issued by the Byzantine emperor Justinian I, c. 529–534 CE. Built on older Roman law, it was the legal foundation of the Byzantine Empire for centuries.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 2,
+       "title": "Feudalism and Manorialism — Protection and Inequality",
+       "date": "2027-02-01",
+       "overview": "Feudalism ran on a deal: protection for service, land for loyalty. Open the “ledger” for each tier — what each owes UP and is owed DOWN — and decide whose deal was fair and whose was a trap.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "He who swears fealty [loyalty] to his lord ought always to keep these six things in mind: what is harmless, safe, honorable, useful, easy, and possible… that he should not injure his lord in his body; … not injure him by betraying his secrets or the defenses upon which he depends for safety… not injure him in his possessions. However, it is not enough to refrain from evil, unless what is good is ...",
+         "credit": "— Bishop Fulbert of Chartres, letter to Duke William of Aquitaine on the obligations of a vassal, c. 1020 (Internet Medieval Sourcebook translation). One of the clearest medieval statements of the feudal bond."
+        }
+       ],
+       "source": {
+        "title": "— Bishop Fulbert of Chartres, letter to Duke William of Aquitaine on the obligations of a vassal, c. 1020 (Internet Medieval Sourcebook translation). One of the clearest medieval statements of the feudal bond.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 3,
+       "title": "Justinian and Theodora — Law, Empire, and Gendered Power",
+       "date": "2027-02-02",
+       "overview": "One historian, Procopius, wrote TWO opposite portraits of Empress Theodora — a heroine in one book, a villain in another. When an author contradicts himself, which portrait do you trust, and for what?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“My opinion is that the present time, above all others, is the wrong time for flight, even though it bring safety. For one who has been an emperor it is unendurable to be a fugitive. May I never be separated from this purple [the imperial robe]… If, now, it is your wish to save yourself, O Emperor, there is no difficulty. For we have much money, and there is the sea, and here the boats. But ...",
+         "credit": "— Empress Theodora, as reported by Procopius, History of the Wars, Book I.24, trans. H. B. Dewing (1914). During the Nika riot of 532 CE, with Constantinople in flames and the court ready to flee, Theodora spoke against running — and the emperor stayed."
+        },
+        {
+         "text": "Procopius also secretly wrote a very different book, the Secret History (Anecdota), not published in his lifetime. In it he attacks Theodora and Justinian, painting the empress as scheming, low-born, and cruel — the exact opposite of the brave, loyal Theodora of the Wars. Historians believe Procopius wrote the Wars as the official court historian (to be read by the powerful) and the Secret ...",
+         "credit": ""
+        }
+       ],
+       "source": {
+        "title": "— Empress Theodora, as reported by Procopius, History of the Wars, Book I.24, trans. H. B. Dewing (1914). During the Nika riot of 532 CE, with Constantinople in flames and the court ready to flee, Theodora spoke against running — and the emperor stayed.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 4,
+       "title": "Byzantine Achievement and Orthodox Christianity",
+       "date": "2027-02-03",
+       "overview": "An empire's spectacle dazzled an envoy in 949 — but the throne is long gone. Which Byzantine achievements actually SURVIVED 1,000 years to reach us in 2027, and what made them last when the throne did not?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "In front of the emperor's throne was set up a tree of gilded bronze, its branches filled with birds, likewise made of bronze gilded over, and these emitted cries appropriate to their different species. The throne itself was so marvelously made that at one moment it was down on the ground, while at another it rose higher and was seen up in the air. It was of immense size and was guarded, as it ...",
+         "credit": "— Liutprand of Cremona, Antapodosis, describing his reception by the Byzantine emperor in the Magnaura hall of Constantinople, 949 CE (after the Becker edition; in C. Mango, The Art of the Byzantine Empire)."
+        }
+       ],
+       "source": {
+        "title": "— Liutprand of Cremona, Antapodosis, describing his reception by the Byzantine emperor in the Magnaura hall of Constantinople, 949 CE (after the Becker edition; in C. Mango, The Art of the Byzantine Empire).",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 5,
+       "title": "Islamic Caliphates — Governing Diversity and Building Knowledge",
+       "date": "2027-02-04",
+       "overview": "After rapid conquests, the early caliphates ruled millions of Christians, Jews, and others. Read one real policy — the Pact of Umar — and judge what it bought the ruler and what it cost the ruled.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "When the Muslims came to our land, we asked them for safety [protection] for ourselves, our descendants, our property, and the people of our community, and we agreed to these conditions: We shall not build, in our cities or near them, new monasteries, churches, convents, or monks' cells. We shall keep our gates wide open for travelers and passers-by. We shall give hospitality to any Muslim who ...",
+         "credit": "— The Pact of Umar, conditions for protected non-Muslim communities (dhimmis) under Muslim rule, traditionally attributed to the early caliphate and recorded by later writers such as al-Tabari (trans. Bernard Lewis, Internet Medieval Sourcebook). Here, conquered Christians address the Muslim authorities. Communities that accepted these terms kept their own faith, property, and self-government, and paid a tax called the jizya."
+        }
+       ],
+       "source": {
+        "title": "— The Pact of Umar, conditions for protected non-Muslim communities (dhimmis) under Muslim rule, traditionally attributed to the early caliphate and recorded by later writers such as al-Tabari (trans. Bernard Lewis, Internet Medieval Sourcebook). Here, conquered Christians address the Muslim authorities. Communities that accepted these terms kept their own faith, property, and self-government, and paid a tax called the jizya.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 10,
+       "title": "Tang and Song China — Stability, Achievement, and Innovation",
+       "date": "2027-02-12",
+       "overview": "Tang and Song China invented things the whole world still uses 1,000 years later. Plot each invention by how FAR and how LONG its impact traveled — and rank which two changed the world the most.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“The Chinese are more proficient in the arts and crafts than any other people. In China there are many large cities, and in each of them there is a governor who represents the Emperor. The people are obedient to their rulers, and the country is well-governed. Justice is administered, and the roads are safe for the traveler and the merchant. Trade is extensive, and merchants from all over the ...",
+         "credit": "— Sulaiman al-Tajir (“Sulaiman the Merchant”), an Arab trader who sailed to Tang China, recorded c. 851 CE in “Accounts of China and India” (Akhbar al-Sin wa'l-Hind)."
+        }
+       ],
+       "source": {
+        "title": "— Sulaiman al-Tajir (“Sulaiman the Merchant”), an Arab trader who sailed to Tang China, recorded c. 851 CE in “Accounts of China and India” (Akhbar al-Sin wa'l-Hind).",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 11,
+       "title": "Feudal Japan and Selective Cultural Borrowing",
+       "date": "2027-02-22",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "Article I. \"Harmony is to be valued, and quarrels are to be avoided. All men are influenced by partisanship, and few are far-sighted. … But when those above are harmonious and those below are friendly… then affairs are managed of their own accord, and what is there that cannot be accomplished?\"",
+         "credit": ""
+        },
+        {
+         "text": "Article II. \"Sincerely reverence the three treasures. The three treasures — the Buddha, the Law (his teachings), and the Priesthood — are the final refuge of all living things… What man in any age can fail to reverence this law?\"",
+         "credit": ""
+        },
+        {
+         "text": "Article III. \"When you receive the imperial commands, fail not scrupulously to obey them. The lord is Heaven, the vassal is Earth… when the lord speaks, the vassal listens; when the superior acts, the inferior yields compliance.\"",
+         "credit": ""
+        }
+       ],
+       "source": {
+        "title": "Article I. \"Harmony is to be valued, and quarrels are to be avoided. All men are influenced by partisanship, and few ...",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 12,
+       "title": "Mongol Empire — Terror, Tolerance, Trade, and Disruption",
+       "date": "2027-02-23",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "After a Mongol prince was killed by an arrow from the walls of Nishapur, the Mongols took the city in revenge and ordered that it be completely destroyed. Juvayni records that the order was given \"that the town should be laid waste in such a manner that the site could be ploughed upon; and that in the exaction of vengeance not even cats and dogs should be left alive.\" Of the Mongol campaigns he ...",
+         "credit": ""
+        }
+       ],
+       "source": {
+        "title": "After a Mongol prince was killed by an arrow from the walls of Nishapur, the Mongols took the city in revenge and ...",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 13,
+       "title": "Technology Movement — East Asia through Islamic World to Europe",
+       "date": "2027-02-24",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "\"When the Tang dynasty still printed from blocks, the practice had not yet developed. During the reign of Qingli (1041–1048), a commoner named Bi Sheng made movable type. His method was as follows: he took sticky clay and cut in it characters as thin as the edge of a coin. Each character formed, as it were, a single type. He baked them in the fire to make them hard… For each character there were ...",
+         "credit": ""
+        }
+       ],
+       "source": {
+        "title": "\"When the Tang dynasty still printed from blocks, the practice had not yet developed. During the reign of Qingli ...",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 18,
+       "title": "Unit 06 Review Sprint",
+       "date": "2027-03-03",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 19,
+       "title": "Unit 06 Test Thursday",
+       "date": "2027-03-04",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      }
+     ],
+     "vocab": [],
+     "misconceptions": []
+    },
+    {
+     "code": "9.6",
+     "title": "Social and Cultural Growth and Conflict",
+     "lessons": [
+      {
+       "n": 6,
+       "title": "Sunni-Shia Division and Authority in Islam",
+       "date": "2027-02-08",
+       "overview": "Both Sunni and Shia Muslims accept the SAME words the Prophet spoke at Ghadir Khumm — but read them differently. How can one text carry two meanings, and how did that difference become a lasting division?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "It is reported that, returning from his final pilgrimage, the Prophet Muhammad stopped at a place called Ghadir Khumm and addressed the Muslims gathered with him. He first asked them: “Do I not have more right over the believers than they have over themselves?” The people answered, “Yes.” He then took the hand of his cousin and son-in-law Ali and said: “He whose mawla I am, Ali is his mawla.”",
+         "credit": "— The hadith (reported saying) of Ghadir Khumm, recorded in Sunni collections such as the Musnad of Ahmad ibn Hanbal and the works of al-Tirmidhi, and central to Shia tradition. Most scholars consider it well-attested; Sunnis and Shia accept the words but INTERPRET them differently. The Arabic word mawla can mean “leader” or “master,” but also “friend” or “protector.”"
+        }
+       ],
+       "source": {
+        "title": "— The hadith (reported saying) of Ghadir Khumm, recorded in Sunni collections such as the Musnad of Ahmad ibn Hanbal and the works of al-Tirmidhi, and central to Shia tradition. Most scholars consider it well-attested; Sunnis and Shia accept the words but INTERPRET them differently. The Arabic word mawla can mean “leader” or “master,” but also “friend” or “protector.”",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 7,
+       "title": "The Great Schism — Christian Division and Political Geography",
+       "date": "2027-02-09",
+       "overview": "Most disagreements blow over. This one split Christianity in two — forever. Track the grievances between the Latin West and Greek East, find the point of no return in 1054, and see why the line still shows on a map today.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "By the authority of the holy and undivided Trinity, and of the Apostolic See whose legation we hold, we sign against Michael and his followers this anathema [a formal curse cutting them off from the Church], which our most reverend lord the Pope has decreed against them unless they repent. Michael, who is wrongly called patriarch, and the supporters of his folly, are sowing countless heresies ...",
+         "credit": "— The Bull (formal sentence) of Excommunication, written by Cardinal Humbert as legate of Pope Leo IX and placed on the high altar of Hagia Sophia on July 16, 1054. It excommunicated Michael Cerularius, the patriarch of Constantinople. Patriarch Michael then called a council that excommunicated the pope's legates in return."
+        }
+       ],
+       "source": {
+        "title": "— The Bull (formal sentence) of Excommunication, written by Cardinal Humbert as legate of Pope Leo IX and placed on the high altar of Hagia Sophia on July 16, 1054. It excommunicated Michael Cerularius, the patriarch of Constantinople. Patriarch Michael then called a council that excommunicated the pope's legates in return.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 8,
+       "title": "The Crusades from Multiple Perspectives",
+       "date": "2027-02-10",
+       "overview": "The same war — the Crusades — was remembered as a holy mission by one side and a massacre by the other. Put both eyewitness accounts on one desk, strip away the framing, and reconstruct what most likely happened.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“For your brethren who live in the east are in urgent need of your help… The Turks and Arabs have attacked them and have conquered the territory of Romania [the Byzantine lands]. I exhort you to strive to expel that wicked race from our Christian lands… All who die by the way, whether by land or by sea, or in battle against the pagans, shall have immediate remission [forgiveness] of sins. This I ...",
+         "credit": "— Pope Urban II's speech at the Council of Clermont, 1095, as recorded by the Christian chronicler Fulcher of Chartres. This speech launched the First Crusade."
+        },
+        {
+         "text": "“The Franks [the Crusaders] stormed the town and gained possession of it… The population was put to the sword by the Franks, who pillaged the area for a week. In the Masjid al-Aqsa [mosque] the Franks killed more than seventy thousand people, among them a large number of Muslim scholars and devout men… The survivors who reached safety carried the news, and the people wept and called for help.”",
+         "credit": "— Ibn al-Athir, The Complete History (al-Kamil), on the Crusaders' capture of Jerusalem in 1099 (trans. Gabrieli & Costello, Arab Historians of the Crusades). A Muslim account of how the Crusades were experienced."
+        }
+       ],
+       "source": {
+        "title": "— Pope Urban II's speech at the Council of Clermont, 1095, as recorded by the Christian chronicler Fulcher of Chartres. This speech launched the First Crusade.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 9,
+       "title": "Delhi Sultanate and Sikhism in South Asia",
+       "date": "2027-02-11",
+       "overview": "In a land where Muslim rulers governed a Hindu majority, Guru Nanak taught a message that sounded partly familiar and partly brand-new. Trace each teaching to its source and decide: is Sikhism a blend of two faiths, or something new?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "The Guru Granth Sahib opens with the Mul Mantar, the core statement of Sikh belief: “There is One God. Truth is His Name. He is the Creator. He is without fear and without hatred. He is beyond time and beyond birth and death, self-existent, and known by the grace of the Guru.”",
+         "credit": "— Words of Guru Nanak (1469–1539), founder of Sikhism, whose hymns open the Guru Granth Sahib (the Sikh scripture, honored as a living Guru). Taught in the Punjab while the Muslim-ruled Delhi Sultanate governed a largely Hindu population."
+        },
+        {
+         "text": "Guru Nanak taught a message of one God and human equality: “There is neither Hindu nor Muslim, so whose path shall I follow? I shall follow God's path. God is neither Hindu nor Muslim, and the path which I follow is God's.”",
+         "credit": "— Words of Guru Nanak (1469–1539), founder of Sikhism, whose hymns open the Guru Granth Sahib (the Sikh scripture, honored as a living Guru). Taught in the Punjab while the Muslim-ruled Delhi Sultanate governed a largely Hindu population."
+        },
+        {
+         "text": "He defended the dignity of women, who were often looked down on: “From woman, man is born; within woman, man is conceived… So why call her bad? From her, kings are born… without woman, there would be no one at all.”",
+         "credit": "— Words of Guru Nanak (1469–1539), founder of Sikhism, whose hymns open the Guru Granth Sahib (the Sikh scripture, honored as a living Guru). Taught in the Punjab while the Muslim-ruled Delhi Sultanate governed a largely Hindu population."
+        }
+       ],
+       "source": {
+        "title": "— Words of Guru Nanak (1469–1539), founder of Sikhism, whose hymns open the Guru Granth Sahib (the Sikh scripture, honored as a living Guru). Taught in the Punjab while the Muslim-ruled Delhi Sultanate governed a largely Hindu population.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 14,
+       "title": "Black Death Map Lab",
+       "date": "2027-02-25",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "As the Mongol (\"Tartar\") army besieging the trading port of Caffa was itself struck by plague, de’ Mussis reports: \"The dying Tartars, stunned and stupefied by the immensity of the disaster… ordered corpses to be placed in catapults and lobbed into the city in the hope that the intolerable stench would kill everyone inside.\" As the rotting corpses tainted the air and poisoned the water, the ...",
+         "credit": ""
+        }
+       ],
+       "source": {
+        "title": "As the Mongol (\"Tartar\") army besieging the trading port of Caffa was itself struck by plague, de’ Mussis reports: \"The ...",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 15,
+       "title": "Black Death Effects — Labor, Religion, Economy, and Fear",
+       "date": "2027-02-26",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "The plague began with \"certain swellings, either on the groin or under the armpits, whereof some waxed of the bigness of a common apple.\" Fear shattered ordinary bonds: \"brother forsook brother… nay, fathers and mothers refused to visit or tend their very children.\" Boccaccio believed \"upward of an hundred thousand human beings perished within the walls of the city of Florence.\"",
+         "credit": ""
+        },
+        {
+         "text": "\"Because a great part of the people, and especially of workmen and servants, has now died in that pestilence, some, seeing the straits of the masters and the scarcity of servants, are not willing to serve unless they receive excessive wages.\" The law therefore ordered that every able-bodied man and woman under sixty must work, and \"shall take only the wages… which… were accustomed to be paid\" ...",
+         "credit": ""
+        }
+       ],
+       "source": {
+        "title": "The plague began with \"certain swellings, either on the groin or under the armpits, whereof some waxed of the bigness ...",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 16,
+       "title": "Crisis Council Simulation — How Societies Respond",
+       "date": "2027-03-01",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "In Florence, Boccaccio recorded, the plague struck so hard that \"brother forsook brother… fathers and mothers refused to visit or tend their very children,\" and he believed \"upward of an hundred thousand human beings perished within the walls of the city.\" Into that terror, the city’s leaders had to decide what to do.",
+         "credit": ""
+        }
+       ],
+       "source": {
+        "title": "In Florence, Boccaccio recorded, the plague struck so hard that \"brother forsook brother… fathers and mothers refused ...",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 17,
+       "title": "CRQ and EIE Bridge — Disease and Power",
+       "date": "2027-03-02",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "\"During these times there was a pestilence, by which the whole human race came near to being annihilated.\" Procopius reports that it \"started from the Aegyptians who dwell in Pelusium,\" then \"divided and moved in one direction towards Alexandria and the rest of Aegypt, and in the other direction it came to Palestine.\" In its victims \"a bubonic swelling developed… below the abdomen, but also ...",
+         "credit": ""
+        },
+        {
+         "text": "In Florence the plague began with \"certain swellings, either on the groin or under the armpits, whereof some waxed of the bigness of a common apple.\" Fear shattered society: \"brother forsook brother… fathers and mothers refused to visit or tend their very children.\" Boccaccio believed \"upward of an hundred thousand human beings perished within the walls of the city of Florence.\"",
+         "credit": ""
+        }
+       ],
+       "source": {
+        "title": "\"During these times there was a pestilence, by which the whole human race came near to being annihilated.\" Procopius ...",
+        "author": "",
+        "year": ""
+       }
+      }
+     ],
+     "vocab": [],
+     "misconceptions": []
+    }
+   ],
+   "counts": {
+    "topics": 2,
+    "lessons": 19,
+    "terms": 0
+   }
+  },
+  {
+   "id": "07",
+   "title": "Worlds Around 1400 and the Transformation of Western Europe",
+   "blurb": "Surveys the world around 1400 and the transformation of western Europe through the Renaissance, Reformation, and Scientific Revolution, alongside the Aztec, Inca, and Ming states.",
+   "weight": "NYS 9.9",
+   "topics": [
+    {
+     "code": "9.7",
+     "title": "The Ottoman Empire and the Ming Dynasty Pre-1600",
+     "lessons": [
+      {
+       "n": 1,
+       "title": "Worlds Around 1400 — Muslim, Christian, and Neo-Confucian Realms",
+       "date": "2027-03-05",
+       "overview": "Standing in the year 1400, which civilization would you have BET on to rule the next 500 years — and why did the realm with the best assets NOT launch global expansion, while fragmented Europe eventually did?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“I set out alone, having neither fellow-traveller in whose companionship I might find cheer, nor caravan whose party I might join, but swayed by an overmastering impulse within me and a desire long-cherished in my bosom to visit these illustrious sanctuaries [Mecca and Medina]. So I braced my resolution to quit my dear ones, female and male, and forsook my home as birds forsake their nests.”",
+         "credit": "— Ibn Battuta, the Rihla (“Travels”), trans. H. A. R. Gibb (1929). Ibn Battuta, a Muslim legal scholar from Tangier, left Morocco in 1325 and traveled some 75,000 miles across the Islamic world; he dictated his account in the 1350s. Public domain."
+        }
+       ],
+       "source": {
+        "title": "— Ibn Battuta, the Rihla (“Travels”), trans. H. A. R. Gibb (1929). Ibn Battuta, a Muslim legal scholar from Tangier, left Morocco in 1325 and traveled some 75,000 miles across the Islamic world; he dictated his account in the 1350s. Public domain.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 11,
+       "title": "Ming China and the Voyages of Zheng He — The Withdrawal",
+       "date": "2027-03-19",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      }
+     ],
+     "vocab": [],
+     "misconceptions": []
+    },
+    {
+     "code": "9.9",
+     "title": "Transformation of Western Europe and Russia",
+     "lessons": [
+      {
+       "n": 2,
+       "title": "Italian Renaissance — Humanism and City-States",
+       "date": "2027-03-08",
+       "overview": "The Italian Renaissance ran on three ingredients — WEALTH, RECOVERED IDEAS, and INDIVIDUALS. If you could remove only ONE, which removal would do the most damage — and what does that tell you about why it began in Italy?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“I have always possessed an extreme contempt for wealth; not that riches are not desirable in themselves, but because I hate the anxiety and care which are invariably associated with them… Among the many subjects that interested me, I dwelt especially upon antiquity, for our own age has always repelled me… In order to forget my own time, I have constantly striven to place myself in spirit in ...",
+         "credit": "— Francesco Petrarch, “Letter to Posterity,” trans. via the Internet Medieval Sourcebook. Petrarch (1304–1374), often called the “father of humanism,” wrote this autobiographical letter to future readers from northern Italy. Public domain."
+        }
+       ],
+       "source": {
+        "title": "— Francesco Petrarch, “Letter to Posterity,” trans. via the Internet Medieval Sourcebook. Petrarch (1304–1374), often called the “father of humanism,” wrote this autobiographical letter to future readers from northern Italy. Public domain.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 4,
+       "title": "Northern Renaissance and the Printing Press",
+       "date": "2027-03-10",
+       "overview": "Gutenberg's printing press (c. 1450) did not just make books — it MULTIPLIED every idea it touched. Trace the cascade outward (1st → 2nd → 3rd order) and decide which downstream effect would most reshape the next 100 years.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“What was written to me about that marvellous man seen at Frankfurt is true. I have not seen complete Bibles, but only a number of quires [folded sheets] of various books of the Bible. The script was very neat and legible, not at all difficult to follow — your grace would be able to read it without effort, and indeed without glasses. Several people told me that 158 copies have been finished ...",
+         "credit": "— Enea Silvio Piccolomini (later Pope Pius II), letter to Cardinal Juan de Carvajal, 12 March 1455, describing printed sheets of the Gutenberg Bible — one of the earliest eyewitness accounts of European printing. Public domain."
+        }
+       ],
+       "source": {
+        "title": "— Enea Silvio Piccolomini (later Pope Pius II), letter to Cardinal Juan de Carvajal, 12 March 1455, describing printed sheets of the Gutenberg Bible — one of the earliest eyewitness accounts of European printing. Public domain.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 5,
+       "title": "Martin Luther and the Protestant Reformation Begins",
+       "date": "2027-03-11",
+       "overview": "Luther's Ninety-Five Theses were a list of COMPLAINTS. Sort each one — was it about MONEY, POWER, or BELIEF? — and decide which KIND of grievance was most dangerous to the Church, and why this protest spread when earlier ones were silenced.",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 6,
+       "title": "Protestant Reformation Spreads — Calvin and Henry VIII",
+       "date": "2027-03-12",
+       "overview": "The Reformation spread for very different REASONS. Diagnose three break-from-Rome movements on a THEOLOGY ←→ POLITICS spectrum — and test whether a reform's MOTIVE predicts how its new church was governed.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“Albeit the king's Majesty justly and rightfully is and ought to be the supreme head of the Church of England… be it enacted, by authority of this present Parliament, that the king, our sovereign lord, his heirs and successors, kings of this realm, shall be taken, accepted, and reputed the only supreme head in earth of the Church of England, called Anglicana Ecclesia; and shall have and enjoy… ...",
+         "credit": "— The Act of Supremacy, passed by the English Parliament, 3 November 1534, under King Henry VIII (modernized spelling). The Act made the king, not the pope, head of the Church in England. Public domain."
+        }
+       ],
+       "source": {
+        "title": "— The Act of Supremacy, passed by the English Parliament, 3 November 1534, under King Henry VIII (modernized spelling). The Act made the king, not the pope, head of the Church in England. Public domain.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 7,
+       "title": "Catholic Counter-Reformation and Wars of Religion",
+       "date": "2027-03-15",
+       "overview": "The Catholic Church did TWO opposite things at once: it REFORMED itself and it fought BACK. Sort its Counter-Reformation measures into reform vs. reaction — and judge whether the response was mostly self-correction or self-defense, and whether it worked.",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "“If any one saith that by faith alone the sinner is justified… let him be anathema.”",
+         "credit": "— Adapted from the Decrees of the Council of Trent (1545–1563), the council the Catholic Church called to answer the Protestant Reformation. (“Anathema” means formally cursed or condemned.) Public domain."
+        },
+        {
+         "text": "“The holy Synod ordains and decrees that the abuses which have crept into the veneration of relics, images, and saints be wholly abolished… every superstition shall be removed, and all filthy desire for gain be done away with.”",
+         "credit": "— Adapted from the Decrees of the Council of Trent (1545–1563), the council the Catholic Church called to answer the Protestant Reformation. (“Anathema” means formally cursed or condemned.) Public domain."
+        }
+       ],
+       "source": {
+        "title": "— Adapted from the Decrees of the Council of Trent (1545–1563), the council the Catholic Church called to answer the Protestant Reformation. (“Anathema” means formally cursed or condemned.) Public domain.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 8,
+       "title": "Scientific Revolution — Copernicus, Galileo, Newton",
+       "date": "2027-03-16",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 12,
+       "title": "Unit 07 Review + CRQ Workshop · Renaissance to Worlds Around 1400",
+       "date": "2027-03-22",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 13,
+       "title": "Unit 07 Test Day + Reflection",
+       "date": "2027-03-23",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 14,
+       "title": "Unit 07 Test Thursday",
+       "date": "2027-03-24",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      }
+     ],
+     "vocab": [],
+     "misconceptions": []
+    },
+    {
+     "code": "9.8",
+     "title": "Africa and the Americas Pre-1600",
+     "lessons": [
+      {
+       "n": 9,
+       "title": "The Aztec Empire — Tenochtitlan and Tribute",
+       "date": "2027-03-17",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 10,
+       "title": "The Inca Empire — Andes, Roads, and Administration",
+       "date": "2027-03-18",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      }
+     ],
+     "vocab": [],
+     "misconceptions": []
+    }
+   ],
+   "counts": {
+    "topics": 3,
+    "lessons": 13,
+    "terms": 0
+   }
+  },
+  {
+   "id": "08",
+   "title": "Age of Exploration Encounter and Exchange",
+   "blurb": "Follows the Age of Exploration, conquest in the Americas, the Columbian Exchange, the Atlantic slave trade, and the rise of mercantile companies.",
+   "weight": "NYS 9.10",
+   "topics": [
+    {
+     "code": "9.10",
+     "title": "Interactions and Disruptions",
+     "lessons": [
+      {
+       "n": 1,
+       "title": "Why Europeans Crossed Oceans — Causes of Exploration",
+       "date": "2027-03-30",
+       "overview": "Why did Europeans who would not sail out of sight of land in 1450 cross whole oceans by 1500 — was it desire, fear, or new tools?",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 2,
+       "title": "Portuguese Exploration — Henry the Navigator and Vasco da Gama",
+       "date": "2027-03-31",
+       "overview": "How did Portugal — small, poor, and on the edge of Europe — build the first sea route to Asia: was it one leader, or a STACK of innovations no one of which works alone?",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 3,
+       "title": "Spanish Exploration — Columbus and the Americas",
+       "date": "2027-04-01",
+       "overview": "Why did Columbus change world history while remaining completely wrong about what he had done — and how did what he ASSUMED about the people he met shape everything that followed?",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 4,
+       "title": "Conquest of the Americas — Cortés, Pizarro, and Encomienda",
+       "date": "2027-04-02",
+       "overview": "How did a few hundred Spaniards defeat empires of millions — was it European 'superiority,' or a combination of disease, alliances, and circumstance that the Indigenous record reveals?",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 5,
+       "title": "The Columbian Exchange — Plants, Animals, Diseases, People",
+       "date": "2027-04-05",
+       "overview": "After 1492, what living things crossed the ocean between the hemispheres — and why did the same exchange that fed Europe's growth also help cause catastrophe in the Americas?",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 6,
+       "title": "Disease and the Collapse of Indigenous Populations",
+       "date": "2027-04-06",
+       "overview": "How did Old World disease kill an estimated 80–95% of the Indigenous people of the Americas — how do we know, and how should we classify what happened?",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 7,
+       "title": "Trans-Atlantic Slave Trade — Origins and Scale",
+       "date": "2027-04-07",
+       "overview": "Why did European demand for plantation labor drive the trans-Atlantic slave trade — and how do we hold its scale (about 12.5 million people) and its human cost together, so that neither the numbers nor the people disappear?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "The trans-Atlantic slave trade ran for 366 years, from 1501 to 1867. Over that time, an estimated 12.5 MILLION enslaved Africans were forcibly transported across the Atlantic. About 10.7 million survived the Middle Passage; roughly 15% — close to 2 million people — died during the crossing itself. Where the enslaved were taken (approximate share of arrivals): Brazil, about 40% (≈4.9 million) for ...",
+         "credit": "— Evidence-based figures on the trans-Atlantic slave trade (1501–1867), compiled from surviving shipping records and historians' voyage databases. These are conservative counts; a data source must be read as carefully as any written one."
+        },
+        {
+         "text": "“The shrieks of the women, and the groans of the dying, rendered the whole a scene of horror almost inconceivable… these things I have seen and suffered, and they cannot be denied.”",
+         "credit": "— Olaudah Equiano, who survived the Middle Passage as a child, The Interesting Narrative of the Life of Olaudah Equiano (1789)."
+        }
+       ],
+       "source": {
+        "title": "— Evidence-based figures on the trans-Atlantic slave trade (1501–1867), compiled from surviving shipping records and historians' voyage databases. These are conservative counts; a data source must be read as carefully as any written one.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 8,
+       "title": "African Slave Trade — Internal, Trans-Saharan, Trans-Atlantic",
+       "date": "2027-04-08",
+       "overview": "Three different slave-trade systems moved people out of Africa for centuries. Read the words of Olaudah Equiano, who survived the Middle Passage as a child, and judge: what gives a survivor's testimony its power — and why must we hear it?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "The closeness of the place, and the heat of the climate, added to the number in the ship, which was so crowded that each had scarcely room to turn himself, almost suffocated us. This produced copious perspirations, so that the air soon became unfit for respiration, from a variety of loathsome smells, and brought on a sickness among the slaves, of which many died… The shrieks of the women, and the ...",
+         "credit": "— Olaudah Equiano, The Interesting Narrative of the Life of Olaudah Equiano (London, 1789). Equiano survived the Middle Passage as a child, later bought his freedom, and became a leading voice of the British abolition movement."
+        }
+       ],
+       "source": {
+        "title": "— Olaudah Equiano, The Interesting Narrative of the Life of Olaudah Equiano (London, 1789). Equiano survived the Middle Passage as a child, later bought his freedom, and became a leading voice of the British abolition movement.",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 9,
+       "title": "Joint-Stock Companies · Dutch East India + British East India",
+       "date": "2027-04-09",
+       "overview": "How did one financial invention — the joint-stock company — let the Dutch (VOC, 1602) and English (EIC, 1600) East India Companies raise huge capital, share risk, and grow so powerful they acted like governments across Asia?",
+       "objectives": [],
+       "essentialQuestions": [],
+       "sources": [
+        {
+         "text": "The States-General grant to the United East India Company, for the term of twenty-one years, that no one but this Company shall sail from the United Netherlands eastward beyond the Cape of Good Hope, nor through the Strait of Magellan, on pain of forfeiting the ships and goods. All residents of these lands shall be permitted to buy shares in this Company and to invest in it as much money as they ...",
+         "credit": "— Adapted from the Charter of the Dutch East India Company (the VOC), granted by the States-General of the United Netherlands on 20 March 1602 — a founding document of one of the first joint-stock companies. (The “States-General” was the Dutch governing assembly.)"
+        }
+       ],
+       "source": {
+        "title": "— Adapted from the Charter of the Dutch East India Company (the VOC), granted by the States-General of the United Netherlands on 20 March 1602 — a founding document of one of the first joint-stock companies. (The “States-General” was the Dutch governing assembly.)",
+        "author": "",
+        "year": ""
+       }
+      },
+      {
+       "n": 10,
+       "title": "Unit 08 Review + CRQ Workshop · Encounter and Exchange",
+       "date": "2027-04-12",
+       "overview": "Build the whole unit into ONE cause-and-effect spine — from why Europeans sailed to the company system — then graft the two Regents CRQ documents onto the exact link they belong to, and write a 2-document CRQ scoring at least 5/6.",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 11,
+       "title": "Unit 08 Test Tuesday",
+       "date": "2027-04-13",
+       "overview": "Clear your own pre-flight check on the Age of Exploration — confirm the unit's load-bearing facts and your test plan — then complete the Unit 8 Exam.",
+       "objectives": [],
+       "essentialQuestions": []
+      }
+     ],
+     "vocab": [],
+     "misconceptions": []
+    }
+   ],
+   "counts": {
+    "topics": 1,
+    "lessons": 11,
+    "terms": 0
+   }
+  },
+  {
+   "id": "09",
+   "title": "Final Exam Preparation and Year End",
+   "blurb": "Year end review that pulls the whole course together through skills practice, enduring issues writing, and a capstone research project.",
+   "weight": "NYS 9.0",
+   "topics": [
+    {
+     "code": "9.0",
+     "title": "Course orientation / cumulative Regents review (no single Key Idea)",
+     "lessons": [
+      {
+       "n": 1,
+       "title": "CRQ Marathon Causation",
+       "date": "2027-04-14",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 2,
+       "title": "CRQ Marathon Comparison",
+       "date": "2027-04-15",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 3,
+       "title": "CRQ Marathon CCOT",
+       "date": "2027-04-16",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 4,
+       "title": "CRQ Marathon Turning Points",
+       "date": "2027-04-19",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 5,
+       "title": "Past Exam MC Diagnostic",
+       "date": "2027-04-20",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 14,
+       "title": "Mock Final Exam Full Length",
+       "date": "2027-05-03",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 15,
+       "title": "Mock Exam Debrief",
+       "date": "2027-05-04",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 16,
+       "title": "Final Strategy Day",
+       "date": "2027-05-05",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 17,
+       "title": "EIE Kickoff Why This Matters and Roadmap to The Final",
+       "date": "2027-05-21",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 18,
+       "title": "EIE Workshop Day 1 Template and NYS Rubric Reset",
+       "date": "2027-05-24",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 19,
+       "title": "EIE Workshop Day 2 Build an Essay Together",
+       "date": "2027-05-25",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 20,
+       "title": "EIE Workshop Day 3 Independent Drafting",
+       "date": "2027-05-26",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 21,
+       "title": "EIE Workshop Day 4 Peer Review and Revision",
+       "date": "2027-05-27",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 22,
+       "title": "EIE Workshop Day 5 Polish and Grader Strategy",
+       "date": "2027-05-28",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 23,
+       "title": "EIE Pre Test Day 1 Thesis and Outline Lock",
+       "date": "2027-06-01",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 24,
+       "title": "EIE Pre Test Day 2 Final Review and Attack Strategy",
+       "date": "2027-06-02",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 25,
+       "title": "EIE FINAL The Capstone Essay Examination",
+       "date": "2027-06-03",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 26,
+       "title": "Year End Project Launch Choose Enduring Issue",
+       "date": "2027-06-04",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 27,
+       "title": "Year End Project Research Day 1 Source Hunt",
+       "date": "2027-06-07",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 28,
+       "title": "Year End Project Research Day 2 Source Analysis",
+       "date": "2027-06-08",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 29,
+       "title": "Year End Project Research Day 3 Cross Era Synthesis",
+       "date": "2027-06-09",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 30,
+       "title": "Year End Project Drafting Day 1 Thesis and Outline",
+       "date": "2027-06-10",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 31,
+       "title": "Year End Project Drafting Day 2 Body Paragraphs",
+       "date": "2027-06-11",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 32,
+       "title": "Year End Project Drafting Day 3 Modern Example and Conclusion",
+       "date": "2027-06-14",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 33,
+       "title": "Year End Project Visual Component Map or Infographic",
+       "date": "2027-06-15",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 34,
+       "title": "Year End Project Polish Day Peer Review",
+       "date": "2027-06-16",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 35,
+       "title": "Year End Project Presentation Rehearsal",
+       "date": "2027-06-17",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 36,
+       "title": "Project Presentations Group A",
+       "date": "2027-06-21",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 37,
+       "title": "Project Presentations Group B",
+       "date": "2027-06-22",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 38,
+       "title": "Project Presentations Group C and Awards",
+       "date": "2027-06-23",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 39,
+       "title": "Skills Carry Forward and Grade 10 Preview",
+       "date": "2027-06-24",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 40,
+       "title": "Last Day of School Year Close Out and Goodbye",
+       "date": "2027-06-25",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 41,
+       "title": "Skills Marathon Sourcing and Bias",
+       "date": "2027-05-06",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 42,
+       "title": "Skills Marathon Geographic Reasoning",
+       "date": "2027-05-07",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 43,
+       "title": "Targeted Review Belief Systems",
+       "date": "2027-05-10",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 44,
+       "title": "Targeted Review Classical Civilizations",
+       "date": "2027-05-11",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 45,
+       "title": "Targeted Review Trade Networks",
+       "date": "2027-05-12",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 46,
+       "title": "Targeted Review Postclassical Power and Plague",
+       "date": "2027-05-13",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 47,
+       "title": "Targeted Review Renaissance to Exploration",
+       "date": "2027-05-14",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 48,
+       "title": "Mock Final Exam Full Length",
+       "date": "2027-05-18",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 49,
+       "title": "Mock Exam Debrief and Targeted Re Teaching",
+       "date": "2027-05-19",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      },
+      {
+       "n": 50,
+       "title": "Final Strategy Day Time Management and Attack Order",
+       "date": "2027-05-20",
+       "overview": "",
+       "objectives": [],
+       "essentialQuestions": []
+      }
+     ],
+     "vocab": [],
+     "misconceptions": []
+    }
+   ],
+   "counts": {
+    "topics": 1,
+    "lessons": 42,
+    "terms": 0
+   }
+  }
+ ],
+ "researchers": []
+}

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Course — Review Atelier</title>
+<link rel="stylesheet" href="css/atelier.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='25' font-size='26'>✦</text></svg>">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="index.html">Review Atelier<span class="star">✦</span></a>
+  <span class="eyebrow" id="courseTitle" style="margin-left:4px"></span>
+  <div class="nav">
+    <div class="searchwrap">
+      <div class="searchbox">
+        <span aria-hidden="true" style="color:var(--ink-3)">⌕</span>
+        <input id="search" type="search" placeholder="Search terms and topics" aria-label="Search terms and topics">
+      </div>
+      <div class="results" id="searchResults" hidden></div>
+    </div>
+    <a href="course.html?c=psych">AP Psych</a>
+    <a href="course.html?c=global">Global 9R</a>
+    <a href="course.html?c=enl">ENL</a>
+    <button class="navbtn" id="themeBtn" aria-label="Toggle light and dark theme">◐</button>
+  </div>
+</header>
+
+<main class="workspace" id="workspace">
+  <aside class="panel rail" id="rail"></aside>
+  <section class="panel stage stage-col" id="stage"></section>
+  <aside class="panel detail" id="detail"></aside>
+</main>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
