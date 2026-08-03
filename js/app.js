@@ -8,13 +8,13 @@ import { createGlobe } from './globe.js';
 
 /* Photoreal unit specimens. Missing entries fall back to generated art. */
 const IMAGES = {
-  'psych:0': 'balance.png',
+  'psych:0': 'balance.jpg',
   'psych:1': 'brain.jpg',
-  'psych:2': 'prism.png',
-  'psych:3': 'nesting.png',
-  'psych:4': 'busts.png',
-  'psych:5': 'glasshead.png',
-  'psych:6': 'jars.png'
+  'psych:2': 'prism.jpg',
+  'psych:3': 'nesting.jpg',
+  'psych:4': 'busts.jpg',
+  'psych:5': 'glasshead.jpg',
+  'psych:6': 'jars.jpg'
 };
 
 /* Hotspots over the brain photograph, in percent of the image box. */
@@ -123,12 +123,20 @@ async function renderHome() {
     </a>`;
   }).join('');
 
+  bootCardGlobes();
 }
 
 function courseArtFor(c) {
-  if (c.specimen === 'brain') return brain().svg;
-  if (c.specimen === 'map')   return worldMap([]).svg;
+  if (c.specimen === 'brain') return `<img src="assets/img/brain.jpg" alt="" class="cardphoto">`;
+  if (c.specimen === 'map')   return `<canvas class="cardglobe" data-globe="${esc(c.id)}"></canvas>`;
   return constellation(c.units[0] || { id: c.id, topics: [] }).svg;
+}
+
+/* Give every card globe its own slow spin. */
+function bootCardGlobes() {
+  $$('canvas.cardglobe').forEach((cv, i) => {
+    createGlobe(cv, { markers: [], rot: 30 + i * 90, tilt: -12 });
+  });
 }
 
 /* ============================ COURSE ============================ */
@@ -296,7 +304,9 @@ function buildStage() {
   $('#stage').innerHTML = `
     <div class="stage-art">
       <div class="artbox" data-wide="${c.specimen === 'map'}">${art}${markers}</div>
-      <div class="tip-note"><b>Tip</b><br>Click a marker on the specimen, then switch to Key terms or Flashcards.</div>
+      <div class="tip-note"><b>Tip</b><br>${marks.length
+        ? 'Click a marker on the specimen, then switch to Key terms or Flashcards.'
+        : 'Pick a topic below, then switch to Key terms or Flashcards.'}</div>
     </div>
     ${strip}
     <div class="stage-foot">

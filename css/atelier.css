@@ -262,8 +262,8 @@ a { color: inherit; }
 .action:hover { border-color: color-mix(in srgb, var(--accent) 42%, transparent); background: var(--paper-2); }
 .action .ico { width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center;
                background: var(--accent-soft); color: var(--accent-ink); font-size: 14px; flex: none; }
-.action .t { font-size: 12.8px; font-weight: 600; }
-.action .s { font-size: 11px; color: var(--ink-3); margin-top: 1px; }
+.action .t { display: block; font-size: 12.8px; font-weight: 600; }
+.action .s { display: block; font-size: 11px; color: var(--ink-3); margin-top: 1px; }
 
 /* pills */
 .pills { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -460,3 +460,21 @@ body[data-course="enl"] canvas.globe { --globe-land: #86ab9c; --globe-ocean: #da
 .autotoggle input { accent-color: var(--accent); cursor: pointer; }
 
 .note-card .cite { font-size: 12.2px; line-height: 1.55; color: var(--ink-2); }
+
+.course-card .art { position: relative; overflow: hidden; display: grid; place-items: center; }
+.course-card img.cardphoto {
+  width: 100%; height: 100%; object-fit: contain; display: block;
+  mix-blend-mode: multiply;
+}
+:root[data-theme="dark"] .course-card img.cardphoto { mix-blend-mode: normal; opacity: .92; }
+canvas.cardglobe {
+  width: 100%; height: 100%; display: block;
+  pointer-events: none;
+  --globe-ocean:#d9e3e8; --globe-land:#93a98f; --globe-line:#ffffff;
+  --globe-glow:rgba(120,150,190,.30); --globe-accent: var(--accent);
+}
+.course-card[data-accent="enl"] canvas.cardglobe { --globe-land:#86ab9c; --globe-ocean:#dae7e6; }
+@media (prefers-color-scheme: dark) {
+  canvas.cardglobe { --globe-ocean:#1e2b33; --globe-land:#3f5a4c; --globe-line:#9fd0c4; }
+}
+:root[data-theme="dark"] canvas.cardglobe { --globe-ocean:#1e2b33; --globe-land:#3f5a4c; --globe-line:#9fd0c4; }
