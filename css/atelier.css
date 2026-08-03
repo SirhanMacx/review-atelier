@@ -374,3 +374,7 @@ canvas.cardglobe {
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
            overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
 :focus-visible { outline: 1.5px solid var(--accent); outline-offset: 3px; border-radius: 8px; }
+
+/* the 3D specimen canvas */
+.viewbox { width: 100%; max-width: 500px; aspect-ratio: 1 / 1; }
+.viewbox canvas { width: 100%; height: 100%; display: block; touch-action: none; cursor: grab; }

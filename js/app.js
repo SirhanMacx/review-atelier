@@ -5,27 +5,39 @@
    ========================================================= */
 import { constellation, emblem, rng } from './art.js';
 import { createGlobe } from './globe.js';
+import { createViewer } from './viewer.js';
 
 const $  = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
-/* Photoreal unit specimens. Anything missing falls back to a drawn topic map. */
-const IMAGES = {
-  'psych:0': 'balance.png', 'psych:1': 'brain.png',   'psych:2': 'prism.png',
-  'psych:3': 'nesting.png', 'psych:4': 'busts.png',   'psych:5': 'glasshead.png',
-  'psych:6': 'jars.png'
+/* Real 3D specimens, one GLB per unit, loaded on demand.
+   Made locally from the specimen renders with img2glb (TripoSR). */
+const ASSET_V = '4';        // bump when the GLBs are regenerated, to beat caches
+const MODELS = {
+  'psych:0': 'balance.glb', 'psych:1': 'brain.glb',   'psych:2': 'prism.glb',
+  'psych:3': 'nesting.glb', 'psych:4': 'busts.glb',   'psych:5': 'glasshead.glb',
+  'psych:6': 'jars.glb'
 };
 
-/* Regions on the brain photograph, in percent of the image box. */
-const BRAIN_PINS = [
-  { x: 30, y: 34, title: 'Frontal lobe',  note: 'Planning, judgment, personality, and speech production (Broca). The Phineas Gage lobe.' },
-  { x: 52, y: 22, title: 'Parietal lobe', note: 'Touch, temperature, pain, and body position. Home of the somatosensory cortex.' },
-  { x: 74, y: 36, title: 'Occipital lobe',note: 'Vision. Damage here can blind you even with perfectly healthy eyes.' },
-  { x: 45, y: 55, title: 'Temporal lobe', note: 'Hearing and language comprehension (Wernicke). Wraps around the hippocampus.' },
-  { x: 71, y: 64, title: 'Cerebellum',    note: 'Balance, coordination, and procedural (muscle memory) learning.' },
-  { x: 56, y: 75, title: 'Brainstem',     note: 'Breathing, heartbeat, and arousal. The parts you never have to think about.' }
-];
+/* Hotspots live in model space. Every model is normalised into the same box,
+   so these are portable, and the viewer snaps each one onto the real surface. */
+const HOTSPOTS = {
+  'psych:1': [
+    { id: 'frontal',    title: 'Frontal lobe',   position: [-1.30,  0.45,  0.85],
+      note: 'Planning, judgment, personality, and speech production (Broca). The Phineas Gage lobe.' },
+    { id: 'parietal',   title: 'Parietal lobe',  position: [ 0.10,  1.30,  0.30],
+      note: 'Touch, temperature, pain, and body position. Home of the somatosensory cortex.' },
+    { id: 'occipital',  title: 'Occipital lobe', position: [ 1.35,  0.35,  0.10],
+      note: 'Vision. Damage here can blind you even with perfectly healthy eyes.' },
+    { id: 'temporal',   title: 'Temporal lobe',  position: [-0.35, -0.65,  1.10],
+      note: 'Hearing and language comprehension (Wernicke). Wraps around the hippocampus.' },
+    { id: 'cerebellum', title: 'Cerebellum',     position: [ 1.05, -0.95,  0.35],
+      note: 'Balance, coordination, and procedural (muscle memory) learning.' },
+    { id: 'brainstem',  title: 'Brainstem',      position: [ 0.25, -1.35,  0.45],
+      note: 'Breathing, heartbeat, and arousal. The parts you never have to think about.' }
+  ]
+};
 
 /* Where each unit's history sits, as a starting view for the globe. */
 const PLACES = {
@@ -73,7 +85,7 @@ const state = {
   course: null, unitIdx: 0, topicIdx: 0, lessonIdx: null,
   view: 'overview', cardIdx: 0, flipped: false, lang: null, part: null
 };
-let GLOBE = null;
+let GLOBE = null, VIEWER = null;
 
 const unit  = () => state.course.units[state.unitIdx] || { topics: [] };
 const topic = () => unit().topics[state.topicIdx] || { vocab: [], lessons: [] };
@@ -162,8 +174,9 @@ function buildRail() {
 function buildStage() {
   const c = state.course, u = unit();
   if (GLOBE) { GLOBE.destroy(); GLOBE = null; }
+  if (VIEWER) { VIEWER.destroy(); VIEWER = null; }
   const nodes = nodesFor(u);
-  const photo = IMAGES[`${c.id}:${u.id}`];
+  const model = MODELS[`${c.id}:${u.id}`];
 
   const seg = `
     <div class="seg">
@@ -174,13 +187,10 @@ function buildStage() {
 
   if (c.specimen === 'map') return globeStage(c, u, nodes, seg);
 
+  if (model) return modelStage(c, u, model, seg);
+
   let art, marks, caption;
-  if (photo) {
-    const pins = (c.id === 'psych' && u.id === '1') ? BRAIN_PINS : [];
-    art = `<img class="specimen" src="assets/img/${photo}" alt="${esc(u.title)}">`;
-    marks = pins.map(p => ({ xPct: p.x, yPct: p.y, title: p.title, note: p.note }));
-    caption = pins.length ? 'Specimen · click a dot to explore' : 'Specimen';
-  } else {
+  {
     const synth = { id: c.id + u.id, title: u.title,
       topics: nodes.map(nd => ({ title: nd.title, vocab: u.topics[nd.topicIdx]?.vocab || [] })) };
     const k = constellation(synth);
@@ -217,6 +227,43 @@ function buildStage() {
     }
     render(); syncHash();
   }));
+  bindSeg();
+}
+
+/* A real specimen: orbit it, or click a marker on its surface. */
+function modelStage(c, u, file, seg) {
+  const pins = HOTSPOTS[`${c.id}:${u.id}`] || [];
+  const accent = getComputedStyle(document.body).getPropertyValue('--accent').trim() || '#8d6bcc';
+
+  $('#stage').innerHTML = `
+    <div class="stage-art">
+      <div class="viewbox" id="viewbox"></div>
+      <div class="tools">
+        <button class="tool" id="tSpin" aria-pressed="true"><span class="g">↻</span><span class="t">Rotate</span></button>
+        <button class="tool" id="tIn"><span class="g">+</span><span class="t">Closer</span></button>
+        <button class="tool" id="tOut"><span class="g">&minus;</span><span class="t">Back</span></button>
+        <button class="tool" id="tReset"><span class="g">⟲</span><span class="t">Reset</span></button>
+      </div>
+      <div class="tip"><b>Tip</b>Drag to rotate<br>Scroll to zoom${pins.length ? '<br>Click a dot to learn more' : ''}</div>
+    </div>
+    <div class="stage-foot">
+      <span class="stage-caption">3D specimen${pins.length ? ' · click a dot to explore' : ''}</span>
+      ${seg}
+    </div>`;
+
+  VIEWER = createViewer($('#viewbox'), {
+    accent,
+    onSelect(hit) { state.part = hit ? hit.id : null; buildDetail(); }
+  });
+  VIEWER.show(`assets/models/${file}?v=${ASSET_V}`, pins);
+
+  $('#tSpin').addEventListener('click', e => {
+    const on = !VIEWER.auto; VIEWER.setAuto(on);
+    e.currentTarget.setAttribute('aria-pressed', String(on));
+  });
+  $('#tIn').addEventListener('click', () => VIEWER.zoom(-1));
+  $('#tOut').addEventListener('click', () => VIEWER.zoom(1));
+  $('#tReset').addEventListener('click', () => VIEWER.reset());
   bindSeg();
 }
 
@@ -348,10 +395,13 @@ function buildDetail() {
 }
 
 function partPanel() {
-  const p = BRAIN_PINS.find(x => x.title === state.part);
+  const u = unit();
+  const list = HOTSPOTS[`${state.course.id}:${u.id}`] || [];
+  const p = list.find(x => x.id === state.part);
+  if (!p) { state.part = null; return buildDetail(); }
   $('#detail').innerHTML = `
     <div class="pad">
-      <span class="kicker">Brain specimen</span>
+      <span class="kicker">${esc(u.title)} · specimen</span>
       <h2>${esc(p.title)}</h2>
       <p class="lede">${esc(p.note)}</p>
       <hr class="rule">

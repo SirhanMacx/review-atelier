@@ -6,13 +6,13 @@
    fixed box so hotspot coordinates are model agnostic, and
    draws only when something actually changed.
    ========================================================= */
-import * as THREE from '../assets/vendor/three.module.js';
-import { OrbitControls } from '../assets/vendor/OrbitControls.js';
-import { GLTFLoader } from '../assets/vendor/GLTFLoader.js';
-import { MeshoptDecoder } from '../assets/vendor/meshopt_decoder.module.js';
+import * as THREE from '../assets/three/three.module.js';
+import { OrbitControls } from '../assets/three/OrbitControls.js';
+import { GLTFLoader } from '../assets/three/GLTFLoader.js';
+import { MeshoptDecoder } from '../assets/three/meshopt_decoder.module.js';
 
-const FIT = 3.8;                       // every model is scaled into this box
-const HOME_CAM = { x: 0, y: 0.9, z: 8.2 };
+const FIT = 3.3;                       // every model is scaled into this box
+const HOME_CAM = { x: 0, y: 0.25, z: 6.6 };
 const HOME_TARGET = { x: 0, y: 0.02, z: 0 };
 const FOV = 34;
 const DOT_PX = 30;                     // on-screen hotspot size, constant
@@ -23,15 +23,23 @@ const loader = new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);
 const cache = new Map();               // url -> parsed scene, small LRU
 
 /* ---------- little canvas textures ---------- */
-function dotTexture(hex) {
+/* Accept any CSS colour, since the accent arrives from a computed style. */
+function rgbTriplet(css) {
+  const c = new THREE.Color(css);
+  return [Math.round(c.r * 255), Math.round(c.g * 255), Math.round(c.b * 255)];
+}
+
+function dotTexture(css) {
+  const [r0, g0, b0] = rgbTriplet(css);
+  const rgba = a => `rgba(${r0},${g0},${b0},${a})`;
   const s = 128, c = document.createElement('canvas');
   c.width = c.height = s;
   const g = c.getContext('2d'), r = s / 2;
   const halo = g.createRadialGradient(r, r, 0, r, r, r);
-  halo.addColorStop(0, hex + 'cc'); halo.addColorStop(0.55, hex + '33'); halo.addColorStop(1, hex + '00');
+  halo.addColorStop(0, rgba(0.8)); halo.addColorStop(0.55, rgba(0.2)); halo.addColorStop(1, rgba(0));
   g.fillStyle = halo; g.beginPath(); g.arc(r, r, r, 0, 7); g.fill();
   g.fillStyle = 'rgba(255,251,244,.95)'; g.beginPath(); g.arc(r, r, s * 0.20, 0, 7); g.fill();
-  g.fillStyle = hex; g.beginPath(); g.arc(r, r, s * 0.135, 0, 7); g.fill();
+  g.fillStyle = rgba(1); g.beginPath(); g.arc(r, r, s * 0.135, 0, 7); g.fill();
   const t = new THREE.CanvasTexture(c);
   t.colorSpace = THREE.SRGBColorSpace;
   return t;
@@ -91,8 +99,8 @@ export function createViewer(mount, opts = {}) {
   controls.enableDamping = true;
   controls.dampingFactor = 0.055;
   controls.enablePan = false;
-  controls.minDistance = 4.8;
-  controls.maxDistance = 12;
+  controls.minDistance = 3.8;
+  controls.maxDistance = 10;
   controls.target.set(HOME_TARGET.x, HOME_TARGET.y, HOME_TARGET.z);
   controls.autoRotate = true;
   controls.autoRotateSpeed = 0.65;
@@ -106,19 +114,13 @@ export function createViewer(mount, opts = {}) {
   const glow = new THREE.PointLight(new THREE.Color(accent), 6, 18); glow.position.set(0, 1.2, 3.4); scene.add(glow);
 
   /* plinth + contact shadow */
-  const plinth = new THREE.Mesh(
-    new THREE.CylinderGeometry(2.3, 2.48, 0.34, 56),
-    new THREE.MeshStandardMaterial({ color: 0xf3ead9, roughness: 0.92, metalness: 0 })
-  );
-  plinth.position.y = -2.5; scene.add(plinth);
-
   const shadow = new THREE.Mesh(
-    new THREE.PlaneGeometry(4.2, 4.2),
+    new THREE.PlaneGeometry(4.4, 4.4),
     new THREE.MeshBasicMaterial({ map: contactShadowTexture(), transparent: true, opacity: 0.62,
                                   depthWrite: false, toneMapped: false })
   );
   shadow.rotation.x = -Math.PI / 2;
-  shadow.position.y = -2.33; scene.add(shadow);
+  shadow.position.y = -2.55; scene.add(shadow);
 
   /* the model lives under a pivot so hotspots inherit its motion */
   const pivot = new THREE.Group();
@@ -159,6 +161,7 @@ export function createViewer(mount, opts = {}) {
     const scale = FIT / Math.max(size.x, size.y, size.z, 0.001);
     scene3.scale.setScalar(scale);
     scene3.position.copy(center.multiplyScalar(-scale));
+    scene3.userData.fitScale = scale;      // the intro tween must animate around this
     scene3.traverse(o => {
       if (!o.isMesh) return;
       o.frustumCulled = false;
@@ -316,11 +319,12 @@ export function createViewer(mount, opts = {}) {
         if (!model) return;
         if (state.current) { pivot.remove(state.current); }
         state.current = model;
-        model.scale.multiplyScalar(0.72);
+        const fit = model.userData.fitScale || 1;
+        model.scale.setScalar(fit * 0.72);
         pivot.add(model);
         setHotspots(hotspots, model);
         /* small ease-in so the specimen arrives rather than pops */
-        const from = 0.72, to = 1, t0 = performance.now();
+        const from = fit * 0.72, to = fit, t0 = performance.now();
         busy(0.7);
         (function grow() {
           const k = Math.min(1, (performance.now() - t0) / 620);
@@ -339,7 +343,7 @@ export function createViewer(mount, opts = {}) {
     setAuto(v) { state.autoWanted = v; markDirty(); },
     get auto() { return state.autoWanted; },
     zoom(dir) {
-      camera.position.z = THREE.MathUtils.clamp(camera.position.z + dir * 1.2, 4.8, 12);
+      camera.position.z = THREE.MathUtils.clamp(camera.position.z + dir * 1.0, 3.8, 10);
       markDirty(); busy(0.4);
     },
     reset() {
