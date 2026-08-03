@@ -4,6 +4,30 @@
    No quizzes, no answer keys.
    ========================================================= */
 import { constellation, brain, worldMap, emblem, rng } from './art.js';
+import { createGlobe } from './globe.js';
+
+/* Photoreal unit specimens. Missing entries fall back to generated art. */
+const IMAGES = {
+  'psych:0': 'balance.png',
+  'psych:1': 'brain.jpg',
+  'psych:2': 'prism.png',
+  'psych:3': 'nesting.png',
+  'psych:4': 'busts.png',
+  'psych:5': 'glasshead.png',
+  'psych:6': 'jars.png'
+};
+
+/* Hotspots over the brain photograph, in percent of the image box. */
+const BRAIN_PINS = [
+  { x: 30, y: 34, title: 'Frontal lobe', note: 'Planning, judgment, personality, and speech production (Broca). The Phineas Gage lobe.' },
+  { x: 52, y: 22, title: 'Parietal lobe', note: 'Touch, temperature, pain, and body position. Home of the somatosensory cortex.' },
+  { x: 74, y: 36, title: 'Occipital lobe', note: 'Vision. Damage here can blind you even with perfectly healthy eyes.' },
+  { x: 45, y: 55, title: 'Temporal lobe', note: 'Hearing and language comprehension (Wernicke). Wraps around the hippocampus.' },
+  { x: 71, y: 64, title: 'Cerebellum', note: 'Balance, coordination, and procedural (muscle memory) learning.' },
+  { x: 56, y: 75, title: 'Brainstem', note: 'Breathing, heartbeat, and arousal. The parts you never have to think about.' }
+];
+
+let GLOBE = null;   // live globe instance, torn down on every re-render
 
 const $  = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -165,33 +189,86 @@ function buildRail() {
 }
 
 /* ---------- stage ---------- */
+
+/* A real rotating globe for the history courses: drag it, or let it spin. */
+function globeStage(c, u, nodes) {
+  const home = PLACES[`${c.id}:${u.id}`] || { lon: 0, lat: 20 };
+  const rand = rng(c.id + u.id);
+  const markers = nodes.map((nd, i) => {
+    const g = geo(nd.title, home);
+    const spread = g.exact ? 5 : 30;
+    return {
+      idx: i, title: nd.title,
+      lon: g.lon + (rand() - .5) * spread,
+      lat: Math.max(-60, Math.min(75, g.lat + (rand() - .5) * spread * 0.7)),
+      active: nd.topicIdx === state.topicIdx &&
+              (nd.lessonIdx == null || nd.lessonIdx === state.lessonIdx)
+    };
+  });
+
+  const strip = u.topics.length > 1 ? `
+    <div class="pills topicstrip">${u.topics.map((t, i) =>
+      `<button class="pill" data-topic="${i}" aria-pressed="${i === state.topicIdx}"
+        >${esc(t.title || t.code || `Topic ${i + 1}`)}</button>`).join('')}</div>` : '';
+
+  $('#stage').innerHTML = `
+    <div class="stage-art globe-wrap">
+      <canvas id="globeCanvas" class="globe" aria-label="Rotatable globe showing where ${esc(u.title)} happened"></canvas>
+      <div class="tip-note"><b>Tip</b><br>Drag the globe to spin it. Click a marker to open that topic.</div>
+      <label class="autotoggle"><input type="checkbox" id="autoSpin" checked> Auto rotate</label>
+    </div>
+    ${strip}
+    <div class="stage-foot">
+      <span class="eyebrow">3D globe · drag to rotate</span>
+      <div class="pills">
+        <button class="pill" data-view="overview" aria-pressed="${state.view === 'overview'}">Overview</button>
+        <button class="pill" data-view="terms" aria-pressed="${state.view === 'terms'}">Key terms</button>
+        <button class="pill" data-view="cards" aria-pressed="${state.view === 'cards'}">Flashcards</button>
+      </div>
+    </div>`;
+
+  GLOBE = createGlobe($('#globeCanvas'), {
+    markers,
+    onPick(m) {
+      const nd = nodes[m.idx];
+      state.topicIdx = nd.topicIdx;
+      state.lessonIdx = nd.lessonIdx ?? null;
+      state.cardIdx = 0; state.flipped = false;
+      render(); syncHash();
+    }
+  });
+  const active = markers.find(m => m.active) || markers[0];
+  if (active) GLOBE.spinTo(active.lon, active.lat);
+
+  $('#autoSpin').addEventListener('change', e => GLOBE.setAuto(e.target.checked));
+  $$('#stage .topicstrip .pill').forEach(b => b.addEventListener('click', () => {
+    state.topicIdx = +b.dataset.topic; state.lessonIdx = null;
+    state.cardIdx = 0; state.flipped = false; render(); syncHash();
+  }));
+  $$('#stage .stage-foot .pill').forEach(b => b.addEventListener('click', () => {
+    state.view = b.dataset.view; state.cardIdx = 0; state.flipped = false; render(); syncHash();
+  }));
+}
+
 function buildStage() {
   const c = state.course, u = unit();
   const nodes = mapNodes(u);
   let art, marks, caption, kind;
 
-  if (c.specimen === 'brain' && u.id === '1') {
-    // A real anatomy specimen: the markers are brain regions, not topics.
-    const b = brain();
-    art = b.svg; marks = b.nodes; kind = 'part';
-    caption = 'Brain specimen · click a region to read about it';
-  } else if (c.specimen === 'map') {
-    const home = PLACES[`${c.id}:${u.id}`] || { lon: 0, lat: 20 };
-    const rand = rng(c.id + u.id);
-    const pins = nodes.map((nd, i) => {
-      const g = geo(nd.title, home);
-      // Located topics sit on their real coordinates; only unmatched ones get
-      // scattered around the unit's home region, and never on top of each other.
-      const spread = g.exact ? 5 : 34;
-      return {
-        id: String(i), title: nd.title,
-        lon: Math.max(-176, Math.min(176, g.lon + (rand() - .5) * spread)),
-        lat: Math.max(-54, Math.min(72, g.lat + (rand() - .5) * spread * 0.7))
-      };
-    });
-    const m = worldMap(pins, { label: `Where ${u.title} happened` });
-    art = m.svg; marks = m.nodes; kind = 'node';
-    caption = 'World atlas · click a marker to open it';
+  const photo = IMAGES[`${c.id}:${u.id}`];
+
+  if (GLOBE) { GLOBE.destroy(); GLOBE = null; }
+
+  if (c.specimen === 'map') return globeStage(c, u, nodes);
+
+  if (photo) {
+    // Photoreal specimen. Unit 1 of AP Psych carries real anatomical hotspots;
+    // the other units are portraits with no regions worth pinning.
+    const pins = (c.id === 'psych' && u.id === '1') ? BRAIN_PINS : [];
+    art = `<img class="specimen" src="assets/img/${photo}" alt="${esc(u.title)} specimen" loading="eager">`;
+    marks = pins.map(p => ({ xPct: p.x, yPct: p.y, title: p.title, note: p.note }));
+    kind = 'part';
+    caption = pins.length ? 'Specimen · click a region to read about it' : `${u.title} · specimen`;
   } else {
     const synth = { id: c.id + u.id, title: u.title,
       topics: nodes.map(nd => ({ code: nd.title, title: nd.title,
@@ -233,7 +310,7 @@ function buildStage() {
 
   $$('#stage .hotspot').forEach(b => b.addEventListener('click', () => {
     const i = +b.dataset.i;
-    if (b.dataset.kind === 'part') return showPart(brain().nodes[i]);
+    if (b.dataset.kind === 'part') return showPart(marks[i]);
     const nd = nodes[i];
     if (!nd) return;
     state.topicIdx = nd.topicIdx;
@@ -308,8 +385,9 @@ function buildDetail() {
           <dt>${esc(p.who)}</dt><dd>${esc(p.what)}</dd></div>`).join('')}</div>` : ''}
 
       ${src ? `<hr class="rule"><span class="eyebrow">Primary source in this topic</span>
-        <div class="note-card"><span><b>${esc(src.title)}</b>
-        ${[src.author, src.year].filter(Boolean).map(esc).join(', ')}</span></div>` : ''}
+        <div class="note-card"><span class="cite">${esc(src.title)}${
+          [src.author, src.year].filter(Boolean).length
+            ? ' — ' + [src.author, src.year].filter(Boolean).map(esc).join(', ') : ''}</span></div>` : ''}
 
       <hr class="rule">
       <div class="actions">

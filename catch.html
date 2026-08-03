@@ -1,0 +1,19 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>asset catcher</title>
+<body style="font:14px system-ui;padding:24px">
+<pre id="log">waiting...</pre>
+<script>
+const log = document.getElementById('log');
+(async () => {
+  try {
+    const payload = window.name || '';
+    if (!payload.startsWith('IMG|')) { log.textContent = 'no payload in window.name (len ' + payload.length + ')'; return; }
+    const [, name, dataUrl] = payload.split('|');
+    const blob = await (await fetch(dataUrl)).blob();
+    const res = await fetch('http://127.0.0.1:8907/?name=' + encodeURIComponent(name), { method: 'POST', body: blob });
+    log.textContent = 'SENT ' + name + ' ' + blob.size + ' bytes -> ' + await res.text();
+    window.name = '';
+  } catch (e) { log.textContent = 'ERROR ' + e.message; }
+})();
+</script>

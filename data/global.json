@@ -60,14 +60,75 @@
        "essentialQuestions": []
       }
      ],
-     "vocab": [],
+     "vocab": [
+      {
+       "term": "the past",
+       "def": "everything that ever happened — gone, and far too big to hold."
+      },
+      {
+       "term": "history",
+       "def": "the story historians BUILD from the evidence that survived."
+      },
+      {
+       "term": "evidence",
+       "def": "what is left behind — objects, writing, art, bones — that we reason from."
+      },
+      {
+       "term": "interpretation",
+       "def": "the meaning a person reads INTO the evidence (it can be done well or badly)."
+      },
+      {
+       "term": "primary source",
+       "def": "evidence from the time itself (the stele, a receipt, a photo)."
+      },
+      {
+       "term": "secondary source",
+       "def": "a later account ABOUT the time (a textbook, a documentary)."
+      },
+      {
+       "term": "reliability",
+       "def": "how much you can trust a source — for a SPECIFIC question."
+      },
+      {
+       "term": "propaganda",
+       "def": "information shaped to make someone or something look good."
+      },
+      {
+       "term": "projection",
+       "def": "any flat map of a round Earth — every one distorts something."
+      },
+      {
+       "term": "Mercator",
+       "def": "the 1569 sailing map (and most classroom maps) that makes northern places look huge."
+      },
+      {
+       "term": "distortion",
+       "def": "you drew it, but wrong size or wrong place."
+      },
+      {
+       "term": "artifact",
+       "def": "an object made or used by people (the axe, the arrow)."
+      },
+      {
+       "term": "forensic",
+       "def": "using science to investigate a death or crime."
+      },
+      {
+       "term": "hypothesis",
+       "def": "a possible explanation you then test against evidence."
+      },
+      {
+       "term": "revise",
+       "def": "to change a conclusion when new evidence appears."
+      }
+     ],
      "misconceptions": []
     }
    ],
    "counts": {
     "topics": 1,
     "lessons": 4,
-    "terms": 0
+    "terms": 15
    }
   },
   {
@@ -207,14 +268,179 @@
        "essentialQuestions": []
       }
      ],
-     "vocab": [],
+     "vocab": [
+      {
+       "term": "fossil",
+       "def": "the preserved remains or trace of a once-living thing."
+      },
+      {
+       "term": "inference",
+       "def": "a careful conclusion drawn FROM evidence (not a guess)."
+      },
+      {
+       "term": "the evidence line",
+       "def": "the point where the evidence stops and story-telling begins."
+      },
+      {
+       "term": "migration",
+       "def": "the movement of people from one region to settle in another."
+      },
+      {
+       "term": "mitochondrial DNA",
+       "def": "genetic code passed only from mother to child — a maternal “family tree.”."
+      },
+      {
+       "term": "Out of Africa",
+       "def": "the theory that all modern humans spread FROM Africa."
+      },
+      {
+       "term": "land bridge",
+       "def": "dry land exposed when sea levels fell (e.g., Bering, Asia→Americas)."
+      },
+      {
+       "term": "Paleolithic",
+       "def": "the Old Stone Age — nomadic hunter-gatherers, before farming."
+      },
+      {
+       "term": "nomadic",
+       "def": "moving from place to place rather than settling."
+      },
+      {
+       "term": "symbol",
+       "def": "something that stands for an idea (a mark, an image)."
+      },
+      {
+       "term": "forager",
+       "def": "a hunter-gatherer — lives on wild food, grows none."
+      },
+      {
+       "term": "scarcity",
+       "def": "not enough of a resource to meet everyone's needs."
+      },
+      {
+       "term": "mobility",
+       "def": "the ability to move — the foragers' answer to scarcity."
+      },
+      {
+       "term": "Neolithic Revolution",
+       "def": "the shift from foraging to FARMING (c. 10,000 BCE)."
+      },
+      {
+       "term": "surplus",
+       "def": "extra food beyond what the growers need to live."
+      },
+      {
+       "term": "specialization",
+       "def": "a full-time job that isn't farming (potter, priest, guard)."
+      },
+      {
+       "term": "paleopathology",
+       "def": "the study of disease and injury in ancient bones and teeth."
+      },
+      {
+       "term": "tradeoff",
+       "def": "a gain that comes only by accepting a loss somewhere else."
+      },
+      {
+       "term": "life expectancy",
+       "def": "the average number of years a person born then could expect to live."
+      },
+      {
+       "term": "archaeology",
+       "def": "the study of past societies through the physical objects they left behind."
+      },
+      {
+       "term": "anomaly",
+       "def": "something that does NOT fit what you expect — a puzzle to explain."
+      },
+      {
+       "term": "hypothesis",
+       "def": "a possible explanation you can test against the evidence."
+      },
+      {
+       "term": "hierarchy",
+       "def": "a society ranked into more- and less-powerful groups (kings, classes)."
+      },
+      {
+       "term": "CRQ",
+       "def": "Constructed-Response Question — 2 documents, 3 tasks (a)(b)(c), answered in complete sentences."
+      },
+      {
+       "term": "turning point",
+       "def": "a moment after which things are permanently different."
+      },
+      {
+       "term": "evidence",
+       "def": "a specific fact or quotation FROM a document or your notes — not a general statement."
+      },
+      {
+       "term": "context",
+       "def": "the WHEN and WHERE (date + place + bigger event) that frames a document."
+      },
+      {
+       "term": "civilization",
+       "def": "a complex society that meets the seven criteria below."
+      },
+      {
+       "term": "criterion",
+       "def": "a standard or test something must meet to count (plural: criteria)."
+      },
+      {
+       "term": "specialized labor",
+       "def": "specific people doing specific non-farming jobs — only possible with surplus."
+      },
+      {
+       "term": "spec-audit",
+       "def": "checking a design against a list of required features — met or not met."
+      },
+      {
+       "term": "adaptation",
+       "def": "a behavior or invention that helps a group survive its environment."
+      },
+      {
+       "term": "kinship band",
+       "def": "a small group of related people (about 25–50) who live and move together."
+      },
+      {
+       "term": "culture",
+       "def": "shared, learned ways of living — passed on, not inherited in the body."
+      },
+      {
+       "term": "History",
+       "def": "The practice of recording and interpreting past events involving human and planetary actions using a combination of written records, archeological remains, geological remains."
+      },
+      {
+       "term": "Geography",
+       "def": "The study of earth and its physical and biological features."
+      },
+      {
+       "term": "Pre-History",
+       "def": "The period of time in human history prior to the development of writing systems and written records. (Up to about 5,000 years ago)."
+      },
+      {
+       "term": "Paleolithic Era",
+       "def": "Period which lasted from the origins of humanity to approximately 10,000 BCE. Societies were nomadic and engaged in hunting and gathering as a method of food acquisition."
+      },
+      {
+       "term": "Neolithic Era",
+       "def": "The Neolithic Revolution (8,000 BCE – 3,000 BCE) was a period of time characterized by the transition from hunting & gathering to agriculture. The N.R. led to food surpluses, permanent settlements, population growth the establishment of social classes, and the eventual rise of civilizations."
+      },
+      {
+       "term": "Agriculture",
+       "def": "Farming. The domestication and cultivation of plants as a method of food production."
+      },
+      {
+       "term": "Sedentary",
+       "def": "Having a fixed/permanent location. The opposite of nomadic. Agricultural societies are sedentary societies."
+      }
+     ],
      "misconceptions": []
     }
    ],
    "counts": {
     "topics": 1,
     "lessons": 12,
-    "terms": 0
+    "terms": 41
    }
   },
   {
@@ -549,14 +775,183 @@
        "essentialQuestions": []
       }
      ],
-     "vocab": [],
+     "vocab": [
+      {
+       "term": "surplus",
+       "def": "extra food beyond what the farmers themselves need to survive."
+      },
+      {
+       "term": "specialization",
+       "def": "doing one job full-time (potter, priest, soldier) because someone else grows your food."
+      },
+      {
+       "term": "irrigation",
+       "def": "canals and ditches that carry river water to fields."
+      },
+      {
+       "term": "civilization",
+       "def": "a complex society with cities, surplus, specialized jobs, social classes, government, and writing."
+      },
+      {
+       "term": "Mesopotamia",
+       "def": "Greek for “the land between the rivers” — the Tigris and Euphrates."
+      },
+      {
+       "term": "city-state",
+       "def": "a city plus its surrounding farmland, run as its own independent country."
+      },
+      {
+       "term": "levee",
+       "def": "an earth wall built to hold back floodwater."
+      },
+      {
+       "term": "ziggurat",
+       "def": "a stepped temple-tower at a city's center — home of its patron god, and of its granary."
+      },
+      {
+       "term": "cuneiform",
+       "def": "“wedge-shaped” writing pressed into wet clay with a reed stylus — the world's first script."
+      },
+      {
+       "term": "pictograph",
+       "def": "an early sign that pictures the thing it means (a bull's head = ox)."
+      },
+      {
+       "term": "scribe",
+       "def": "a trained professional writer — one of the few who could read."
+      },
+      {
+       "term": "bureaucracy",
+       "def": "government run on records and officials rather than memory and trust."
+      },
+      {
+       "term": "lex talionis (Latin)",
+       "def": "“law of retaliation”: the harm you cause is done back to you — “an eye for an eye.”."
+      },
+      {
+       "term": "stele (STEE-lee)",
+       "def": "a tall carved stone monument set up in public."
+      },
+      {
+       "term": "epic",
+       "def": "a long poem about a hero's journey — Gilgamesh is the world's first."
+      },
+      {
+       "term": "polytheism",
+       "def": "belief in many gods, each controlling part of nature (storms, rivers, sun)."
+      },
+      {
+       "term": "Uruk",
+       "def": "Gilgamesh's city — the same Uruk that wrote the barley receipts on Tuesday."
+      },
+      {
+       "term": "delta",
+       "def": "the fan of rich farmland where a river splits before reaching the sea."
+      },
+      {
+       "term": "inundation",
+       "def": "Egypt's yearly flood season (akhet) — it arrived ON SCHEDULE, every summer."
+      },
+      {
+       "term": "Hapi",
+       "def": "the god OF the flood itself — Egyptians prayed to the inundation."
+      },
+      {
+       "term": "corroborate",
+       "def": "to confirm one source's claim using a different source."
+      },
+      {
+       "term": "vizier",
+       "def": "the pharaoh's chief administrator — the man who makes the numbers work."
+      },
+      {
+       "term": "reliability",
+       "def": "how much a source can be trusted — and for which claims."
+      },
+      {
+       "term": "Ma'at",
+       "def": "truth, justice, and cosmic order — pictured as a feather."
+      },
+      {
+       "term": "Osiris",
+       "def": "god of the dead; judge of every soul."
+      },
+      {
+       "term": "Ammit",
+       "def": "the devourer — part crocodile, lion, and hippo — who eats hearts that fail the test."
+      },
+      {
+       "term": "mummification",
+       "def": "preserving the body for the afterlife; the HEART stays in (it gets weighed)."
+      },
+      {
+       "term": "hieroglyphs",
+       "def": "Egypt's sacred picture-script — unreadable to everyone on earth from c. 400 CE to 1822."
+      },
+      {
+       "term": "cartouche",
+       "def": "the oval ring drawn around a royal name."
+      },
+      {
+       "term": "inference",
+       "def": "a careful conclusion drawn from evidence — more than a guess, less than a fact."
+      },
+      {
+       "term": "undeciphered",
+       "def": "still unreadable — and no Rosetta Stone for it has ever been found."
+      },
+      {
+       "term": "oracle bone",
+       "def": "an ox shoulder-blade or turtle shell heated until it cracks — the cracks were read as answers from ancestors."
+      },
+      {
+       "term": "diviner",
+       "def": "the specialist who prepares the bone and poses the question."
+      },
+      {
+       "term": "charge",
+       "def": "the question put to the ancestors — often posed in a positive/negative pair."
+      },
+      {
+       "term": "verification",
+       "def": "the note added later recording what really happened."
+      },
+      {
+       "term": "synthesis",
+       "def": "pulling separate pieces of learning into one picture — today's whole job."
+      },
+      {
+       "term": "superlative",
+       "def": "a 'most' award — most durable, most equal, most mysterious."
+      },
+      {
+       "term": "pattern",
+       "def": "what repeats across all four cases — the thing the test loves to ask."
+      },
+      {
+       "term": "CRQ",
+       "def": "constructed-response question — the Regents' document-based short answers."
+      },
+      {
+       "term": "IDENTIFY",
+       "def": "name it precisely — who/what, with date and place. No analysis required."
+      },
+      {
+       "term": "EXPLAIN",
+       "def": "describe features AND cite the document's own language."
+      },
+      {
+       "term": "ANALYZE",
+       "def": "connect evidence to a bigger claim — here, an enduring issue."
+      }
+     ],
      "misconceptions": []
     }
    ],
    "counts": {
     "topics": 1,
     "lessons": 14,
-    "terms": 0
+    "terms": 42
    }
   },
   {
@@ -1025,14 +1420,219 @@
        "essentialQuestions": []
       }
      ],
-     "vocab": [],
+     "vocab": [
+      {
+       "term": "belief system",
+       "def": "a shared set of answers to life's biggest questions that guides how a group lives."
+      },
+      {
+       "term": "neutral framing",
+       "def": "describing what a tradition teaches without judging whether it is true."
+      },
+      {
+       "term": "Vedas",
+       "def": "the oldest sacred texts of Hinduism, chanted by priests."
+      },
+      {
+       "term": "varna",
+       "def": "one of the four ranked social classes of Vedic India."
+      },
+      {
+       "term": "Brahmin",
+       "def": "the priest class — composers and reciters of the Vedas."
+      },
+      {
+       "term": "hierarchy",
+       "def": "a ranking in which each level outranks the one below."
+      },
+      {
+       "term": "dharma",
+       "def": "the duty that comes with your place in life."
+      },
+      {
+       "term": "karma",
+       "def": "the moral consequences of your actions, carried into the next life."
+      },
+      {
+       "term": "moksha",
+       "def": "release from the cycle — the final goal."
+      },
+      {
+       "term": "atman",
+       "def": "the soul, which the Gita teaches never dies."
+      },
+      {
+       "term": "dukkha",
+       "def": "suffering — the problem the Buddha set out to solve."
+      },
+      {
+       "term": "craving",
+       "def": "the thirst for more that the sermon names as suffering's cause."
+      },
+      {
+       "term": "nirvana",
+       "def": "the end of craving — release from the cycle."
+      },
+      {
+       "term": "sangha",
+       "def": "the community of followers — open to ANY caste."
+      },
+      {
+       "term": "Ashoka",
+       "def": "Maurya emperor (r. c. 268–232 BCE) who embraced Buddhism after a bloody war."
+      },
+      {
+       "term": "edict",
+       "def": "a ruler's public order — Ashoka's were carved in stone."
+      },
+      {
+       "term": "diffusion",
+       "def": "the spread of ideas from place to place."
+      },
+      {
+       "term": "reform movement",
+       "def": "an effort to change a tradition from INSIDE it."
+      },
+      {
+       "term": "classification",
+       "def": "the historian's act of sorting — our categories, not the past's."
+      },
+      {
+       "term": "samsara",
+       "def": "the rebirth cycle BOTH traditions seek to escape."
+      },
+      {
+       "term": "Warring States",
+       "def": "centuries of Chinese civil war (the crisis all three schools answer)."
+      },
+      {
+       "term": "civil service exam",
+       "def": "the test on Confucian texts that staffed China's government."
+      },
+      {
+       "term": "the Tao (Dao)",
+       "def": "'the Way' — the natural flow of the universe."
+      },
+      {
+       "term": "paradox",
+       "def": "a statement that seems wrong but carries truth."
+      },
+      {
+       "term": "Laozi",
+       "def": "the traditional author ('Old Master'), c. 6th–4th century BCE."
+      },
+      {
+       "term": "Legalism",
+       "def": "order through strict law, surveillance, and harsh punishment."
+      },
+      {
+       "term": "Qin Shi Huangdi",
+       "def": "the 'First Emperor' — unified China in 221 BCE under Legalist policy."
+      },
+      {
+       "term": "covenant",
+       "def": "a binding two-way promise — both sides owe something."
+      },
+      {
+       "term": "Torah",
+       "def": "the first five books of the Hebrew Bible — Judaism's core scripture."
+      },
+      {
+       "term": "Exodus",
+       "def": "the departure from slavery in Egypt (tradition places it c. 1300 BCE)."
+      },
+      {
+       "term": "diaspora",
+       "def": "the scattering of a people away from their homeland."
+      },
+      {
+       "term": "Second Temple",
+       "def": "the center of Jewish worship in Jerusalem — destroyed by Rome, 70 CE."
+      },
+      {
+       "term": "rabbi",
+       "def": "a teacher of Torah and Jewish law (not a priest)."
+      },
+      {
+       "term": "synagogue",
+       "def": "a local house of prayer and study — any town can have one."
+      },
+      {
+       "term": "Gospel",
+       "def": "one of the four accounts of Jesus's life — Christian scripture."
+      },
+      {
+       "term": "Edict of Milan",
+       "def": "313 CE — the order that made Christianity legal."
+      },
+      {
+       "term": "missionary",
+       "def": "someone who travels to spread a faith — like Paul."
+      },
+      {
+       "term": "Qur'an",
+       "def": "Islam's scripture — Muslims believe it records God's revelation to the Prophet Muhammad."
+      },
+      {
+       "term": "caliph",
+       "def": "the leader who succeeded the Prophet as head of the community."
+      },
+      {
+       "term": "metaphysics",
+       "def": "beliefs about what reality IS — gods, souls, what happens after death."
+      },
+      {
+       "term": "jigsaw",
+       "def": "you master one piece; your home group needs you for it."
+      },
+      {
+       "term": "Mandate of Heaven",
+       "def": "China: Heaven backs only the virtuous ruler — and can withdraw its backing."
+      },
+      {
+       "term": "inscription",
+       "def": "text carved onto a monument — built to be seen."
+      },
+      {
+       "term": "CRQ",
+       "def": "constructed-response question — short written answers built on documents."
+      },
+      {
+       "term": "historical context",
+       "def": "what was happening when and where the document was made."
+      },
+      {
+       "term": "sourcing",
+       "def": "using WHO made it, for WHOM, and WHY to weigh a document."
+      },
+      {
+       "term": "rubric",
+       "def": "the printed rules the grader scores you by — today you hold them first."
+      },
+      {
+       "term": "enduring issue",
+       "def": "a challenge or problem debated across time that societies keep trying to address."
+      },
+      {
+       "term": "HAPP-E",
+       "def": "the document ritual: Historical context · Audience · Point of view · Purpose — then E: which Enduring issue?."
+      },
+      {
+       "term": "persistence",
+       "def": "the issue keeps RETURNING across eras — not just 'it mattered once.'."
+      },
+      {
+       "term": "thesis",
+       "def": "your claim — here, the issue you name and promise to prove."
+      }
+     ],
      "misconceptions": []
     }
    ],
    "counts": {
     "topics": 1,
     "lessons": 18,
-    "terms": 0
+    "terms": 51
    }
   },
   {
@@ -1645,14 +2245,407 @@
        }
       }
      ],
-     "vocab": [],
+     "vocab": [
+      {
+       "term": "classical civilization",
+       "def": "a large, organized state of c. 600 BCE–600 CE whose ideas still shape the world."
+      },
+      {
+       "term": "golden age",
+       "def": "a stretch of peace and wealth when art, science, and ideas leap forward."
+      },
+      {
+       "term": "citizenship",
+       "def": "holding a SHARE of power in your state — this unit's key word."
+      },
+      {
+       "term": "forecast",
+       "def": "a prediction you can check against the record."
+      },
+      {
+       "term": "polis (pl. poleis)",
+       "def": "a Greek city-state — a city and its countryside ruling itself."
+      },
+      {
+       "term": "citizen",
+       "def": "a member who holds a SHARE of the state's power — not just a resident."
+      },
+      {
+       "term": "counterfactual",
+       "def": "a what-if test: remove one cause and see what disappears with it."
+      },
+      {
+       "term": "Aegean",
+       "def": "the island-filled sea between Greece and Asia Minor."
+      },
+      {
+       "term": "direct democracy",
+       "def": "citizens vote on laws themselves — no representatives (Athens)."
+      },
+      {
+       "term": "oligarchy",
+       "def": "rule by a few (Sparta's two kings + council + five ephors)."
+      },
+      {
+       "term": "agoge",
+       "def": "Sparta's state training system — barracks from age seven."
+      },
+      {
+       "term": "helot",
+       "def": "a conquered Greek enslaved by Sparta to farm its land — helots outnumbered Spartans roughly 7 to 1."
+      },
+      {
+       "term": "metic",
+       "def": "a free foreign-born resident of Athens — works, pays taxes, never votes."
+      },
+      {
+       "term": "Assembly (ekklesia)",
+       "def": "the meeting of citizens that voted Athens' laws — on a hill called the Pnyx."
+      },
+      {
+       "term": "citizenship law of 451 BCE",
+       "def": "Pericles' own rule: BOTH your parents must be citizen-born."
+      },
+      {
+       "term": "funeral oration",
+       "def": "a speech honoring the war dead — Athens' proudest portrait of itself."
+      },
+      {
+       "term": "stress test",
+       "def": "deliberately loading a system to find out what breaks it."
+      },
+      {
+       "term": "Delian League",
+       "def": "the anti-Persia alliance Athens led — and slowly turned into an Athenian empire."
+      },
+      {
+       "term": "root cause",
+       "def": "the underlying flaw behind a failure — not the first thing that visibly snapped."
+      },
+      {
+       "term": "Chaeronea (338 BCE)",
+       "def": "the battle where Macedon ended the free polis era."
+      },
+      {
+       "term": "Hellenistic",
+       "def": "the 300-year blend of Greek + Persian + Egyptian + Indian culture after Alexander — Greek-ISH, not Greek."
+      },
+      {
+       "term": "cultural diffusion",
+       "def": "ideas and styles spreading between peoples — the unit's first big case of it."
+      },
+      {
+       "term": "Diadochi",
+       "def": "Alexander's generals, who carved up the empire after 323 BCE."
+      },
+      {
+       "term": "hybrid",
+       "def": "a thing made of two streams — the lab's word."
+      },
+      {
+       "term": "republic",
+       "def": "a state whose leaders are elected to act for the citizens — res publica, “the public thing.”."
+      },
+      {
+       "term": "consul",
+       "def": "one of TWO chief executives, elected for ONE year — each can veto the other."
+      },
+      {
+       "term": "Senate",
+       "def": "~300 ex-officials who advise and hold the treasury — the experienced few."
+      },
+      {
+       "term": "tribune / veto",
+       "def": "plebeian officers whose word “I forbid” (veto) stops any harmful act."
+      },
+      {
+       "term": "prior art",
+       "def": "earlier inventions a patent examiner compares a new claim against."
+      },
+      {
+       "term": "patricians",
+       "def": "Rome's hereditary aristocratic families — they held the offices, courts, and priesthoods."
+      },
+      {
+       "term": "plebeians",
+       "def": "everyone else — farmers, soldiers, craftsmen; the legions' backbone."
+      },
+      {
+       "term": "secession",
+       "def": "withdrawing as a group — the plebs' walkout weapon."
+      },
+      {
+       "term": "nexum",
+       "def": "debt-bondage: a defaulting debtor could be bound into servitude."
+      },
+      {
+       "term": "leverage",
+       "def": "what makes the other side need a deal."
+      },
+      {
+       "term": "Rubicon",
+       "def": "the stream Caesar crossed with his army in 49 BCE — the act of civil war; still our phrase for the point of no return."
+      },
+      {
+       "term": "princeps",
+       "def": "“first citizen” — Augustus' careful title; not king, not dictator."
+      },
+      {
+       "term": "auctoritas / potestas",
+       "def": "prestige-influence vs official legal power — HIS distinction, and the key to the trick."
+      },
+      {
+       "term": "critical edition",
+       "def": "a text printed WITH the footnotes that keep it honest."
+      },
+      {
+       "term": "Pax Romana",
+       "def": "“Roman Peace” — c. 200 years of relative stability across the empire under one-man rule, beginning with Augustus."
+      },
+      {
+       "term": "aqueduct",
+       "def": "an engineered channel that carries water, often over arched bridges, into a city."
+      },
+      {
+       "term": "infrastructure",
+       "def": "the roads, water systems, and public works that let a society and its government function."
+      },
+      {
+       "term": "cost-benefit",
+       "def": "weighing what a thing gives (benefit) against what it takes (cost), including who pays."
+      },
+      {
+       "term": "historiography",
+       "def": "the study of HOW history is written and argued — why historians disagree about the same event."
+      },
+      {
+       "term": "multi-causal",
+       "def": "having many causes that work together; the opposite of “one thing did it.”."
+      },
+      {
+       "term": "secondary source",
+       "def": "an account written LATER by someone who studied the event (e.g., a modern historian), not a witness."
+      },
+      {
+       "term": "debasement",
+       "def": "lowering the precious-metal content of coins, which causes inflation (prices rise)."
+      },
+      {
+       "term": "Maurya Empire",
+       "def": "the empire (c. 321–185 BCE) that first unified most of the Indian subcontinent."
+      },
+      {
+       "term": "Ashoka",
+       "def": "Maurya's third and greatest emperor (r. c. 268–232 BCE); conquered Kalinga, then converted to Buddhism."
+      },
+      {
+       "term": "Dhamma (Dharma)",
+       "def": "moral law / right conduct; Ashoka's policy of ruling by righteousness, not force."
+      },
+      {
+       "term": "edict",
+       "def": "an official order; Ashoka carved his on rocks and pillars across the empire for all to read."
+      },
+      {
+       "term": "Gupta Empire",
+       "def": "the empire (c. 320–550 CE) of northern India's “golden age” of math, science, art, and literature."
+      },
+      {
+       "term": "corroborate",
+       "def": "to confirm a claim with a SECOND, independent source."
+      },
+      {
+       "term": "pilgrim",
+       "def": "a religious traveler; Faxian came to India to collect Buddhist texts."
+      },
+      {
+       "term": "Qin Dynasty",
+       "def": "the dynasty (221–206 BCE) that first unified China under one emperor."
+      },
+      {
+       "term": "Qin Shi Huangdi",
+       "def": "the “First Emperor”; unified China by force and ruled by Legalism."
+      },
+      {
+       "term": "Legalism",
+       "def": "a philosophy that people are selfish and must be controlled by strict laws and harsh punishments."
+      },
+      {
+       "term": "autopsy",
+       "def": "an examination after death to find the cause; here, the cause of a dynasty's death."
+      },
+      {
+       "term": "Han Dynasty",
+       "def": "the dynasty (206 BCE–220 CE) that kept China's unity but ruled by Confucian values, not fear."
+      },
+      {
+       "term": "civil service",
+       "def": "the government officials who run an empire; the Han chose them increasingly by merit/exam."
+      },
+      {
+       "term": "merit",
+       "def": "selection by ability or achievement rather than by birth or wealth."
+      },
+      {
+       "term": "Silk Road",
+       "def": "the trade routes linking China to Central Asia, India, and the Mediterranean, opened after Zhang Qian."
+      },
+      {
+       "term": "city-state",
+       "def": "an independent city and its surrounding land — the Maya had dozens, with no single emperor over all."
+      },
+      {
+       "term": "proxy",
+       "def": "indirect evidence scientists use to reconstruct the past (tree pollen, lake mud, carved dates)."
+      },
+      {
+       "term": "deforestation",
+       "def": "large-scale clearing of forests, which can dry out and damage the land."
+      },
+      {
+       "term": "curator",
+       "def": "the person who chooses what a museum displays and writes the labels that explain it."
+      },
+      {
+       "term": "SPICE",
+       "def": "the lenses historians use: Social/cultural · Political · Intellectual-tech · economiC · Environment-geography."
+      },
+      {
+       "term": "object label",
+       "def": "the short museum card next to an artifact saying what it is and why it matters."
+      },
+      {
+       "term": "docent",
+       "def": "a museum guide who leads visitors through an exhibit and answers their questions."
+      },
+      {
+       "term": "gallery walk",
+       "def": "moving from exhibit to exhibit, viewing and evaluating each in turn."
+      },
+      {
+       "term": "in role",
+       "def": "staying in character as the docent/curator while answering questions."
+      },
+      {
+       "term": "evidence",
+       "def": "the artifacts and facts that PROVE a claim — what your vote must be based on."
+      },
+      {
+       "term": "collapse",
+       "def": "the rapid loss of a state's population, power, and complexity — not always a single sudden event."
+      },
+      {
+       "term": "comorbidity",
+       "def": "a condition that exists ALONGSIDE others; in medicine, problems a patient has at the same time."
+      },
+      {
+       "term": "Mandate of Heaven",
+       "def": "the Chinese idea that Heaven gives a dynasty the right to rule — and takes it away when it fails."
+      },
+      {
+       "term": "manner of death",
+       "def": "the medical examiner's ruling on HOW a death happened: natural, homicide, or self-inflicted."
+      },
+      {
+       "term": "mystery document",
+       "def": "a source on the Regents with no title — you must figure out what it is from the words alone."
+      },
+      {
+       "term": "tell",
+       "def": "the detail (a word, a name, an idea) that gives a source away."
+      },
+      {
+       "term": "stimulus MCQ",
+       "def": "a multiple-choice question built on a short quoted source you read first."
+      },
+      {
+       "term": "distractor",
+       "def": "a wrong answer choice, written to look tempting."
+      },
+      {
+       "term": "CRQ",
+       "def": "Constructed Response Question — a short written answer based on documents."
+      },
+      {
+       "term": "command verb",
+       "def": "the verb that tells you what to DO: identify, explain, compare."
+      },
+      {
+       "term": "relay",
+       "def": "a team race where each runner runs one leg, then passes the baton."
+      },
+      {
+       "term": "leg",
+       "def": "one stage of the relay — here, one type of review (Map · Who-Said-It · Cause/Effect · Lightning)."
+      },
+      {
+       "term": "baton time",
+       "def": "your team's total time + accuracy across all four legs."
+      },
+      {
+       "term": "cross-unit",
+       "def": "connecting two different units of study — here, Belief Systems and Classical Power."
+      },
+      {
+       "term": "synthesis",
+       "def": "combining evidence from more than one source into a single argument."
+      },
+      {
+       "term": "legitimize",
+       "def": "to make power look RIGHTFUL — to give a ruler a reason to be obeyed."
+      },
+      {
+       "term": "span",
+       "def": "the part of a bridge between the two piers — here, the claim that holds across both documents."
+      },
+      {
+       "term": "legitimacy",
+       "def": "the accepted RIGHT to rule — why people obey a government without being forced."
+      },
+      {
+       "term": "official belief system",
+       "def": "a religion or philosophy a state adopts and promotes as its own."
+      },
+      {
+       "term": "ledger",
+       "def": "an accounting record of what was spent and what was gained — a balance sheet."
+      },
+      {
+       "term": "reflection",
+       "def": "looking back honestly at your own learning to plan what's next."
+      },
+      {
+       "term": "stamina",
+       "def": "the endurance to keep your quality up across MORE than one CRQ."
+      },
+      {
+       "term": "lap",
+       "def": "one timed run — here, one full CRQ written against the clock."
+      },
+      {
+       "term": "pit stop",
+       "def": "a short, deliberate stop to fix what's slowing you down before the race continues."
+      },
+      {
+       "term": "through-line",
+       "def": "the single idea that connects everything from the start of the story to the end."
+      },
+      {
+       "term": "director's commentary",
+       "def": "when a filmmaker talks over the film, pointing out what each scene means."
+      },
+      {
+       "term": "trailer",
+       "def": "a short preview of what's coming next — here, Unit 5 in January."
+      }
+     ],
      "misconceptions": []
     }
    ],
    "counts": {
     "topics": 1,
     "lessons": 27,
-    "terms": 0
+    "terms": 98
    }
   },
   {
@@ -1981,14 +2974,255 @@
        "essentialQuestions": []
       }
      ],
-     "vocab": [],
+     "vocab": [
+      {
+       "term": "postclassical",
+       "def": "the era c. 500–1450 CE, after the classical empires, when long-distance networks linked Afro-Eurasia."
+      },
+      {
+       "term": "interregional",
+       "def": "between regions — trade that crosses from one part of the world to another."
+      },
+      {
+       "term": "accelerator",
+       "def": "something that speeds a process up. Here: a cause that made trade grow faster."
+      },
+      {
+       "term": "profit",
+       "def": "the money left after costs — what the merchant keeps."
+      },
+      {
+       "term": "Silk Roads",
+       "def": "the overland routes linking China, Central Asia, Persia, and the Mediterranean."
+      },
+      {
+       "term": "value added",
+       "def": "the increase in a good's worth at each step of production or transport."
+      },
+      {
+       "term": "luxury good",
+       "def": "a high-value, low-weight item (silk, spice) — worth carrying far; opposite of bulk goods (grain, timber)."
+      },
+      {
+       "term": "monsoon",
+       "def": "a seasonal wind that reverses direction twice a year over the Indian Ocean."
+      },
+      {
+       "term": "dhow",
+       "def": "an Arab sailing ship with a triangular (lateen) sail that can tack against the wind."
+      },
+      {
+       "term": "almanac",
+       "def": "a calendar of dates and seasonal events used for planning."
+      },
+      {
+       "term": "diaspora",
+       "def": "a community of merchants or migrants settled far from their homeland."
+      },
+      {
+       "term": "Trans-Saharan trade",
+       "def": "the caravan trade across the Sahara, exchanging North African SALT for West African GOLD."
+      },
+      {
+       "term": "mithqal",
+       "def": "a unit of gold (about 4.25 grams) used as money."
+      },
+      {
+       "term": "caravan",
+       "def": "a group of merchants and pack animals traveling together for safety."
+      },
+      {
+       "term": "medium of exchange",
+       "def": "anything used as money — here, salt itself."
+      },
+      {
+       "term": "Byzantine Empire",
+       "def": "the eastern half of the Roman Empire, capital Constantinople; survived until 1453."
+      },
+      {
+       "term": "Constantinople",
+       "def": "the Byzantine capital on the Bosporus strait (today Istanbul)."
+      },
+      {
+       "term": "strait",
+       "def": "a narrow channel of water connecting two seas — a natural chokepoint for trade."
+      },
+      {
+       "term": "keystone",
+       "def": "the one piece that, if removed, makes the whole structure collapse."
+      },
+      {
+       "term": "technology diffusion",
+       "def": "the spread of an invention from where it was made to other places that adopt it."
+      },
+      {
+       "term": "compass",
+       "def": "a magnetized needle that points north–south, used to steer without landmarks."
+      },
+      {
+       "term": "astrolabe",
+       "def": "a star-and-sun instrument used to find latitude at sea."
+      },
+      {
+       "term": "lateen sail",
+       "def": "a triangular sail that lets a ship sail against the wind."
+      },
+      {
+       "term": "chattel slavery",
+       "def": "a system that treats an enslaved person as property that can be bought and sold."
+      },
+      {
+       "term": "definition",
+       "def": "a precise statement of what a term means — sharp enough to tell things apart."
+      },
+      {
+       "term": "corroborate",
+       "def": "to confirm a claim with a second, independent source."
+      },
+      {
+       "term": "triangulate",
+       "def": "to check a claim against two or more sources to locate the truth."
+      },
+      {
+       "term": "single witness",
+       "def": "a claim only one source makes — believable, but unconfirmed."
+      },
+      {
+       "term": "reliability",
+       "def": "how much we can trust a source — which depends on the question we ask."
+      },
+      {
+       "term": "Swahili coast",
+       "def": "the East African trading coast (Kilwa, Mombasa, Zanzibar) linked to the Indian Ocean network."
+      },
+      {
+       "term": "Zanj",
+       "def": "the medieval Arabic name for the peoples of the East African coast."
+      },
+      {
+       "term": "cartouche",
+       "def": "a sealed frame around an important inscription — here, a box that seals one proven inference."
+      },
+      {
+       "term": "inference",
+       "def": "a conclusion you reason out from evidence in the text."
+      },
+      {
+       "term": "Taghaza",
+       "def": "Saharan salt-mining town where salt was cut in slabs."
+      },
+      {
+       "term": "Bambuk / Wangara",
+       "def": "West African goldfields whose location traders kept secret."
+      },
+      {
+       "term": "Timbuktu",
+       "def": "Mali trading and learning city near the Niger River."
+      },
+      {
+       "term": "Ghana (c.700",
+       "def": "1240) – early West African empire that taxed the gold-salt trade."
+      },
+      {
+       "term": "Mali (c.1235",
+       "def": "1670) – larger successor empire; capital Niani; cities Timbuktu & Djenné."
+      },
+      {
+       "term": "al-Bakri",
+       "def": "Muslim scholar in Córdoba (Spain) who described Ghana from travelers' reports."
+      },
+      {
+       "term": "tribute / tax",
+       "def": "payment a ruler collects; here, duties on trade crossing the empire."
+      },
+      {
+       "term": "secondhand source",
+       "def": "an account by someone who did not witness the events directly."
+      },
+      {
+       "term": "soft power",
+       "def": "getting what you want through reputation and attraction, not force."
+      },
+      {
+       "term": "inflation",
+       "def": "a fall in the value of money when too much of it floods a market."
+      },
+      {
+       "term": "hajj",
+       "def": "the Muslim pilgrimage to Mecca; one of the Five Pillars."
+      },
+      {
+       "term": "Catalan Atlas",
+       "def": "a 1375 European world map that pictured Mansa Musa with gold."
+      },
+      {
+       "term": "Osman I",
+       "def": "founder of the Ottoman state, c. 1299, in Anatolia."
+      },
+      {
+       "term": "Bosporus",
+       "def": "narrow strait at Constantinople linking the Black Sea and Mediterranean."
+      },
+      {
+       "term": "chokepoint",
+       "def": "a narrow passage that all traffic must pass through — easy to control and tax."
+      },
+      {
+       "term": "Janissary corps",
+       "def": "elite Ottoman infantry, recruited and trained by the state."
+      },
+      {
+       "term": "network control",
+       "def": "the ability to tax, protect, and profit from a trade route."
+      },
+      {
+       "term": "merchant house",
+       "def": "your team — a trading family with a home corridor and special strengths."
+      },
+      {
+       "term": "Prestige",
+       "def": "the score: coins earned from trade PLUS points for spreading ideas/faith."
+      },
+      {
+       "term": "Diffusion track",
+       "def": "carry an idea or faith (paper, the compass, Islam) for extra Prestige."
+      },
+      {
+       "term": "chokepoint toll",
+       "def": "the fee you pay to pass Constantinople after the Ottoman 1453 event."
+      },
+      {
+       "term": "cultural diffusion",
+       "def": "the spread of ideas, beliefs, technology, and goods from one culture to another."
+      },
+      {
+       "term": "CRQ",
+       "def": "Constructed-Response Question — short documents + scaffolded questions."
+      },
+      {
+       "term": "on-task vs trap",
+       "def": "evidence that actually answers the prompt vs evidence that looks right but doesn't fit."
+      },
+      {
+       "term": "network",
+       "def": "a connected system of routes — goods and ideas move across the whole, not just one road."
+      },
+      {
+       "term": "connection",
+       "def": "a link between two parts of the system (e.g., Islam moving Trans-Saharan into Mali)."
+      },
+      {
+       "term": "corridor",
+       "def": "one of the four major routes: Silk Road · Indian Ocean · Trans-Saharan · Mediterranean."
+      }
+     ],
      "misconceptions": []
     }
    ],
    "counts": {
     "topics": 1,
     "lessons": 18,
-    "terms": 0
+    "terms": 60
    }
   },
   {
@@ -2201,7 +3435,276 @@
        "essentialQuestions": []
       }
      ],
-     "vocab": [],
+     "vocab": [
+      {
+       "term": "fragmentation",
+       "def": "the breaking of one large unit into many small, separate pieces."
+      },
+      {
+       "term": "Byzantine Empire",
+       "def": "the Eastern Roman Empire, capital Constantinople; it outlived the West by ~1,000 years."
+      },
+      {
+       "term": "centralized",
+       "def": "run from one center by one government — the opposite of fragmented."
+      },
+      {
+       "term": "codify",
+       "def": "to gather laws into one written, official code (as Justinian did)."
+      },
+      {
+       "term": "feudalism",
+       "def": "the medieval system of exchanging land and protection for loyalty and military service."
+      },
+      {
+       "term": "vassal",
+       "def": "a noble who receives land (a fief) from a lord in return for service and loyalty."
+      },
+      {
+       "term": "fief",
+       "def": "land granted by a lord to a vassal in exchange for service."
+      },
+      {
+       "term": "manorialism",
+       "def": "the economic system of the self-sufficient manor, where serfs farm a lord's land in return for protection."
+      },
+      {
+       "term": "Nika riot (532)",
+       "def": "a deadly revolt in Constantinople that nearly toppled Justinian; Theodora's stand helped save his throne."
+      },
+      {
+       "term": "reliability",
+       "def": "how much we can trust a source — separate from whether it is for or against someone."
+      },
+      {
+       "term": "motive",
+       "def": "the reason an author writes; it can shape (and bias) what they say."
+      },
+      {
+       "term": "Secret History",
+       "def": "Procopius's hidden, hostile book about the same rulers he praised in public."
+      },
+      {
+       "term": "Hagia Sophia",
+       "def": "the vast domed church built by Justinian (537); later a mosque, now a monument — still standing."
+      },
+      {
+       "term": "Cyrillic",
+       "def": "the alphabet the Orthodox Church spread to Slavic peoples; still used by ~250 million."
+      },
+      {
+       "term": "Orthodox Christianity",
+       "def": "the Eastern Christian church led by patriarchs, centered on Constantinople."
+      },
+      {
+       "term": "durability",
+       "def": "how long something lasts; here, why some achievements outlive the empire that made them."
+      },
+      {
+       "term": "caliphate",
+       "def": "the state led by a caliph, the political successor to leadership of the Muslim community after 632 CE."
+      },
+      {
+       "term": "dhimmi",
+       "def": "a “protected person” — a non-Muslim (often Christian or Jewish) living under Muslim rule with defined rights and duties."
+      },
+      {
+       "term": "jizya",
+       "def": "a tax paid by dhimmis in exchange for protection and exemption from military service."
+      },
+      {
+       "term": "House of Wisdom",
+       "def": "the great Abbasid center of learning in Baghdad where scholars of many faiths translated and advanced knowledge."
+      },
+      {
+       "term": "succession",
+       "def": "who takes over leadership after a leader dies."
+      },
+      {
+       "term": "caliph",
+       "def": "a chosen political successor leading the Muslim community after 632."
+      },
+      {
+       "term": "imam",
+       "def": "in Shia tradition, the rightful spiritual-political leader from the Prophet's family."
+      },
+      {
+       "term": "interpretation",
+       "def": "how people understand the meaning of a text; the same words can be read in more than one way."
+      },
+      {
+       "term": "schism",
+       "def": "a permanent split within a religion or church."
+      },
+      {
+       "term": "excommunication",
+       "def": "an official act cutting someone off from the Church."
+      },
+      {
+       "term": "patriarch",
+       "def": "the chief bishop of the Eastern (Orthodox) Church, based in Constantinople."
+      },
+      {
+       "term": "Pope",
+       "def": "the chief bishop of the Western (Roman Catholic) Church, based in Rome."
+      },
+      {
+       "term": "Crusades",
+       "def": "a series of religious wars (from 1095) in which European Christians sought to take the Holy Land from Muslim rule."
+      },
+      {
+       "term": "framing",
+       "def": "the way a source presents an event — the words and details it chooses — which shapes how we judge it."
+      },
+      {
+       "term": "Franks",
+       "def": "the term Muslim writers used for the Western European Crusaders."
+      },
+      {
+       "term": "indulgence",
+       "def": "the promise of forgiveness of sins Urban II offered to those who joined the Crusade."
+      },
+      {
+       "term": "Delhi Sultanate",
+       "def": "a Muslim-ruled empire in northern India (c. 1206–1526) governing a largely Hindu population."
+      },
+      {
+       "term": "Sikhism",
+       "def": "a religion founded by Guru Nanak in the Punjab around 1500."
+      },
+      {
+       "term": "syncretism",
+       "def": "the blending of ideas or beliefs from different traditions into something new."
+      },
+      {
+       "term": "Guru Granth Sahib",
+       "def": "the sacred scripture of Sikhism, honored by Sikhs as a living Guru."
+      },
+      {
+       "term": "Tang & Song",
+       "def": "two Chinese dynasties (618–907 and 960–1279) seen as a golden age of stability, trade, and invention."
+      },
+      {
+       "term": "civil-service exam",
+       "def": "a merit test used to pick government officials, strengthening the emperor's bureaucracy."
+      },
+      {
+       "term": "impact",
+       "def": "the effect something has — here, how far across the world and how long in time."
+      },
+      {
+       "term": "half-life",
+       "def": "how long something keeps having an effect; a long half-life means it still matters today."
+      },
+      {
+       "term": "shogun",
+       "def": "the real military ruler of Japan (the emperor stayed a figurehead)."
+      },
+      {
+       "term": "samurai",
+       "def": "warrior bound by loyalty and the bushido code."
+      },
+      {
+       "term": "selective borrowing",
+       "def": "taking only the parts of another culture that fit your needs."
+      },
+      {
+       "term": "Shinto",
+       "def": "Japan's native belief system, kept alongside imported Buddhism."
+      },
+      {
+       "term": "Pax Mongolica",
+       "def": "the “Mongol Peace,” c. 1250–1350: safe trade across Eurasia."
+      },
+      {
+       "term": "Yuan dynasty",
+       "def": "the Mongol dynasty that ruled China (Khubilai Khan)."
+      },
+      {
+       "term": "Yam",
+       "def": "the Mongol relay-station system that moved messengers and goods fast."
+      },
+      {
+       "term": "diffusion",
+       "def": "the spread of ideas, technology, or culture from one place to another."
+      },
+      {
+       "term": "Abbasid Golden Age",
+       "def": "c. 750–1258 flowering of learning centered on Baghdad."
+      },
+      {
+       "term": "movable type",
+       "def": "reusable single-character type for printing (Bi Sheng, c. 1040)."
+      },
+      {
+       "term": "Black Death",
+       "def": "the plague pandemic of 1346–1353 that killed perhaps 1/3 of Europe."
+      },
+      {
+       "term": "Yersinia pestis",
+       "def": "the bacterium that causes plague, spread by fleas on rats."
+      },
+      {
+       "term": "Caffa",
+       "def": "Black Sea trading port where the plague entered the Genoese network."
+      },
+      {
+       "term": "trade route",
+       "def": "the sea and land paths that carried goods — and disease."
+      },
+      {
+       "term": "contagion",
+       "def": "the spread of disease from person to person or place to place."
+      },
+      {
+       "term": "mortality rate",
+       "def": "the share of a population that dies in a given period."
+      },
+      {
+       "term": "Statute of Labourers",
+       "def": "English 1351 law trying to force wages back down."
+      },
+      {
+       "term": "serfdom",
+       "def": "the system binding peasants to a lord's land."
+      },
+      {
+       "term": "flagellants",
+       "def": "groups who whipped themselves to beg God's mercy."
+      },
+      {
+       "term": "social mobility",
+       "def": "the ability to move up (or down) in society's ranks."
+      },
+      {
+       "term": "quarantine",
+       "def": "isolating people for ~40 days to stop a disease (Italian: quaranta)."
+      },
+      {
+       "term": "faction",
+       "def": "a group within a community with its own interests."
+      },
+      {
+       "term": "Constructed Response Question (CRQ)",
+       "def": "short-answer questions based on documents (Regents Part 2)."
+      },
+      {
+       "term": "Enduring Issue",
+       "def": "a challenge that recurs across many times and places."
+      },
+      {
+       "term": "Plague of Justinian",
+       "def": "the 541–549 CE pandemic that struck the Byzantine Empire."
+      },
+      {
+       "term": "Impact of Interconnectedness",
+       "def": "how trade/contact links societies — for wealth AND disease."
+      },
+      {
+       "term": "EIE",
+       "def": "Enduring Issues Essay — define an issue, then show it across documents."
+      }
+     ],
      "misconceptions": []
     },
     {
@@ -2388,7 +3891,7 @@
    "counts": {
     "topics": 2,
     "lessons": 19,
-    "terms": 0
+    "terms": 67
    }
   },
   {
@@ -2429,7 +3932,200 @@
        "essentialQuestions": []
       }
      ],
-     "vocab": [],
+     "vocab": [
+      {
+       "term": "realm",
+       "def": "a large civilization or zone of states sharing a religion, culture, and way of governing."
+      },
+      {
+       "term": "Neo-Confucian",
+       "def": "the East-Asian revival of Confucian ideas (order, hierarchy, the scholar-official) under Ming China, Joseon Korea, Ashikaga Japan."
+      },
+      {
+       "term": "dar al-Islam",
+       "def": "“the lands of Islam” — the connected zone where Muslims shared law, language (Arabic), and hospitality."
+      },
+      {
+       "term": "fragmented",
+       "def": "broken into many small, separate, competing units (Europe in 1400)."
+      },
+      {
+       "term": "Renaissance",
+       "def": "“rebirth” — the revival of Greek/Roman art and learning in Italy, c. 1350–1550."
+      },
+      {
+       "term": "humanism",
+       "def": "a way of thinking that focused on human potential, achievement, and the classics — life on Earth, not only the afterlife."
+      },
+      {
+       "term": "city-state",
+       "def": "an independent city + its surrounding land that governs itself (Florence, Venice, Milan)."
+      },
+      {
+       "term": "patron",
+       "def": "a wealthy person who PAYS an artist to create a work (e.g., the Medici)."
+      },
+      {
+       "term": "printing press",
+       "def": "Gutenberg's machine (c. 1450) using movable metal type to print many identical pages quickly."
+      },
+      {
+       "term": "Northern Renaissance",
+       "def": "the Renaissance north of the Alps (Germany, the Netherlands, England) — more focused on religion and daily life than Italy's classical themes."
+      },
+      {
+       "term": "vernacular",
+       "def": "the everyday spoken language of a place (German, English) — not Latin."
+      },
+      {
+       "term": "force multiplier",
+       "def": "something that hugely increases the effect of an action — here, the press multiplies the reach of every idea."
+      },
+      {
+       "term": "Reformation",
+       "def": "the 1500s movement that protested practices in the Catholic Church and led to new (Protestant) churches."
+      },
+      {
+       "term": "indulgence",
+       "def": "a pardon the Church sold or granted to reduce punishment for sin."
+      },
+      {
+       "term": "Ninety-Five Theses",
+       "def": "Luther's 1517 list of complaints (theses) against the sale of indulgences."
+      },
+      {
+       "term": "grievance",
+       "def": "a complaint about something believed to be wrong or unfair."
+      },
+      {
+       "term": "predestination",
+       "def": "John Calvin's belief that God already decided, before birth, who would be saved."
+      },
+      {
+       "term": "Act of Supremacy",
+       "def": "the 1534 English law making the king (not the pope) head of the Church of England."
+      },
+      {
+       "term": "Anglican Church",
+       "def": "the Church of England, headed by the English monarch."
+      },
+      {
+       "term": "theology",
+       "def": "beliefs about God, faith, and salvation — as opposed to politics (power, money, rule)."
+      },
+      {
+       "term": "Counter-Reformation",
+       "def": "the Catholic Church's response to the Protestant Reformation (reform + fighting back)."
+      },
+      {
+       "term": "Council of Trent",
+       "def": "the 1545–1563 council that reformed Catholic practice AND reaffirmed Catholic doctrine."
+      },
+      {
+       "term": "Jesuits",
+       "def": "the Society of Jesus — a Catholic order of teachers and missionaries (founded 1540)."
+      },
+      {
+       "term": "Geocentric",
+       "def": "“Earth-centered.” The old view (Ptolemy, Aristotle) that the Sun and planets orbit a fixed Earth."
+      },
+      {
+       "term": "Heliocentric",
+       "def": "“Sun-centered.” Copernicus’s view that Earth and the planets orbit the Sun."
+      },
+      {
+       "term": "Authority",
+       "def": "Truth accepted because a trusted text or thinker (Bible, Aristotle) said so."
+      },
+      {
+       "term": "Empirical evidence",
+       "def": "Truth tested by observation, experiment, and measurement — “sense-experience.”."
+      },
+      {
+       "term": "Scientific method",
+       "def": "Asking a question, observing, testing a hypothesis, and reasoning from the results."
+      },
+      {
+       "term": "Tenochtitlan",
+       "def": "The Aztec (Mexica) capital, founded 1325 on an island in Lake Texcoco; ~200,000 people by 1519."
+      },
+      {
+       "term": "Chinampa",
+       "def": "“Floating garden” — an artificial farm plot built in the shallow lake, feeding the huge city."
+      },
+      {
+       "term": "Tribute",
+       "def": "Goods (food, cloth, feathers, gold) and captives that conquered peoples were forced to send the Aztecs."
+      },
+      {
+       "term": "Conquistador",
+       "def": "A Spanish soldier-conqueror; Bernal Díaz was one, marching with Hernán Cortés in 1519."
+      },
+      {
+       "term": "Point of view (POV)",
+       "def": "Whose perspective a source is told from — which shapes what it notices and what it leaves out."
+      },
+      {
+       "term": "Tawantinsuyu",
+       "def": "“The Four Parts Together” — the Inca name for their empire (1438–1533), centered on Cusco."
+      },
+      {
+       "term": "Qhapaq Ñan",
+       "def": "The 25,000-mile Inca royal road system crossing the Andes; “Qhapaq Ñan” = “the royal road.”."
+      },
+      {
+       "term": "Chasqui",
+       "def": "Relay runners stationed along the roads who carried messages and small goods at high speed."
+      },
+      {
+       "term": "Quipu",
+       "def": "A device of knotted, colored cords used to record numbers, taxes, and accounts without writing."
+      },
+      {
+       "term": "Mita",
+       "def": "A labor tax: each community owed the state a set period of work (roads, farms, building, army)."
+      },
+      {
+       "term": "Ming Dynasty",
+       "def": "Chinese dynasty (1368–1644) that overthrew Mongol rule and restored Han Chinese government."
+      },
+      {
+       "term": "Yongle Emperor",
+       "def": "Ming emperor (r. 1402–1424) who launched the treasure-fleet voyages to display Ming power."
+      },
+      {
+       "term": "Zheng He",
+       "def": "Muslim eunuch admiral who led seven huge voyages across the Indian Ocean (1405–1433)."
+      },
+      {
+       "term": "Tribute system",
+       "def": "Foreign states sent gifts and ‘audience’ to acknowledge China’s superiority; China gave gifts back."
+      },
+      {
+       "term": "Isolation",
+       "def": "Turning inward — halting the voyages, restricting sea trade, and focusing on internal/land defense."
+      },
+      {
+       "term": "Stimulus",
+       "def": "The quote, image, or caption a test question is built around; read it BEFORE the answer choices."
+      },
+      {
+       "term": "Distractor",
+       "def": "A wrong answer choice designed to look right — usually a true-but-irrelevant fact, or a unit mix-up."
+      },
+      {
+       "term": "CRQ",
+       "def": "Constructed-Response Question: short written answer in parts (identify / explain-using-the-doc / connect)."
+      },
+      {
+       "term": "HIPP",
+       "def": "History · Intended audience · Purpose · Point of view — the lens we use to read every source."
+      },
+      {
+       "term": "Tell",
+       "def": "A clue in a stimulus (a name, a date, a key word) that reveals which unit topic it is testing."
+      }
+     ],
      "misconceptions": []
     },
     {
@@ -2588,7 +4284,7 @@
    "counts": {
     "topics": 3,
     "lessons": 13,
-    "terms": 0
+    "terms": 48
    }
   },
   {
@@ -2727,14 +4423,127 @@
        "essentialQuestions": []
       }
      ],
-     "vocab": [],
+     "vocab": [
+      {
+       "term": "Caravel",
+       "def": "a small, fast Portuguese ship built for ocean voyages."
+      },
+      {
+       "term": "Astrolabe",
+       "def": "a tool that finds latitude (north–south position) by the sun or stars."
+      },
+      {
+       "term": "Cause",
+       "def": "a reason something happened — but not all causes are the same KIND."
+      },
+      {
+       "term": "Lateen sail",
+       "def": "a triangular sail that lets a ship sail against the wind."
+      },
+      {
+       "term": "Observation",
+       "def": "what a person actually SEES with their eyes."
+      },
+      {
+       "term": "Assumption",
+       "def": "what a person ADDS in their mind, beyond what they saw."
+      },
+      {
+       "term": "Taíno",
+       "def": "the Indigenous people of the Caribbean Columbus met in 1492."
+      },
+      {
+       "term": "Conquistador",
+       "def": "a Spanish soldier-adventurer who led conquests in the Americas."
+      },
+      {
+       "term": "Encomienda",
+       "def": "a Spanish system that forced Indigenous people to labor for a colonist."
+      },
+      {
+       "term": "Nahua",
+       "def": "the Indigenous people of central Mexico, including the Aztecs (Mexica)."
+      },
+      {
+       "term": "Columbian Exchange",
+       "def": "the movement of plants, animals, diseases & people between hemispheres after 1492."
+      },
+      {
+       "term": "Epidemic",
+       "def": "a disease that spreads rapidly through many people at once."
+      },
+      {
+       "term": "Immunity",
+       "def": "the body's built-up defense against a disease it has met before."
+      },
+      {
+       "term": "Genocide",
+       "def": "the deliberate destruction of a people; a term with a precise, serious meaning."
+      },
+      {
+       "term": "trans-Atlantic slave trade",
+       "def": "the forced shipment of enslaved Africans across the Atlantic to the Americas, c. 1501–1867."
+      },
+      {
+       "term": "Middle Passage",
+       "def": "the brutal ocean crossing from Africa to the Americas — the middle leg of the triangular trade."
+      },
+      {
+       "term": "plantation",
+       "def": "a large estate growing one cash crop (sugar, tobacco) with forced labor; the demand for that labor drove the trade."
+      },
+      {
+       "term": "testimony",
+       "def": "a firsthand account by someone who lived through an event — evidence a record of numbers cannot give."
+      },
+      {
+       "term": "internal slave trade",
+       "def": "enslavement within or near Africa itself — most often war captives kept on the continent."
+      },
+      {
+       "term": "trans-Saharan trade",
+       "def": "the routing of enslaved people NORTH across the Sahara to North Africa and the Middle East (c. 650–1900)."
+      },
+      {
+       "term": "joint-stock company",
+       "def": "a business owned by many investors who each buy a “share,” pooling money and splitting profit and risk."
+      },
+      {
+       "term": "share",
+       "def": "one unit of ownership in a company; the owner gets a fraction of the profit — and risks only what the share cost."
+      },
+      {
+       "term": "mercantilism",
+       "def": "the policy that a nation grows rich by maximizing exports, controlling colonies, and chartering monopoly companies."
+      },
+      {
+       "term": "VOC / EIC",
+       "def": "the Dutch (1602) and English (1600) East India Companies — the era's two great joint-stock trading powers."
+      },
+      {
+       "term": "CRQ",
+       "def": "Constructed-Response Question — a short-answer set on Regents documents, scored on a rubric (here, out of 6)."
+      },
+      {
+       "term": "causal spine",
+       "def": "a chain of links where each event is the CAUSE of the next — the backbone of this whole unit."
+      },
+      {
+       "term": "on-task evidence",
+       "def": "evidence that actually proves the link it is attached to — not just 'about the topic.'."
+      },
+      {
+       "term": "HAPP",
+       "def": "Historical context · Audience · Purpose · Point of view — the sourcing moves a CRQ rewards."
+      }
+     ],
      "misconceptions": []
     }
    ],
    "counts": {
     "topics": 1,
     "lessons": 11,
-    "terms": 0
+    "terms": 28
    }
   },
   {
@@ -3095,14 +4904,191 @@
        "essentialQuestions": []
       }
      ],
-     "vocab": [],
+     "vocab": [
+      {
+       "term": "Cause",
+       "def": "the event or condition that comes FIRST and makes something else happen."
+      },
+      {
+       "term": "Immediate cause",
+       "def": "the trigger — the spark right before the effect."
+      },
+      {
+       "term": "Comparison category",
+       "def": "the shared question you measure BOTH things against (e.g., “how leaders were chosen”)."
+      },
+      {
+       "term": "Difference",
+       "def": "a way the two are unlike — on the SAME category."
+      },
+      {
+       "term": "Apples-to-oranges",
+       "def": "the trap: describing each separately on different terms (not a real comparison)."
+      },
+      {
+       "term": "CCOT",
+       "def": "Change and Continuity Over Time — track ONE society across a span of years."
+      },
+      {
+       "term": "Change",
+       "def": "what was different by the end (then → now)."
+      },
+      {
+       "term": "Span",
+       "def": "the two time points you compare the society between."
+      },
+      {
+       "term": "Turning point",
+       "def": "an event after which the course of history was clearly different."
+      },
+      {
+       "term": "The hinge",
+       "def": "the event itself — what the door swings on."
+      },
+      {
+       "term": "Before / After",
+       "def": "the two states you contrast to prove the turn."
+      },
+      {
+       "term": "Significance",
+       "def": "WHY it mattered — what was no longer true afterward."
+      },
+      {
+       "term": "Stimulus",
+       "def": "the quote, map, or image a question is based on."
+      },
+      {
+       "term": "Stem",
+       "def": "the actual question being asked (decode it first)."
+      },
+      {
+       "term": "Distractor",
+       "def": "a wrong answer choice designed to trap you."
+      },
+      {
+       "term": "Key Idea",
+       "def": "the NYS Framework topics 9.1–9.9 the exam tests."
+      },
+      {
+       "term": "Item analysis",
+       "def": "studying WHICH questions you missed and WHY, to plan smarter studying."
+      },
+      {
+       "term": "Error type",
+       "def": "the REASON you missed it — content vs method."
+      },
+      {
+       "term": "Two-pass",
+       "def": "answer the easy ones first; circle hard ones and return."
+      },
+      {
+       "term": "Enduring issue",
+       "def": "a problem or challenge societies have faced and argued about across many eras and regions."
+      },
+      {
+       "term": "Thread",
+       "def": "the SAME issue showing up again and again across different times — not just one event."
+      },
+      {
+       "term": "Prescribed issue",
+       "def": "one of the five issues the exam lets you choose from."
+      },
+      {
+       "term": "Sourcing",
+       "def": "evaluating WHO made a document and why before trusting it."
+      },
+      {
+       "term": "Bias",
+       "def": "a slant caused by the author’s position or motive."
+      },
+      {
+       "term": "Reliability",
+       "def": "how trustworthy a source is for a specific question."
+      },
+      {
+       "term": "Human-environment interaction",
+       "def": "how people change the land and the land shapes people."
+      },
+      {
+       "term": "Movement",
+       "def": "the flow of goods, people, ideas, and disease across space."
+      },
+      {
+       "term": "Region",
+       "def": "a larger zone tied together by shared features."
+      },
+      {
+       "term": "Belief system",
+       "def": "an organized set of ideas about the meaning of life, right conduct, and the divine."
+      },
+      {
+       "term": "Cultural diffusion",
+       "def": "the spread of ideas/beliefs from one place to another (e.g., along trade routes)."
+      },
+      {
+       "term": "Classical civilization",
+       "def": "a powerful society (c. 600 BCE–600 CE) whose ideas/institutions shaped later cultures."
+      },
+      {
+       "term": "Golden age",
+       "def": "a peak period of peace, prosperity, and achievement."
+      },
+      {
+       "term": "Trade network",
+       "def": "a system of routes that moves goods, people, ideas, and disease between regions."
+      },
+      {
+       "term": "Inference",
+       "def": "a conclusion you reach from evidence (not stated directly)."
+      },
+      {
+       "term": "Pax Mongolica",
+       "def": "the 'Mongol Peace' — Mongol rule made Silk Road trade safer."
+      },
+      {
+       "term": "Bubonic plague",
+       "def": "the Black Death (c. 1347-51), which killed ~1/3 of Europe."
+      },
+      {
+       "term": "Humanism",
+       "def": "Renaissance focus on human potential, reason, and questioning authority."
+      },
+      {
+       "term": "Reformation",
+       "def": "the movement that split Western Christianity (Luther, 1517)."
+      },
+      {
+       "term": "Columbian Exchange",
+       "def": "the transfer of crops, animals, people, and disease after 1492."
+      },
+      {
+       "term": "Growth delta",
+       "def": "the CHANGE in your score from Mock 1 to Mock 2 (did you improve?)."
+      },
+      {
+       "term": "Per-unit delta",
+       "def": "where you gained or lost ground, unit by unit."
+      },
+      {
+       "term": "Targeted re-teaching",
+       "def": "the teacher re-teaches only the few items the most students still miss."
+      },
+      {
+       "term": "Attack order",
+       "def": "the sequence you tackle the exam sections in."
+      },
+      {
+       "term": "Point-grab",
+       "def": "moves that bank partial credit even when you're unsure."
+      }
+     ],
      "misconceptions": []
     }
    ],
    "counts": {
     "topics": 1,
     "lessons": 42,
-    "terms": 0
+    "terms": 44
    }
   }
  ],
