@@ -35,8 +35,10 @@
        "n": 1,
        "title": "Course launch + expectations",
        "date": "2026-09-01",
-       "overview": "First student day on official GNPS overview calendar.",
-       "objectives": [],
+       "overview": "What is history, how is it different from 'the past,' and why do historians ask questions before they trust a source?",
+       "objectives": [
+        "I can EXPLAIN what history is and DESCRIBE how a historian reads a source, using key vocabulary and sentence starters."
+       ],
        "essentialQuestions": [],
        "source": null
       },
@@ -44,20 +46,184 @@
        "n": 2,
        "title": "Social Pyramid (about-you) + draw map from memory",
        "date": "2026-09-02",
-       "overview": "Social Pyramid (about-you) + draw map from memory",
-       "objectives": [],
+       "overview": "What habits do historians use to read a source carefully and decide what it can prove?",
+       "objectives": [
+        "I can DESCRIBE the habits historians use and EXPLAIN how they read one source, using key vocabulary and sentence starters."
+       ],
        "essentialQuestions": [],
        "source": null
       }
      ],
-     "vocab": [],
+     "vocab": [
+      {
+       "term": "history",
+       "def": "the study of the past, told by people who look at evidence",
+       "pinyin": "lìshǐ",
+       "zh": "历史",
+       "es": "la historia"
+      },
+      {
+       "term": "the past",
+       "def": "everything that really happened before now",
+       "pinyin": "guòqù",
+       "zh": "过去",
+       "es": "el pasado"
+      },
+      {
+       "term": "historian",
+       "def": "a person who studies and writes about the past",
+       "pinyin": "lìshǐ xuéjiā",
+       "zh": "历史学家",
+       "es": "el historiador"
+      },
+      {
+       "term": "evidence",
+       "def": "facts or objects that show something is true",
+       "pinyin": "zhèngjù",
+       "zh": "证据",
+       "es": "la evidencia"
+      },
+      {
+       "term": "primary source",
+       "def": "a record made by a person who was there at the time",
+       "pinyin": "yīshǒu shǐliào",
+       "zh": "一手史料",
+       "es": "la fuente primaria"
+      },
+      {
+       "term": "artifact",
+       "def": "an old object made by people, like a tool or a pot",
+       "pinyin": "wénwù",
+       "zh": "文物",
+       "es": "el artefacto"
+      },
+      {
+       "term": "interpretation",
+       "def": "an explanation of what something means",
+       "pinyin": "jiěshì",
+       "zh": "解释",
+       "es": "la interpretación"
+      },
+      {
+       "term": "source",
+       "def": "where information comes from (a book, a photo, an object)",
+       "pinyin": "láiyuán",
+       "zh": "来源",
+       "es": "la fuente"
+      },
+      {
+       "term": "sourcing",
+       "def": "asking who made a source, when, and why",
+       "pinyin": "cházhèng láiyuán",
+       "zh": "查证来源",
+       "es": "el análisis de la fuente"
+      },
+      {
+       "term": "context",
+       "def": "what was happening at the time and place",
+       "pinyin": "bèijǐng",
+       "zh": "背景",
+       "es": "el contexto"
+      },
+      {
+       "term": "point of view",
+       "def": "the opinion or side of the person who made the source",
+       "pinyin": "guāndiǎn",
+       "zh": "观点",
+       "es": "el punto de vista"
+      },
+      {
+       "term": "bias",
+       "def": "when a source favors one side and is not fair",
+       "pinyin": "piānjiàn",
+       "zh": "偏见",
+       "es": "el sesgo"
+      },
+      {
+       "term": "corroborate",
+       "def": "to check one source against another to see if they agree",
+       "pinyin": "yìnzhèng",
+       "zh": "印证",
+       "es": "corroborar"
+      },
+      {
+       "term": "claim",
+       "def": "a statement you believe is true and can support",
+       "pinyin": "lùndiǎn",
+       "zh": "论点",
+       "es": "la afirmación"
+      },
+      {
+       "term": "reliable",
+       "def": "able to be trusted; gives true information",
+       "pinyin": "kěkào",
+       "zh": "可靠",
+       "es": "fiable"
+      },
+      {
+       "term": "archaeologist",
+       "def": "a scientist who studies the past by digging up old things",
+       "pinyin": "kǎogǔ xuéjiā",
+       "zh": "考古学家",
+       "es": "el arqueólogo"
+      },
+      {
+       "term": "remains",
+       "def": "the body or parts of a person or animal from long ago",
+       "pinyin": "yíhái",
+       "zh": "遗骸",
+       "es": "los restos"
+      },
+      {
+       "term": "mummy",
+       "def": "a body that did not decay because of ice, dryness, or special care",
+       "pinyin": "mùnǎiyī",
+       "zh": "木乃伊",
+       "es": "la momia"
+      },
+      {
+       "term": "conclusion",
+       "def": "what you decide is true after looking at evidence",
+       "pinyin": "jiélùn",
+       "zh": "结论",
+       "es": "la conclusión"
+      },
+      {
+       "term": "hypothesis",
+       "def": "a first guess you can test with evidence",
+       "pinyin": "jiǎshè",
+       "zh": "假设",
+       "es": "la hipótesis"
+      },
+      {
+       "term": "audience",
+       "def": "the people the source was made FOR",
+       "pinyin": "tīngzhòng / dúzhě",
+       "zh": "读者",
+       "es": "el público / lector"
+      },
+      {
+       "term": "purpose",
+       "def": "the reason WHY the source was created",
+       "pinyin": "mùdì",
+       "zh": "目的",
+       "es": "el propósito"
+      },
+      {
+       "term": "author",
+       "def": "the person who made or wrote the source",
+       "pinyin": "zuòzhě",
+       "zh": "作者",
+       "es": "el autor"
+      }
+     ],
      "misconceptions": []
     }
    ],
    "counts": {
     "topics": 1,
     "lessons": 2,
-    "terms": 0
+    "terms": 23
    }
   },
   {
@@ -4238,55 +4404,6 @@
        "es": "conquistar"
       },
       {
-       "term": "Alexander the Great",
-       "def": "a Macedonian king who built one of history's largest empires",
-       "pinyin": "Yàlìshāndà dàdì",
-       "zh": "亚历山大大帝",
-       "es": "Alejandro Magno"
-      },
-      {
-       "term": "Macedon",
-       "def": "a kingdom north of Greece; Alexander's home",
-       "pinyin": "Mǎqídùn",
-       "zh": "马其顿",
-       "es": "Macedonia"
-      },
-      {
-       "term": "conquest",
-       "def": "taking control of lands by force",
-       "pinyin": "zhēngfú",
-       "zh": "征服",
-       "es": "la conquista"
-      },
-      {
-       "term": "Hellenistic",
-       "def": "describing the blending of Greek culture with other cultures",
-       "pinyin": "Xīlàhuà",
-       "zh": "希腊化",
-       "es": "helenístico"
-      },
-      {
-       "term": "cultural diffusion",
-       "def": "the spread and mixing of ideas between cultures",
-       "pinyin": "wénhuà chuánbō",
-       "zh": "文化传播",
-       "es": "la difusión cultural"
-      },
-      {
-       "term": "blend",
-       "def": "to mix two or more things together",
-       "pinyin": "rónghé",
-       "zh": "融合",
-       "es": "mezclar"
-      },
-      {
-       "term": "Alexandria",
-       "def": "an Egyptian city Alexander founded; a center of learning",
-       "pinyin": "Yàlìshāndà chéng",
-       "zh": "亚历山大城",
-       "es": "Alejandría"
-      },
-      {
        "term": "Maurya Empire",
        "def": "the first empire to unite most of India (around 320 to 185 BCE)",
        "pinyin": "Kǒngquè wángcháo",
@@ -4544,6 +4661,13 @@
        "pinyin": "bēngkuì",
        "zh": "崩溃",
        "es": "el colapso"
+      },
+      {
+       "term": "Hellenistic",
+       "def": "the mixing of Greek culture with other cultures after Alexander the Great",
+       "pinyin": "Xīlàhuà",
+       "zh": "希腊化",
+       "es": "helenístico"
       },
       {
        "term": "primary source",
@@ -6511,7 +6635,7 @@
    "counts": {
     "topics": 3,
     "lessons": 43,
-    "terms": 319
+    "terms": 313
    }
   },
   {
@@ -6794,6 +6918,62 @@
        "es": "la expansión"
       },
       {
+       "term": "Alexander the Great",
+       "def": "a Macedonian king who built one of history's largest empires",
+       "pinyin": "Yàlìshāndà dàdì",
+       "zh": "亚历山大大帝",
+       "es": "Alejandro Magno"
+      },
+      {
+       "term": "Macedon",
+       "def": "a kingdom north of Greece; Alexander's home",
+       "pinyin": "Mǎqídùn",
+       "zh": "马其顿",
+       "es": "Macedonia"
+      },
+      {
+       "term": "conquest",
+       "def": "taking control of lands by force",
+       "pinyin": "zhēngfú",
+       "zh": "征服",
+       "es": "la conquista"
+      },
+      {
+       "term": "empire",
+       "def": "many lands and peoples ruled by one leader",
+       "pinyin": "dìguó",
+       "zh": "帝国",
+       "es": "el imperio"
+      },
+      {
+       "term": "Hellenistic",
+       "def": "describing the blending of Greek culture with other cultures",
+       "pinyin": "Xīlàhuà",
+       "zh": "希腊化",
+       "es": "helenístico"
+      },
+      {
+       "term": "cultural diffusion",
+       "def": "the spread and mixing of ideas between cultures",
+       "pinyin": "wénhuà chuánbō",
+       "zh": "文化传播",
+       "es": "la difusión cultural"
+      },
+      {
+       "term": "blend",
+       "def": "to mix two or more things together",
+       "pinyin": "rónghé",
+       "zh": "融合",
+       "es": "mezclar"
+      },
+      {
+       "term": "Alexandria",
+       "def": "an Egyptian city Alexander founded; a center of learning",
+       "pinyin": "Yàlìshāndà chéng",
+       "zh": "亚历山大城",
+       "es": "Alejandría"
+      },
+      {
        "term": "trade network",
        "def": "a system of routes where people buy and sell goods over long distances",
        "pinyin": "màoyì wǎngluò",
@@ -6927,18 +7107,116 @@
        "es": "el hach"
       },
       {
-       "term": "empire",
-       "def": "a large area with many lands ruled by one leader",
-       "pinyin": "dìguó",
-       "zh": "帝国",
-       "es": "el imperio"
-      },
-      {
        "term": "Timbuktu",
        "def": "a great city in Mali, a center of trade and learning",
        "pinyin": "Tōngbùtú",
        "zh": "廷巴克图",
        "es": "Tombuctú"
+      },
+      {
+       "term": "magnetic compass",
+       "def": "a tool with a needle that always points north",
+       "pinyin": "zhǐnánzhēn",
+       "zh": "指南针",
+       "es": "la brújula"
+      },
+      {
+       "term": "astrolabe",
+       "def": "a tool that uses the sun and stars to find your location at sea",
+       "pinyin": "xīngpán",
+       "zh": "星盘",
+       "es": "el astrolabio"
+      },
+      {
+       "term": "lateen sail",
+       "def": "a triangle sail that can catch wind from many directions",
+       "pinyin": "sānjiǎofān",
+       "zh": "三角帆",
+       "es": "la vela latina"
+      },
+      {
+       "term": "camel saddle",
+       "def": "a special seat that lets people ride and load camels",
+       "pinyin": "luòtuó ān",
+       "zh": "骆驼鞍",
+       "es": "la silla de camello"
+      },
+      {
+       "term": "navigation",
+       "def": "the skill of finding your way when you travel",
+       "pinyin": "dǎoháng",
+       "zh": "导航",
+       "es": "la navegación"
+      },
+      {
+       "term": "innovation",
+       "def": "a new idea, tool, or way of doing something",
+       "pinyin": "chuàngxīn",
+       "zh": "创新",
+       "es": "la innovación"
+      },
+      {
+       "term": "long-distance trade",
+       "def": "trade between places that are very far apart",
+       "pinyin": "chángtú màoyì",
+       "zh": "长途贸易",
+       "es": "el comercio de larga distancia"
+      },
+      {
+       "term": "slavery",
+       "def": "a system where some people are owned and forced to work by others",
+       "pinyin": "núlì zhì",
+       "zh": "奴隶制",
+       "es": "la esclavitud"
+      },
+      {
+       "term": "enslaved person",
+       "def": "a person who is owned and forced to work against their will",
+       "pinyin": "bèi núyì zhě",
+       "zh": "被奴役者",
+       "es": "la persona esclavizada"
+      },
+      {
+       "term": "manumission",
+       "def": "setting an enslaved person free",
+       "pinyin": "shìfàng núlì",
+       "zh": "释放奴隶",
+       "es": "la manumisión"
+      },
+      {
+       "term": "hereditary",
+       "def": "passed down from parent to child",
+       "pinyin": "shìxí de",
+       "zh": "世袭的",
+       "es": "hereditario"
+      },
+      {
+       "term": "chattel slavery",
+       "def": "treating enslaved people as property to be bought and sold",
+       "pinyin": "dòngchǎn núlì zhì",
+       "zh": "动产奴隶制",
+       "es": "la esclavitud de bienes muebles"
+      },
+      {
+       "term": "scale",
+       "def": "the size or amount of something (how big or how many)",
+       "pinyin": "guīmó",
+       "zh": "规模",
+       "es": "la escala"
+      },
+      {
+       "term": "compare",
+       "def": "to look at two or more things to see how they are alike and different",
+       "pinyin": "bǐjiào",
+       "zh": "比较",
+       "es": "comparar"
+      },
+      {
+       "term": "race",
+       "def": "groups people are sorted into by skin color or background",
+       "pinyin": "zhǒngzú",
+       "zh": "种族",
+       "es": "la raza"
       },
       {
        "term": "traveler",
@@ -7179,13 +7457,6 @@
        "es": "el estado"
       },
       {
-       "term": "compare",
-       "def": "to look at two or more things to see how they are alike and different",
-       "pinyin": "bǐjiào",
-       "zh": "比较",
-       "es": "comparar"
-      },
-      {
        "term": "similarity",
        "def": "a way that two things are the same or alike",
        "pinyin": "xiāngsì zhī chù",
@@ -7226,6 +7497,97 @@
        "pinyin": "jūnduì",
        "zh": "军队",
        "es": "el ejército"
+      },
+      {
+       "term": "route",
+       "def": "the path you travel from one place to another",
+       "pinyin": "lùxiàn",
+       "zh": "路线",
+       "es": "la ruta"
+      },
+      {
+       "term": "goods",
+       "def": "things that are bought and sold (for example, silk, salt, gold)",
+       "pinyin": "huòwù",
+       "zh": "货物",
+       "es": "las mercancías"
+      },
+      {
+       "term": "profit",
+       "def": "the money you make after you pay your costs",
+       "pinyin": "lìrùn",
+       "zh": "利润",
+       "es": "la ganancia"
+      },
+      {
+       "term": "risk",
+       "def": "the chance that something bad or dangerous could happen",
+       "pinyin": "fēngxiǎn",
+       "zh": "风险",
+       "es": "el riesgo"
+      },
+      {
+       "term": "Silk Road",
+       "def": "the famous land trade routes connecting China to the Middle East and Europe",
+       "pinyin": "Sīchóu zhī lù",
+       "zh": "丝绸之路",
+       "es": "la Ruta de la Seda"
+      },
+      {
+       "term": "strategy",
+       "def": "a plan to win or to reach a goal",
+       "pinyin": "cèlüè",
+       "zh": "策略",
+       "es": "la estrategia"
+      },
+      {
+       "term": "document",
+       "def": "a written or visual source, like a letter, map, or picture, that gives information",
+       "pinyin": "wénjiàn",
+       "zh": "文件",
+       "es": "el documento"
+      },
+      {
+       "term": "historical context",
+       "def": "what was happening in the world (time and place) when a source was made",
+       "pinyin": "lìshǐ bèijǐng",
+       "zh": "历史背景",
+       "es": "el contexto histórico"
+      },
+      {
+       "term": "purpose",
+       "def": "the reason WHY a source was created",
+       "pinyin": "mùdì",
+       "zh": "目的",
+       "es": "el propósito"
+      },
+      {
+       "term": "religion",
+       "def": "a system of belief about God or gods (for example, Islam, Buddhism)",
+       "pinyin": "zōngjiào",
+       "zh": "宗教",
+       "es": "la religión"
+      },
+      {
+       "term": "interconnectedness",
+       "def": "the way different parts of the world are connected and affect each other",
+       "pinyin": "xiānghù liánxì",
+       "zh": "相互联系",
+       "es": "la interconexión"
+      },
+      {
+       "term": "test",
+       "def": "a set of questions to show what you have learned",
+       "pinyin": "kǎoshì",
+       "zh": "考试",
+       "es": "el examen"
+      },
+      {
+       "term": "multiple choice",
+       "def": "a question that gives you answers to choose from (A, B, C, D)",
+       "pinyin": "xuǎnzé tí",
+       "zh": "选择题",
+       "es": "opción múltiple"
       },
       {
        "term": "feudalism",
@@ -7396,13 +7758,6 @@
        "es": "la perspectiva"
       },
       {
-       "term": "conquest",
-       "def": "taking control of land or people by force",
-       "pinyin": "zhēngfú",
-       "zh": "征服",
-       "es": "la conquista"
-      },
-      {
        "term": "narrative",
        "def": "a story that explains what happened and why",
        "pinyin": "xùshù / gùshì",
@@ -7480,13 +7835,6 @@
        "es": "la lealtad"
       },
       {
-       "term": "cultural diffusion",
-       "def": "when ideas or customs spread from one group to another",
-       "pinyin": "wénhuà chuánbō",
-       "zh": "文化传播",
-       "es": "la difusión cultural"
-      },
-      {
        "term": "selective borrowing",
        "def": "choosing only SOME ideas from another culture and keeping your own",
        "pinyin": "xuǎnzéxìng jièjiàn",
@@ -7520,13 +7868,6 @@
        "pinyin": "Měnggǔ hépíng",
        "zh": "蒙古和平",
        "es": "la Paz Mongólica"
-      },
-      {
-       "term": "Silk Road",
-       "def": "trade routes that connected Asia, the Middle East, and Europe",
-       "pinyin": "Sīchóu zhī lù",
-       "zh": "丝绸之路",
-       "es": "la Ruta de la Seda"
       },
       {
        "term": "disruption",
@@ -7655,13 +7996,6 @@
        "es": "el campesino"
       },
       {
-       "term": "religion",
-       "def": "people's beliefs about God and how to live",
-       "pinyin": "zōngjiào",
-       "zh": "宗教",
-       "es": "la religión"
-      },
-      {
        "term": "blame",
        "def": "to say someone is the reason a bad thing happened",
        "pinyin": "guījiù",
@@ -7730,20 +8064,6 @@
        "pinyin": "chíxù wèntí",
        "zh": "持续问题",
        "es": "el problema perdurable"
-      },
-      {
-       "term": "interconnectedness",
-       "def": "the way people and places are linked and affect each other",
-       "pinyin": "xiānghù liánxì",
-       "zh": "相互联系",
-       "es": "la interconexión"
-      },
-      {
-       "term": "document",
-       "def": "a written source that gives information from the past",
-       "pinyin": "wénjiàn",
-       "zh": "文件",
-       "es": "el documento"
       },
       {
        "term": "claim",
@@ -8172,7 +8492,7 @@
    "counts": {
     "topics": 1,
     "lessons": 22,
-    "terms": 205
+    "terms": 233
    }
   },
   {

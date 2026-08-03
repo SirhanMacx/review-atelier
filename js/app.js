@@ -36,6 +36,40 @@ const PLACES = {
   'enl:Intro': { lon: 0, lat: 20 }, 'enl:EI': { lon: 20, lat: 20 }
 };
 
+/* Pins should land where the history actually happened, so match the topic or
+   lesson name first and only fall back to the unit's home region. */
+const GEO = [
+  [/mesopotam|sumer|babylon|hammurabi|fertile crescent|tigris|euphrates/i, 44, 32],
+  [/egypt|nile|pyramid|pharaoh|hieroglyph/i, 31, 27],
+  [/indus|harappa|mohenjo|india|maurya|gupta|ashoka|hindu|buddh|delhi|sikh/i, 78, 24],
+  [/china|shang|qin|han|tang|song|confuc|dao|legalism|zheng he|ming|silk road/i, 112, 34],
+  [/greece|greek|athens|sparta|polis|alexander|hellenis/i, 23, 38],
+  [/rome|roman|caesar|augustus|republic|patrician|plebeian|twelve tables/i, 12, 42],
+  [/japan|samurai|shogun/i, 138, 36],
+  [/byzant|justinian|constantinople|orthodox/i, 29, 41],
+  [/islam|caliph|muhammad|sunni|shia|mecca|arabia/i, 40, 24],
+  [/mongol|genghis|khan|steppe/i, 100, 47],
+  [/africa|ghana|mali|mansa musa|songhai|trans.?saharan|timbuktu/i, -4, 15],
+  [/maya|aztec|tenochtitlan|mesoamerica|inca|andes|olmec/i, -92, 17],
+  [/renaissance|medici|florence|italian|humanism/i, 11, 43],
+  [/reformation|luther|calvin|protestant|counter.?reform|trent/i, 11, 51],
+  [/scientific revolution|copernicus|galileo|newton/i, 14, 50],
+  [/crusade|jerusalem|holy land/i, 35, 32],
+  [/black death|plague|middle ages|feudal|manorial|medieval|dark ages/i, 5, 48],
+  [/ottoman|turk|istanbul/i, 32, 39],
+  [/indian ocean|monsoon|swahili|port city/i, 62, 2],
+  [/columbus|exploration|atlantic|portug|magellan|da gama|conquest|columbian/i, -32, 22],
+  [/paleolithic|neolithic|human origin|out of africa|hunter|forager|catalhoyuk/i, 33, 8],
+  [/slave trade|middle passage/i, -22, 5],
+  [/russia|moscow/i, 40, 56],
+  [/geography|map|continent|hemisphere|equator/i, 0, 8]
+];
+
+function geo(name, home) {
+  for (const [re, lon, lat] of GEO) if (re.test(name || '')) return { lon, lat, exact: true };
+  return { ...home, exact: false };
+}
+
 /* ============================ LANDING ============================ */
 async function renderHome() {
   const courses = [
@@ -65,9 +99,6 @@ async function renderHome() {
     </a>`;
   }).join('');
 
-  // per-card accent
-  $$('.course-card').forEach(el => el.style.setProperty('--accent',
-    getComputedStyle(document.documentElement).getPropertyValue(`--c-${el.dataset.accent}`) || ''));
 }
 
 function courseArtFor(c) {
@@ -147,11 +178,17 @@ function buildStage() {
   } else if (c.specimen === 'map') {
     const home = PLACES[`${c.id}:${u.id}`] || { lon: 0, lat: 20 };
     const rand = rng(c.id + u.id);
-    const pins = nodes.map((nd, i) => ({
-      id: String(i), title: nd.title,
-      lon: Math.max(-176, Math.min(176, home.lon + (rand() - .5) * 40)),
-      lat: Math.max(-54, Math.min(72, home.lat + (rand() - .5) * 30))
-    }));
+    const pins = nodes.map((nd, i) => {
+      const g = geo(nd.title, home);
+      // Located topics sit on their real coordinates; only unmatched ones get
+      // scattered around the unit's home region, and never on top of each other.
+      const spread = g.exact ? 5 : 34;
+      return {
+        id: String(i), title: nd.title,
+        lon: Math.max(-176, Math.min(176, g.lon + (rand() - .5) * spread)),
+        lat: Math.max(-54, Math.min(72, g.lat + (rand() - .5) * spread * 0.7))
+      };
+    });
     const m = worldMap(pins, { label: `Where ${u.title} happened` });
     art = m.svg; marks = m.nodes; kind = 'node';
     caption = 'World atlas · click a marker to open it';

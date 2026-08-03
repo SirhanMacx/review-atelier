@@ -100,6 +100,21 @@ def title_case_unit(folder):
     return " ".join(out)
 
 
+def no_dashes(text):
+    """House style: no em dashes or en dashes in display prose.
+
+    Ranges become " to ", everything else becomes a comma. Quoted primary
+    source text is never passed through this, so quotations stay verbatim.
+    """
+    if not text:
+        return text
+    text = re.sub(r"\s*[–—]\s*(?=\d)", " to ", text)
+    text = re.sub(r"(?<=\d)\s*[–—]\s*", " to ", text)
+    text = re.sub(r"\s*[–—]\s*", ", ", text)
+    text = re.sub(r",\s*,", ",", text)
+    return re.sub(r"\s{2,}", " ", text).strip()
+
+
 def clip(text, limit=400):
     text = " ".join(text.split())
     if len(text) <= limit:
@@ -431,15 +446,15 @@ def main():
             t_title = (key_idea_titles.get(code)
                        or les.get("key_idea_title") or "Review")
             topic = topics.setdefault(code, {
-                "code": code, "title": t_title, "lessons": [],
+                "code": code, "title": no_dashes(t_title), "lessons": [],
                 "vocab": [], "misconceptions": [],
             })
 
             lesson_obj = {
                 "n": les.get("lesson"),
-                "title": title,
+                "title": no_dashes(title),
                 "date": date,
-                "overview": overview,
+                "overview": no_dashes(overview),
                 "objectives": [],
                 "essentialQuestions": [],
             }
@@ -463,7 +478,7 @@ def main():
 
         units_out.append({
             "id": uid,
-            "title": title_case_unit(folder),
+            "title": no_dashes(title_case_unit(folder)),
             "blurb": UNIT_BLURBS.get(uid, ""),
             "weight": "NYS " + dominant,
             "topics": topic_list,
