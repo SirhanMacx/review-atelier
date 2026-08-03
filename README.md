@@ -18,11 +18,14 @@ or flip through flashcards.
 The specimens are drawn as SVG, so they scale cleanly and follow the light or
 dark theme:
 
-- AP Psych Unit 1 renders a lateral view of the brain with clickable regions.
-- Global 9R and ENL render a world atlas (Natural Earth 110m land, public domain)
-  with markers placed near where the unit's history happened.
-- Every other unit renders a generated topic map, with node size scaled to how
-  many key terms that topic carries.
+- Each AP Psych unit opens on a photoreal 3D specimen render. Unit 1 is a brain
+  with clickable anatomical regions.
+- Global 9R and ENL open on a real rotating globe: an orthographic canvas render
+  of Natural Earth 110m coastlines (public domain), lit like a sphere, with
+  drag-to-rotate, auto-spin, and markers placed where the history actually
+  happened, fading in as they come over the limb.
+- Units without a specimen render a generated topic map, with node size scaled
+  to how many key terms that topic carries.
 
 ## Review only
 
@@ -38,7 +41,9 @@ index.html          landing page, one card per course
 course.html         the three-column course workspace
 css/atelier.css     design system (warm ivory canvas, per-course accents)
 js/app.js           engine: rail, stage, detail panel, flashcards, search
-js/art.js           SVG specimen generators
+js/art.js           SVG specimen generators (topic maps, emblems)
+js/globe.js         the rotating canvas globe
+assets/img/         photoreal unit specimens
 assets/land.js      world coastline path, generated from Natural Earth 110m
 data/*.json         extracted course content
 build/*.py          extractors that regenerate data/ from the curriculum volume
