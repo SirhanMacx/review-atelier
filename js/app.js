@@ -1,67 +1,43 @@
 /* =========================================================
-   app.js — the Review Atelier engine.
-   Review only: term banks, concept maps, flashcards, search.
+   app.js — the Review Atelier.
+   Review only: term banks, specimens, flashcards, search.
    No quizzes, no answer keys.
    ========================================================= */
-import { constellation, brain, worldMap, emblem, rng } from './art.js';
+import { constellation, emblem, rng } from './art.js';
 import { createGlobe } from './globe.js';
-
-/* Photoreal unit specimens. Missing entries fall back to generated art. */
-const IMAGES = {
-  'psych:0': 'balance.jpg',
-  'psych:1': 'brain.jpg',
-  'psych:2': 'prism.jpg',
-  'psych:3': 'nesting.jpg',
-  'psych:4': 'busts.jpg',
-  'psych:5': 'glasshead.jpg',
-  'psych:6': 'jars.jpg'
-};
-
-/* Hotspots over the brain photograph, in percent of the image box. */
-const BRAIN_PINS = [
-  { x: 30, y: 34, title: 'Frontal lobe', note: 'Planning, judgment, personality, and speech production (Broca). The Phineas Gage lobe.' },
-  { x: 52, y: 22, title: 'Parietal lobe', note: 'Touch, temperature, pain, and body position. Home of the somatosensory cortex.' },
-  { x: 74, y: 36, title: 'Occipital lobe', note: 'Vision. Damage here can blind you even with perfectly healthy eyes.' },
-  { x: 45, y: 55, title: 'Temporal lobe', note: 'Hearing and language comprehension (Wernicke). Wraps around the hippocampus.' },
-  { x: 71, y: 64, title: 'Cerebellum', note: 'Balance, coordination, and procedural (muscle memory) learning.' },
-  { x: 56, y: 75, title: 'Brainstem', note: 'Breathing, heartbeat, and arousal. The parts you never have to think about.' }
-];
-
-let GLOBE = null;   // live globe instance, torn down on every re-render
 
 const $  = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
-const state = {
-  course: null,          // loaded JSON
-  unitIdx: 0,
-  topicIdx: 0,
-  view: 'overview',      // overview | terms | cards
-  lessonIdx: null,
-  cardIdx: 0,
-  flipped: false,
-  lang: null             // ENL translation language
+/* Photoreal unit specimens. Anything missing falls back to a drawn topic map. */
+const IMAGES = {
+  'psych:0': 'balance.png', 'psych:1': 'brain.png',   'psych:2': 'prism.png',
+  'psych:3': 'nesting.png', 'psych:4': 'busts.png',   'psych:5': 'glasshead.png',
+  'psych:6': 'jars.png'
 };
 
-/* ---------- world-map pins: unit -> where it happened ---------- */
+/* Regions on the brain photograph, in percent of the image box. */
+const BRAIN_PINS = [
+  { x: 30, y: 34, title: 'Frontal lobe',  note: 'Planning, judgment, personality, and speech production (Broca). The Phineas Gage lobe.' },
+  { x: 52, y: 22, title: 'Parietal lobe', note: 'Touch, temperature, pain, and body position. Home of the somatosensory cortex.' },
+  { x: 74, y: 36, title: 'Occipital lobe',note: 'Vision. Damage here can blind you even with perfectly healthy eyes.' },
+  { x: 45, y: 55, title: 'Temporal lobe', note: 'Hearing and language comprehension (Wernicke). Wraps around the hippocampus.' },
+  { x: 71, y: 64, title: 'Cerebellum',    note: 'Balance, coordination, and procedural (muscle memory) learning.' },
+  { x: 56, y: 75, title: 'Brainstem',     note: 'Breathing, heartbeat, and arousal. The parts you never have to think about.' }
+];
+
+/* Where each unit's history sits, as a starting view for the globe. */
 const PLACES = {
-  // Global 9R units
-  'global:00': { lon: 15, lat: 25 },   'global:01': { lon: 36, lat: 4 },
-  'global:02': { lon: 44, lat: 32 },   'global:03': { lon: 78, lat: 24 },
-  'global:04': { lon: 20, lat: 40 },   'global:05': { lon: 60, lat: 22 },
-  'global:06': { lon: 30, lat: 45 },   'global:07': { lon: 8,  lat: 44 },
-  'global:08': { lon: -40, lat: 12 },  'global:09': { lon: 0,  lat: 30 },
-  // ENL units
-  'enl:1': { lon: 0, lat: 10 },   'enl:2': { lon: 34, lat: 6 },
-  'enl:3': { lon: 44, lat: 32 },  'enl:4': { lon: 22, lat: 39 },
-  'enl:5': { lon: 12, lat: 48 },  'enl:6': { lon: 11, lat: 43 },
-  'enl:7': { lon: -60, lat: 10 }, 'enl:8': { lon: 5, lat: 30 },
-  'enl:Intro': { lon: 0, lat: 20 }, 'enl:EI': { lon: 20, lat: 20 }
+  'global:00': [15, 25], 'global:01': [36, 4],  'global:02': [44, 32], 'global:03': [78, 24],
+  'global:04': [20, 40], 'global:05': [60, 22], 'global:06': [30, 45], 'global:07': [8, 44],
+  'global:08': [-40, 12],'global:09': [0, 30],
+  'enl:Intro': [0, 20],  'enl:1': [0, 10],      'enl:2': [34, 6],      'enl:3': [44, 32],
+  'enl:EI': [20, 20],    'enl:4': [22, 39],     'enl:5': [12, 48],     'enl:6': [11, 43],
+  'enl:7': [-60, 10],    'enl:8': [5, 30]
 };
 
-/* Pins should land where the history actually happened, so match the topic or
-   lesson name first and only fall back to the unit's home region. */
+/* Pins belong where the history happened, so match the name before falling back. */
 const GEO = [
   [/mesopotam|sumer|babylon|hammurabi|fertile crescent|tigris|euphrates/i, 44, 32],
   [/egypt|nile|pyramid|pharaoh|hieroglyph/i, 31, 27],
@@ -88,55 +64,53 @@ const GEO = [
   [/russia|moscow/i, 40, 56],
   [/geography|map|continent|hemisphere|equator/i, 0, 8]
 ];
-
-function geo(name, home) {
+const geo = (name, home) => {
   for (const [re, lon, lat] of GEO) if (re.test(name || '')) return { lon, lat, exact: true };
-  return { ...home, exact: false };
+  return { lon: home[0], lat: home[1], exact: false };
+};
+
+const state = {
+  course: null, unitIdx: 0, topicIdx: 0, lessonIdx: null,
+  view: 'overview', cardIdx: 0, flipped: false, lang: null, part: null
+};
+let GLOBE = null;
+
+const unit  = () => state.course.units[state.unitIdx] || { topics: [] };
+const topic = () => unit().topics[state.topicIdx] || { vocab: [], lessons: [] };
+
+/* A unit lumped into one topic makes a lonely map, so fan it out per lesson. */
+function nodesFor(u) {
+  const t = u.topics || [];
+  if (t.length >= 3 || !t[0]) return t.map((x, i) => ({ title: x.title || `Topic ${i + 1}`, topicIdx: i }));
+  return (t[0].lessons || []).map((l, i) => ({ title: l.title, topicIdx: 0, lessonIdx: i }));
 }
 
 /* ============================ LANDING ============================ */
 async function renderHome() {
-  const courses = [
-    { id: 'psych',  file: 'data/psych.json' },
-    { id: 'global', file: 'data/global.json' },
-    { id: 'enl',    file: 'data/enl.json' }
-  ];
-  const grid = $('#courseGrid');
-  const loaded = await Promise.all(courses.map(async c => {
-    try { const r = await fetch(c.file); return r.ok ? await r.json() : null; }
-    catch { return null; }
+  const files = ['psych', 'global', 'enl'];
+  const loaded = await Promise.all(files.map(async id => {
+    try { const r = await fetch(`data/${id}.json`); return r.ok ? await r.json() : null; } catch { return null; }
   }));
 
-  grid.innerHTML = loaded.filter(Boolean).map(c => {
-    const units = c.units.length;
+  $('#courseGrid').innerHTML = loaded.filter(Boolean).map(c => {
     const terms = c.units.reduce((a, u) => a + (u.counts?.terms || 0), 0);
     const lessons = c.units.reduce((a, u) => a + (u.counts?.lessons || 0), 0);
+    const art = c.specimen === 'brain'
+      ? `<img class="cardphoto" src="assets/img/brain.png" alt="">`
+      : `<canvas class="cardglobe"></canvas>`;
     return `
-    <a class="course-card" href="course.html?c=${esc(c.id)}" data-accent="${esc(c.accent)}">
-      <div class="art">${courseArtFor(c)}</div>
-      <div class="body">
-        <span class="eyebrow">${esc(c.subtitle)}</span>
-        <h3>${esc(c.title)}</h3>
-        <p>${esc(c.note || '')}</p>
-        <div class="meta"><span>${units} units</span><span>${lessons} lessons</span><span>${terms} key terms</span></div>
-      </div>
-    </a>`;
+      <a class="course-card" href="course.html?c=${esc(c.id)}" data-accent="${esc(c.accent)}">
+        <div class="art">${art}</div>
+        <div class="body">
+          <span class="label">${esc(c.subtitle)}</span>
+          <h3>${esc(c.title)}</h3>
+          <p>${esc(c.note || '')}</p>
+          <div class="nums"><span>${c.units.length} units</span><span>${lessons} lessons</span><span>${terms} key terms</span></div>
+        </div>
+      </a>`;
   }).join('');
 
-  bootCardGlobes();
-}
-
-function courseArtFor(c) {
-  if (c.specimen === 'brain') return `<img src="assets/img/brain.jpg" alt="" class="cardphoto">`;
-  if (c.specimen === 'map')   return `<canvas class="cardglobe" data-globe="${esc(c.id)}"></canvas>`;
-  return constellation(c.units[0] || { id: c.id, topics: [] }).svg;
-}
-
-/* Give every card globe its own slow spin. */
-function bootCardGlobes() {
-  $$('canvas.cardglobe').forEach((cv, i) => {
-    createGlobe(cv, { markers: [], rot: 30 + i * 90, tilt: -12 });
-  });
+  $$('canvas.cardglobe').forEach((cv, i) => createGlobe(cv, { markers: [], rot: 40 + i * 110, tilt: -12, speed: 0.06 }));
 }
 
 /* ============================ COURSE ============================ */
@@ -147,8 +121,8 @@ async function renderCourse() {
     const r = await fetch(`data/${id}.json`);
     if (!r.ok) throw new Error(r.status);
     data = await r.json();
-  } catch (e) {
-    $('#workspace').innerHTML = `<div class="panel panel-pad"><h2>Course not found</h2>
+  } catch {
+    $('#workspace').innerHTML = `<div class="panel pad"><h2>Course not found</h2>
       <p class="lede">Could not load <code>data/${esc(id)}.json</code>.</p>
       <a class="btn" href="index.html">Back to all courses</a></div>`;
     return;
@@ -156,51 +130,98 @@ async function renderCourse() {
   state.course = data;
   document.body.dataset.course = data.accent || id;
   document.title = `${data.title} — Review Atelier`;
-  $('#courseTitle').textContent = data.title;
   if (data.multilingual && data.languages?.length) state.lang = data.languages[0].code;
 
-  restoreFromHash();
+  restoreHash();
   buildRail();
   render();
-  buildSearchIndex();
+  buildIndex();
 }
-
-function unit()  { return state.course.units[state.unitIdx] || { topics: [] }; }
-
-/* A unit with one lumped topic makes a lonely map. Fan it out per lesson
-   so every node is something a student can actually click into. */
-function mapNodes(u) {
-  const t = u.topics || [];
-  if (t.length >= 3 || !t[0]) return t.map((x, i) => ({ title: x.title || `Topic ${i + 1}`, topicIdx: i }));
-  return (t[0].lessons || []).map((l, i) => ({ title: l.title, topicIdx: 0, lessonIdx: i }));
-}
-function topic() { return unit().topics[state.topicIdx] || { vocab: [], lessons: [] }; }
 
 /* ---------- rail ---------- */
 function buildRail() {
   const c = state.course;
   $('#rail').innerHTML = `
-    <div class="panel-head"><span class="eyebrow">${esc(c.title)} · Units</span></div>
+    <div class="rail-head"><span class="label">${esc(c.title)}</span></div>
     <ul class="unit-list" role="tablist">
       ${c.units.map((u, i) => `
         <li><button class="unit-item" role="tab" data-unit="${i}" aria-selected="${i === state.unitIdx}">
           <span class="unit-chip">${emblem(c.id + u.id + u.title)}</span>
           <span><span class="unit-name">${esc(u.title)}</span>
-          <span class="unit-sub">${u.counts?.terms || 0} terms · ${u.counts?.lessons || 0} lessons</span></span>
+          <span class="unit-sub">${esc(u.weight || `${u.counts?.terms || 0} terms`)}</span></span>
         </button></li>`).join('')}
     </ul>`;
   $$('#rail .unit-item').forEach(b => b.addEventListener('click', () => {
     state.unitIdx = +b.dataset.unit; state.topicIdx = 0; state.lessonIdx = null;
-    state.cardIdx = 0; state.view = 'overview';
+    state.cardIdx = 0; state.view = 'overview'; state.part = null;
     buildRail(); render(); syncHash();
   }));
 }
 
 /* ---------- stage ---------- */
+function buildStage() {
+  const c = state.course, u = unit();
+  if (GLOBE) { GLOBE.destroy(); GLOBE = null; }
+  const nodes = nodesFor(u);
+  const photo = IMAGES[`${c.id}:${u.id}`];
 
-/* A real rotating globe for the history courses: drag it, or let it spin. */
-function globeStage(c, u, nodes) {
-  const home = PLACES[`${c.id}:${u.id}`] || { lon: 0, lat: 20 };
+  const seg = `
+    <div class="seg">
+      <button data-view="overview" aria-pressed="${state.view === 'overview'}">Overview</button>
+      <button data-view="terms" aria-pressed="${state.view === 'terms'}">Key terms</button>
+      <button data-view="cards" aria-pressed="${state.view === 'cards'}">Flashcards</button>
+    </div>`;
+
+  if (c.specimen === 'map') return globeStage(c, u, nodes, seg);
+
+  let art, marks, caption;
+  if (photo) {
+    const pins = (c.id === 'psych' && u.id === '1') ? BRAIN_PINS : [];
+    art = `<img class="specimen" src="assets/img/${photo}" alt="${esc(u.title)}">`;
+    marks = pins.map(p => ({ xPct: p.x, yPct: p.y, title: p.title, note: p.note }));
+    caption = pins.length ? 'Specimen · click a dot to explore' : 'Specimen';
+  } else {
+    const synth = { id: c.id + u.id, title: u.title,
+      topics: nodes.map(nd => ({ title: nd.title, vocab: u.topics[nd.topicIdx]?.vocab || [] })) };
+    const k = constellation(synth);
+    art = k.svg;
+    marks = k.nodes.map((nd, i) => ({ ...nd, title: nodes[i]?.title, node: i }));
+    caption = 'Topic map · click a dot to open it';
+  }
+
+  const dots = marks.map((nd, i) => `
+    <button class="hotspot" style="left:${nd.xPct.toFixed(2)}%;top:${nd.yPct.toFixed(2)}%"
+      data-i="${i}" aria-pressed="${nd.node != null
+        ? (nodes[i]?.topicIdx === state.topicIdx && (nodes[i]?.lessonIdx == null || nodes[i]?.lessonIdx === state.lessonIdx))
+        : state.part === nd.title}"
+      aria-label="${esc(nd.title || '')}" title="${esc(nd.title || '')}"></button>`).join('');
+
+  $('#stage').innerHTML = `
+    <div class="stage-art">
+      <div class="artbox">${art}${dots}</div>
+      ${marks.length ? `<div class="tip"><b>Tip</b>Click a dot to learn more</div>` : ''}
+    </div>
+    <div class="stage-foot">
+      <span class="stage-caption">${esc(caption)}</span>
+      ${seg}
+    </div>`;
+
+  $$('#stage .hotspot').forEach(b => b.addEventListener('click', () => {
+    const nd = marks[+b.dataset.i];
+    if (nd.node != null) {
+      const n = nodes[nd.node];
+      state.topicIdx = n.topicIdx; state.lessonIdx = n.lessonIdx ?? null; state.part = null;
+      state.cardIdx = 0; state.view = 'overview';
+    } else {
+      state.part = nd.title;
+    }
+    render(); syncHash();
+  }));
+  bindSeg();
+}
+
+function globeStage(c, u, nodes, seg) {
+  const home = PLACES[`${c.id}:${u.id}`] || [0, 20];
   const rand = rng(c.id + u.id);
   const markers = nodes.map((nd, i) => {
     const g = geo(nd.title, home);
@@ -209,250 +230,168 @@ function globeStage(c, u, nodes) {
       idx: i, title: nd.title,
       lon: g.lon + (rand() - .5) * spread,
       lat: Math.max(-60, Math.min(75, g.lat + (rand() - .5) * spread * 0.7)),
-      active: nd.topicIdx === state.topicIdx &&
-              (nd.lessonIdx == null || nd.lessonIdx === state.lessonIdx)
+      active: nd.topicIdx === state.topicIdx && (nd.lessonIdx == null || nd.lessonIdx === state.lessonIdx)
     };
   });
 
-  const strip = u.topics.length > 1 ? `
-    <div class="pills topicstrip">${u.topics.map((t, i) =>
-      `<button class="pill" data-topic="${i}" aria-pressed="${i === state.topicIdx}"
-        >${esc(t.title || t.code || `Topic ${i + 1}`)}</button>`).join('')}</div>` : '';
-
   $('#stage').innerHTML = `
-    <div class="stage-art globe-wrap">
-      <canvas id="globeCanvas" class="globe" aria-label="Rotatable globe showing where ${esc(u.title)} happened"></canvas>
-      <div class="tip-note"><b>Tip</b><br>Drag the globe to spin it. Click a marker to open that topic.</div>
-      <label class="autotoggle"><input type="checkbox" id="autoSpin" checked> Auto rotate</label>
-    </div>
-    ${strip}
-    <div class="stage-foot">
-      <span class="eyebrow">3D globe · drag to rotate</span>
-      <div class="pills">
-        <button class="pill" data-view="overview" aria-pressed="${state.view === 'overview'}">Overview</button>
-        <button class="pill" data-view="terms" aria-pressed="${state.view === 'terms'}">Key terms</button>
-        <button class="pill" data-view="cards" aria-pressed="${state.view === 'cards'}">Flashcards</button>
+    <div class="stage-art">
+      <canvas id="globeCanvas" class="globe" aria-label="Globe showing where ${esc(u.title)} happened"></canvas>
+      <div class="tools">
+        <button class="tool" id="tSpin" aria-pressed="true"><span class="g">↻</span><span class="t">Rotate</span></button>
+        <button class="tool" id="tHome"><span class="g">⌂</span><span class="t">Center</span></button>
+        <button class="tool" id="tReset"><span class="g">⟲</span><span class="t">Reset</span></button>
       </div>
+      <div class="tip"><b>Tip</b>Drag to rotate<br>Click a dot to learn more</div>
+    </div>
+    <div class="stage-foot">
+      <span class="stage-caption">3D globe · drag to rotate</span>
+      ${seg}
     </div>`;
 
   GLOBE = createGlobe($('#globeCanvas'), {
     markers,
     onPick(m) {
       const nd = nodes[m.idx];
-      state.topicIdx = nd.topicIdx;
-      state.lessonIdx = nd.lessonIdx ?? null;
-      state.cardIdx = 0; state.flipped = false;
+      state.topicIdx = nd.topicIdx; state.lessonIdx = nd.lessonIdx ?? null;
+      state.cardIdx = 0; state.view = 'overview';
       render(); syncHash();
     }
   });
   const active = markers.find(m => m.active) || markers[0];
   if (active) GLOBE.spinTo(active.lon, active.lat);
 
-  $('#autoSpin').addEventListener('change', e => GLOBE.setAuto(e.target.checked));
-  $$('#stage .topicstrip .pill').forEach(b => b.addEventListener('click', () => {
-    state.topicIdx = +b.dataset.topic; state.lessonIdx = null;
-    state.cardIdx = 0; state.flipped = false; render(); syncHash();
-  }));
-  $$('#stage .stage-foot .pill').forEach(b => b.addEventListener('click', () => {
-    state.view = b.dataset.view; state.cardIdx = 0; state.flipped = false; render(); syncHash();
+  $('#tSpin').addEventListener('click', e => {
+    const on = !GLOBE.auto; GLOBE.setAuto(on);
+    e.currentTarget.setAttribute('aria-pressed', String(on));
+  });
+  $('#tHome').addEventListener('click', () => { if (active) GLOBE.spinTo(active.lon, active.lat); });
+  $('#tReset').addEventListener('click', () => GLOBE.reset());
+  bindSeg();
+}
+
+function bindSeg() {
+  $$('#stage .seg button').forEach(b => b.addEventListener('click', () => {
+    state.view = b.dataset.view; state.cardIdx = 0; state.flipped = false; state.part = null;
+    render(); syncHash();
   }));
 }
 
-function buildStage() {
-  const c = state.course, u = unit();
-  const nodes = mapNodes(u);
-  let art, marks, caption, kind;
-
-  const photo = IMAGES[`${c.id}:${u.id}`];
-
-  if (GLOBE) { GLOBE.destroy(); GLOBE = null; }
-
-  if (c.specimen === 'map') return globeStage(c, u, nodes);
-
-  if (photo) {
-    // Photoreal specimen. Unit 1 of AP Psych carries real anatomical hotspots;
-    // the other units are portraits with no regions worth pinning.
-    const pins = (c.id === 'psych' && u.id === '1') ? BRAIN_PINS : [];
-    art = `<img class="specimen" src="assets/img/${photo}" alt="${esc(u.title)} specimen" loading="eager">`;
-    marks = pins.map(p => ({ xPct: p.x, yPct: p.y, title: p.title, note: p.note }));
-    kind = 'part';
-    caption = pins.length ? 'Specimen · click a region to read about it' : `${u.title} · specimen`;
-  } else {
-    const synth = { id: c.id + u.id, title: u.title,
-      topics: nodes.map(nd => ({ code: nd.title, title: nd.title,
-        vocab: (u.topics[nd.topicIdx]?.vocab) || [] })) };
-    const k = constellation(synth);
-    art = k.svg; marks = k.nodes; kind = 'node';
-    caption = 'Topic map · click a node to open it';
-  }
-
-  const markers = marks.map((nd, i) => {
-    const label = kind === 'part' ? nd.title : (nodes[i]?.title || nd.title || '');
-    const active = kind === 'node' && nodes[i] &&
-      nodes[i].topicIdx === state.topicIdx &&
-      (nodes[i].lessonIdx == null || nodes[i].lessonIdx === state.lessonIdx);
-    return `<button class="hotspot" style="left:${nd.xPct.toFixed(2)}%;top:${nd.yPct.toFixed(2)}%"
-      data-i="${i}" data-kind="${kind}" aria-pressed="${!!active}"
-      aria-label="${esc(label)}" title="${esc(label)}"></button>`;
-  }).join('');
-
-  const strip = u.topics.length > 1 ? `
-    <div class="pills topicstrip">${u.topics.map((t, i) =>
-      `<button class="pill" data-topic="${i}" aria-pressed="${i === state.topicIdx}"
-        >${esc(t.title || t.code || `Topic ${i + 1}`)}</button>`).join('')}</div>` : '';
-
-  $('#stage').innerHTML = `
-    <div class="stage-art">
-      <div class="artbox" data-wide="${c.specimen === 'map'}">${art}${markers}</div>
-      <div class="tip-note"><b>Tip</b><br>${marks.length
-        ? 'Click a marker on the specimen, then switch to Key terms or Flashcards.'
-        : 'Pick a topic below, then switch to Key terms or Flashcards.'}</div>
-    </div>
-    ${strip}
-    <div class="stage-foot">
-      <span class="eyebrow">${esc(caption)}</span>
-      <div class="pills">
-        <button class="pill" data-view="overview" aria-pressed="${state.view === 'overview'}">Overview</button>
-        <button class="pill" data-view="terms" aria-pressed="${state.view === 'terms'}">Key terms</button>
-        <button class="pill" data-view="cards" aria-pressed="${state.view === 'cards'}">Flashcards</button>
-      </div>
-    </div>`;
-
-  $$('#stage .hotspot').forEach(b => b.addEventListener('click', () => {
-    const i = +b.dataset.i;
-    if (b.dataset.kind === 'part') return showPart(marks[i]);
-    const nd = nodes[i];
-    if (!nd) return;
-    state.topicIdx = nd.topicIdx;
-    state.lessonIdx = nd.lessonIdx ?? null;
-    state.cardIdx = 0; state.flipped = false; render(); syncHash();
-  }));
-  $$('#stage .topicstrip .pill').forEach(b => b.addEventListener('click', () => {
-    state.topicIdx = +b.dataset.topic; state.lessonIdx = null;
-    state.cardIdx = 0; state.flipped = false; render(); syncHash();
-  }));
-  $$('#stage .stage-foot .pill').forEach(b => b.addEventListener('click', () => {
-    state.view = b.dataset.view; state.cardIdx = 0; state.flipped = false; render(); syncHash();
-  }));
-}
-
-function showPart(part) {
-  $('#detail').innerHTML = `
-    <div class="panel-pad">
-      <span class="eyebrow">Brain specimen</span>
-      <h2>${esc(part.title)}</h2>
-      <p class="lede">${esc(part.note)}</p>
-      <button class="btn" id="backTopic">Back to the topic</button>
-    </div>`;
-  $('#backTopic').addEventListener('click', render);
-}
-
-/* ---------- detail panel ---------- */
+/* ---------- detail ---------- */
 function buildDetail() {
-  const u = unit(), t = topic();
-  if (state.view === 'terms') return buildTerms();
-  if (state.view === 'cards') return buildCards();
+  if (state.part) return partPanel();
+  if (state.view === 'terms') return termsPanel();
+  if (state.view === 'cards') return cardsPanel();
 
+  const u = unit(), t = topic();
   const all = t.lessons || [];
   const lessons = (state.lessonIdx != null && all[state.lessonIdx]) ? [all[state.lessonIdx]] : all;
+  const heading = (lessons.length === 1 && state.lessonIdx != null) ? lessons[0].title : (t.title || u.title);
   const src = lessons.map(l => l.source).find(Boolean);
+  const people = (state.course.researchers || []).filter(p => p.unit === u.id).slice(0, 6);
+  const eq = lessons.flatMap(l => l.essentialQuestions || [])[0];
+  const obj = lessons.flatMap(l => l.objectives || [])[0];
+  const mis = (t.misconceptions || [])[0];
+  const overview = lessons.map(l => l.overview).filter(Boolean)[0] || '';
+
   const facts = [
     ['◇', 'Unit', u.title],
     u.weight ? ['⌁', 'Weighting', u.weight] : null,
-    ['❋', 'Topic', t.code ? `${t.code} ${t.title || ''}`.trim() : (t.title || '')],
-    ['⌖', 'Lessons', `${lessons.length}`],
-    ['◈', 'Key terms', `${(t.vocab || []).length}`]
+    ['❋', 'Lessons', String(lessons.length)],
+    ['◈', 'Key terms', String((t.vocab || []).length)]
   ].filter(Boolean);
 
-  const eqs = lessons.flatMap(l => l.essentialQuestions || []).slice(0, 3);
-  const objs = lessons.flatMap(l => l.objectives || []).slice(0, 4);
-  const mis = (t.misconceptions || []).slice(0, 3);
-  const people = (state.course.researchers || []).filter(p => p.unit === u.id);
-  const overview = lessons.map(l => l.overview).filter(Boolean)[0] || '';
-
   $('#detail').innerHTML = `
-    <div class="panel-pad">
-      <span class="eyebrow">${esc(u.title)}</span>
-      <h2>${esc(lessons.length === 1 && state.lessonIdx != null ? lessons[0].title : (t.title || u.title))}</h2>
-      <div class="kicker">${esc(u.blurb || '')}</div>
+    <div class="pad">
+      <span class="kicker">${esc(u.title)}</span>
+      <h2>${esc(heading)}</h2>
+      ${u.blurb ? `<div class="sub">${esc(u.blurb)}</div>` : ''}
       ${overview ? `<p class="lede">${esc(overview)}</p>` : ''}
 
-      <span class="eyebrow">Key facts</span>
-      <div class="facts">${facts.map(([g, k, v]) =>
-        `<div class="fact"><span class="gl">${g}</span><span class="k">${esc(k)}</span><span class="v">${esc(v)}</span></div>`).join('')}</div>
+      <div class="sec">
+        <span class="label">Key facts</span>
+        <div class="facts">${facts.map(([g, k, v]) =>
+          `<div class="fact"><span class="g">${g}</span><span class="k">${esc(k)}</span><span class="v">${esc(v)}</span></div>`).join('')}</div>
+      </div>
 
-      ${eqs.length ? `<hr class="rule"><span class="eyebrow">Questions to be able to answer</span>
-        <div class="actions">${eqs.map(q => `<div class="note-card"><span>${esc(q)}</span></div>`).join('')}</div>` : ''}
+      ${eq ? `<div class="soft"><span class="g">?</span><div><b>Be able to answer</b><p>${esc(eq)}</p></div></div>` : ''}
+      ${obj ? `<div class="soft"><span class="g">✦</span><div><b>You should be able to</b><p>${esc(obj)}</p></div></div>` : ''}
+      ${mis ? `<div class="soft"><span class="g">!</span><div><b>Common mix-up</b><p>${esc(mis)}</p></div></div>` : ''}
+      ${src ? `<div class="soft"><span class="g">❞</span><div><b>Primary source</b><p>${esc(src.title)}${
+        [src.author, src.year].filter(Boolean).length ? ', ' + [src.author, src.year].filter(Boolean).map(esc).join(', ') : ''}</p></div></div>` : ''}
 
-      ${objs.length ? `<hr class="rule"><span class="eyebrow">You should be able to</span>
-        <div class="actions">${objs.map(o => `<div class="note-card"><span>${esc(o)}</span></div>`).join('')}</div>` : ''}
-
-      ${mis.length ? `<hr class="rule"><span class="eyebrow">Common mix-ups</span>
-        <div class="actions">${mis.map(m => `<div class="note-card"><b>Watch out</b><span>${esc(m)}</span></div>`).join('')}</div>` : ''}
-
-      ${people.length ? `<hr class="rule"><span class="eyebrow">Researchers to know in this unit</span>
-        <div class="terms">${people.map(p => `<div class="term">
-          <dt>${esc(p.who)}</dt><dd>${esc(p.what)}</dd></div>`).join('')}</div>` : ''}
-
-      ${src ? `<hr class="rule"><span class="eyebrow">Primary source in this topic</span>
-        <div class="note-card"><span class="cite">${esc(src.title)}${
-          [src.author, src.year].filter(Boolean).length
-            ? ' — ' + [src.author, src.year].filter(Boolean).map(esc).join(', ') : ''}</span></div>` : ''}
-
-      <hr class="rule">
-      <div class="actions">
-        <button class="action" data-go="terms"><span class="ico">◈</span>
+      <div class="sec">
+        <button class="act" data-go="terms"><span class="g">◈</span>
           <span><span class="t">Key terms</span><span class="s">${(t.vocab || []).length} to review</span></span></button>
-        <button class="action" data-go="cards"><span class="ico">⇄</span>
+        <button class="act" data-go="cards"><span class="g">⇄</span>
           <span><span class="t">Flashcards</span><span class="s">Flip through this topic</span></span></button>
       </div>
 
-      ${lessons.length ? `<hr class="rule"><span class="eyebrow">Lessons in this topic</span>
-        <div class="terms">${lessons.map(l => `<div class="term">
-          <dt>${esc(l.title)}</dt>${l.date ? `<dd>${esc(l.date)}</dd>` : ''}</div>`).join('')}</div>` : ''}
+      ${u.topics.length > 1 ? `<div class="sec"><span class="label">Topics in this unit</span>
+        <div class="topics">${u.topics.map((x, i) =>
+          `<button class="topic-row" data-topic="${i}" aria-pressed="${i === state.topicIdx}">
+            <span class="n">${i + 1}</span><span class="t">${esc(x.title || x.code || `Topic ${i + 1}`)}</span>
+          </button>`).join('')}</div></div>` : ''}
+
+      ${people.length ? `<div class="sec"><span class="label">Researchers to know</span>
+        <div class="terms">${people.map(p =>
+          `<div class="term"><dt>${esc(p.who)}</dt><dd>${esc(p.what)}</dd></div>`).join('')}</div></div>` : ''}
     </div>`;
 
   $$('#detail [data-go]').forEach(b => b.addEventListener('click', () => {
     state.view = b.dataset.go; state.cardIdx = 0; state.flipped = false; render(); syncHash();
   }));
+  $$('#detail .topic-row').forEach(b => b.addEventListener('click', () => {
+    state.topicIdx = +b.dataset.topic; state.lessonIdx = null; state.cardIdx = 0;
+    render(); syncHash();
+  }));
 }
 
-function langPicker() {
+function partPanel() {
+  const p = BRAIN_PINS.find(x => x.title === state.part);
+  $('#detail').innerHTML = `
+    <div class="pad">
+      <span class="kicker">Brain specimen</span>
+      <h2>${esc(p.title)}</h2>
+      <p class="lede">${esc(p.note)}</p>
+      <hr class="rule">
+      <button class="btn" id="back">Back to the unit</button>
+    </div>`;
+  $('#back').addEventListener('click', () => { state.part = null; render(); });
+}
+
+function langBar() {
   const c = state.course;
   if (!c.multilingual || !c.languages?.length) return '';
-  return `<div class="pills" style="margin:10px 0 4px">
-    ${c.languages.map(l => `<button class="pill" data-lang="${esc(l.code)}"
-      aria-pressed="${state.lang === l.code}">${esc(l.label)}</button>`).join('')}
-    <button class="pill" data-lang="" aria-pressed="${!state.lang}">English only</button>
-  </div>`;
+  return `<div class="btn-row" style="margin:12px 0 4px">
+    ${c.languages.map(l => `<button class="btn ${state.lang === l.code ? 'btn-key' : ''}" data-lang="${esc(l.code)}">${esc(l.label)}</button>`).join('')}
+    <button class="btn ${!state.lang ? 'btn-key' : ''}" data-lang="">English only</button></div>`;
 }
-
 function bindLang() {
   $$('#detail [data-lang]').forEach(b => b.addEventListener('click', () => {
     state.lang = b.dataset.lang || null; render();
   }));
 }
 
-function buildTerms() {
-  const t = topic(), u = unit();
-  const vocab = t.vocab || [];
+function termsPanel() {
+  const u = unit(), t = topic(), vocab = t.vocab || [];
   $('#detail').innerHTML = `
-    <div class="panel-pad">
-      <span class="eyebrow">${esc(u.title)} · ${esc(t.title || '')}</span>
+    <div class="pad">
+      <span class="kicker">${esc(u.title)}</span>
       <h2>Key terms</h2>
-      <div class="kicker">${vocab.length} to review</div>
-      ${langPicker()}
-      ${vocab.length ? `<div class="terms" style="margin-top:12px">${vocab.map(v => `
-        <div class="term">
-          <dt>${esc(v.term)}</dt>
-          ${state.lang && v[state.lang] ? `<dd><b>${esc(v[state.lang])}</b>${v.pinyin && state.lang === 'zh' ? ` · ${esc(v.pinyin)}` : ''}</dd>` : ''}
-          <dd>${esc(v.def)}</dd>
-        </div>`).join('')}</div>`
+      <div class="sub">${vocab.length} to review</div>
+      ${langBar()}
+      ${vocab.length
+        ? `<div class="terms" style="margin-top:14px">${vocab.map(v => `
+            <div class="term"><dt>${esc(v.term)}</dt>
+            ${state.lang && v[state.lang] ? `<dd class="tr">${esc(v[state.lang])}${
+              state.lang === 'zh' && v.pinyin ? ` · ${esc(v.pinyin)}` : ''}</dd>` : ''}
+            <dd>${esc(v.def)}</dd></div>`).join('')}</div>`
         : `<p class="lede">No term list has been added for this topic yet.</p>`}
       <hr class="rule">
-      <div class="btn-row">
-        <button class="btn btn-primary" data-go="cards">Study as flashcards</button>
-        <button class="btn" data-go="overview">Back to overview</button>
+      <div class="btn-row" style="margin-top:16px">
+        <button class="btn btn-key" data-go="cards">Study as flashcards</button>
+        <button class="btn" data-go="overview">Back</button>
       </div>
     </div>`;
   bindLang();
@@ -461,50 +400,46 @@ function buildTerms() {
   }));
 }
 
-function buildCards() {
-  const t = topic(), u = unit();
-  const vocab = t.vocab || [];
+function cardsPanel() {
+  const u = unit(), t = topic(), vocab = t.vocab || [];
   if (!vocab.length) {
-    $('#detail').innerHTML = `<div class="panel-pad"><h2>Flashcards</h2>
-      <p class="lede">No terms are available for this topic yet.</p>
-      <button class="btn" data-go="overview">Back to overview</button></div>`;
+    $('#detail').innerHTML = `<div class="pad"><span class="kicker">${esc(u.title)}</span>
+      <h2>Flashcards</h2><p class="lede">No terms are available for this topic yet.</p>
+      <button class="btn" data-go="overview">Back</button></div>`;
     $('#detail [data-go]').addEventListener('click', () => { state.view = 'overview'; render(); });
     return;
   }
-  const i = Math.min(state.cardIdx, vocab.length - 1);
-  const v = vocab[i];
-  const tr = state.lang && v[state.lang] ? `<div class="kicker" style="margin-top:8px">${esc(v[state.lang])}</div>` : '';
+  const i = Math.min(state.cardIdx, vocab.length - 1), v = vocab[i];
+  const tr = state.lang && v[state.lang] ? `<div class="sub" style="margin-top:8px">${esc(v[state.lang])}</div>` : '';
 
   $('#detail').innerHTML = `
-    <div class="panel-pad">
-      <span class="eyebrow">${esc(u.title)} · Flashcards</span>
-      <h2 style="font-size:24px">Card ${i + 1} of ${vocab.length}</h2>
-      ${langPicker()}
-      <div class="card-flip ${state.flipped ? 'flipped' : ''}" id="card" style="margin:12px 0 14px">
+    <div class="pad">
+      <span class="kicker">${esc(u.title)}</span>
+      <h2 style="font-size:32px">Flashcards</h2>
+      <div class="sub">Card ${i + 1} of ${vocab.length}</div>
+      ${langBar()}
+      <div class="card-flip ${state.flipped ? 'flipped' : ''}" id="card" style="margin:14px 0 16px">
         <div class="card-inner">
-          <div class="card-face"><div><div style="font-family:var(--serif);font-size:24px;font-weight:600">${esc(v.term)}</div>
-            ${tr}<div class="eyebrow" style="margin-top:12px">Click to reveal</div></div></div>
-          <div class="card-face back"><div style="font-size:14px;line-height:1.6">${esc(v.def)}</div></div>
+          <div class="card-face"><div><div class="word">${esc(v.term)}</div>${tr}
+            <div class="label" style="margin-top:14px">Click to reveal</div></div></div>
+          <div class="card-face back"><div class="def">${esc(v.def)}</div></div>
         </div>
       </div>
       <div class="btn-row">
-        <button class="btn" id="prev">‹ Previous</button>
-        <button class="btn" id="flip">Flip</button>
-        <button class="btn btn-primary" id="next">Next ›</button>
+        <button class="btn" id="prev">‹ Back</button>
+        <button class="btn btn-key" id="next">Next ›</button>
         <button class="btn" id="shuffle">Shuffle</button>
+        <button class="btn" data-go="overview">Done</button>
       </div>
-      <hr class="rule">
-      <button class="btn" data-go="overview">Back to overview</button>
     </div>`;
 
-  const go = d => { state.cardIdx = (i + d + vocab.length) % vocab.length; state.flipped = false; buildCards(); };
+  const go = d => { state.cardIdx = (i + d + vocab.length) % vocab.length; state.flipped = false; cardsPanel(); };
   $('#card').addEventListener('click', () => { state.flipped = !state.flipped; $('#card').classList.toggle('flipped'); });
-  $('#flip').addEventListener('click', e => { e.stopPropagation(); state.flipped = !state.flipped; $('#card').classList.toggle('flipped'); });
   $('#prev').addEventListener('click', () => go(-1));
   $('#next').addEventListener('click', () => go(1));
   $('#shuffle').addEventListener('click', () => {
-    for (let k = vocab.length - 1; k > 0; k--) { const j = Math.floor(Math.random() * (k + 1));[vocab[k], vocab[j]] = [vocab[j], vocab[k]]; }
-    state.cardIdx = 0; state.flipped = false; buildCards();
+    for (let k = vocab.length - 1; k > 0; k--) { const j = Math.floor(Math.random() * (k + 1)); [vocab[k], vocab[j]] = [vocab[j], vocab[k]]; }
+    state.cardIdx = 0; state.flipped = false; cardsPanel();
   });
   bindLang();
   $('#detail [data-go]').addEventListener('click', () => { state.view = 'overview'; render(); syncHash(); });
@@ -512,31 +447,29 @@ function buildCards() {
 
 /* ---------- search ---------- */
 let INDEX = [];
-function buildSearchIndex() {
+function buildIndex() {
   INDEX = [];
   state.course.units.forEach((u, ui) => (u.topics || []).forEach((t, ti) => {
     INDEX.push({ kind: 'topic', label: t.title || u.title, sub: u.title, ui, ti });
-    (t.vocab || []).forEach(v => INDEX.push({ kind: 'term', label: v.term, sub: `${u.title} · ${t.title || ''}`, def: v.def, ui, ti }));
+    (t.vocab || []).forEach(v => INDEX.push({ kind: 'term', label: v.term, sub: u.title, def: v.def, ui, ti }));
   }));
-  (state.course.researchers || []).forEach(r =>
-    INDEX.push({ kind: 'person', label: r.who, sub: r.what, def: r.what }));
+  (state.course.researchers || []).forEach(r => INDEX.push({ kind: 'researcher', label: r.who, sub: r.what, def: r.what }));
 }
 
 function runSearch(q) {
   const box = $('#searchResults');
   q = q.trim().toLowerCase();
-  if (q.length < 2) { box.innerHTML = ''; box.hidden = true; return; }
-  const hits = INDEX.filter(x => x.label.toLowerCase().includes(q) ||
-    (x.def || '').toLowerCase().includes(q)).slice(0, 24);
+  if (q.length < 2) { box.hidden = true; return; }
+  const hits = INDEX.filter(x => x.label.toLowerCase().includes(q) || (x.def || '').toLowerCase().includes(q)).slice(0, 24);
   box.hidden = false;
   box.innerHTML = hits.length
     ? hits.map((h, i) => `<button class="result" data-i="${i}">
         <div class="r-t">${esc(h.label)}</div><div class="r-s">${esc(h.kind)} · ${esc(h.sub)}</div></button>`).join('')
-    : `<div class="result" style="cursor:default"><div class="r-s">No matches</div></div>`;
+    : `<div class="result"><div class="r-s">No matches</div></div>`;
   $$('#searchResults .result[data-i]').forEach(b => b.addEventListener('click', () => {
     const h = hits[+b.dataset.i];
     if (h.ui != null) {
-      state.unitIdx = h.ui; state.topicIdx = h.ti;
+      state.unitIdx = h.ui; state.topicIdx = h.ti; state.lessonIdx = null; state.part = null;
       state.view = h.kind === 'term' ? 'terms' : 'overview';
       buildRail(); render(); syncHash();
     }
@@ -544,37 +477,17 @@ function runSearch(q) {
   }));
 }
 
-/* ---------- routing + shell ---------- */
-function syncHash() {
-  location.hash = `u${state.unitIdx}-t${state.topicIdx}-${state.view}`;
-}
-function restoreFromHash() {
+/* ---------- shell ---------- */
+const syncHash = () => { location.hash = `u${state.unitIdx}-t${state.topicIdx}-${state.view}`; };
+function restoreHash() {
   const m = /^#u(\d+)-t(\d+)-(\w+)$/.exec(location.hash);
   if (!m) return;
   state.unitIdx = Math.min(+m[1], state.course.units.length - 1);
   state.topicIdx = Math.max(0, +m[2]);
   if (['overview', 'terms', 'cards'].includes(m[3])) state.view = m[3];
 }
-
 function render() { buildStage(); buildDetail(); }
 
-/* theme toggle */
-function initTheme() {
-  const saved = localStorage.getItem('atelier-theme');
-  if (saved) document.documentElement.dataset.theme = saved;
-  const btn = $('#themeBtn');
-  if (!btn) return;
-  btn.addEventListener('click', () => {
-    const cur = document.documentElement.dataset.theme
-      || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    const next = cur === 'dark' ? 'light' : 'dark';
-    document.documentElement.dataset.theme = next;
-    localStorage.setItem('atelier-theme', next);
-  });
-}
-
-/* boot */
-initTheme();
 if ($('#courseGrid')) renderHome();
 if ($('#workspace')) {
   renderCourse();
@@ -587,6 +500,6 @@ if ($('#workspace')) {
     if (state.view !== 'cards') return;
     if (e.key === 'ArrowRight') $('#next')?.click();
     if (e.key === 'ArrowLeft') $('#prev')?.click();
-    if (e.key === ' ') { e.preventDefault(); $('#flip')?.click(); }
+    if (e.key === ' ') { e.preventDefault(); $('#card')?.click(); }
   });
 }

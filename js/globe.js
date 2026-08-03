@@ -27,6 +27,9 @@ export function createGlobe(canvas, opts = {}) {
     rot: opts.rot ?? 20,
     tilt: (opts.tilt ?? -14) * RAD,
     auto: opts.auto !== false,
+    speed: opts.speed ?? 0.11,
+    rot0: opts.rot ?? 20,
+    tilt0: (opts.tilt ?? -14) * RAD,
     markers: opts.markers || [],
     hover: -1,
     dragging: false,
@@ -155,15 +158,15 @@ export function createGlobe(canvas, opts = {}) {
       ctx.fillStyle = hexA(accent, .18); ctx.fill();
       ctx.beginPath(); ctx.arc(p.x, p.y, r, 0, 7);
       ctx.fillStyle = accent; ctx.fill();
-      ctx.lineWidth = 2; ctx.strokeStyle = 'rgba(255,255,255,.92)'; ctx.stroke();
+      ctx.lineWidth = 2; ctx.strokeStyle = 'rgba(255,251,244,.95)'; ctx.stroke();
       if (active) {
-        ctx.font = '600 12px Inter, system-ui, sans-serif';
+        ctx.font = '500 13px "Cormorant Garamond", Georgia, serif';
         const label = m.title || '';
         const tw = ctx.measureText(label).width;
         const bx = p.x - tw / 2 - 8, by = p.y - r - 30;
-        ctx.fillStyle = 'rgba(255,255,255,.96)';
+        ctx.fillStyle = 'rgba(255,251,244,.97)';
         roundRect(ctx, bx, by, tw + 16, 23, 7); ctx.fill();
-        ctx.fillStyle = '#2c2723';
+        ctx.fillStyle = '#2f2a27';
         ctx.fillText(label, p.x - tw / 2, by + 15.5);
       }
       ctx.globalAlpha = 1;
@@ -179,7 +182,7 @@ export function createGlobe(canvas, opts = {}) {
 
   function tick() {
     if (state.dead) return;
-    if (state.auto && !state.dragging) state.rot += 0.12;
+    if (state.auto && !state.dragging) state.rot += state.speed;
     draw();
     state.raf = requestAnimationFrame(tick);
   }
@@ -226,6 +229,7 @@ export function createGlobe(canvas, opts = {}) {
   return {
     setMarkers(m) { state.markers = m; },
     setAuto(v) { state.auto = v; },
+    reset() { state.rot = state.rot0; state.tilt = state.tilt0; state.auto = true; },
     get auto() { return state.auto; },
     spinTo(lon, lat) {                       // ease the globe to face a place
       const target = -lon;
