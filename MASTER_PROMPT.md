@@ -59,26 +59,70 @@ Each topic also carries: overview, essential questions, objectives,
 misconceptions, and primary source citations. This is the substance. The
 interface exists to serve it.
 
-## 5. Where 3D and imagery are actually earned
+## 5. Every topic gets a specimen, and every specimen is a real thing
 
-Use a visual **only where it is the object of study**:
+Each topic in each course is modelled in 3D and explained. Roughly 90 specimens.
 
-- **AP Psych Unit 1, the brain.** Genuine. A student must locate the frontal
-  lobe, the cerebellum, the brainstem. Keep the 3D model with labelled regions.
-- **Global 9R and ENL, the map.** Genuine. Geography is content: where the river
-  valleys are, where the Silk Roads ran, what the Columbian Exchange moved and
-  in which direction. But a slowly spinning globe with scattered pins is
-  decoration. It must become a **real map that answers a question**: the four
-  river valleys located and named; trade routes drawn as routes; the Mongol
-  advance; the Atlantic triangle. If a unit has no geographic claim to make,
-  it shows no map.
-- **Everywhere else: no specimen.** Cognition, Development, Social, Health, the
-  ENL vocabulary units. These get a clean type-led page. Empty space is better
-  than a metaphor.
+The rule from section 0 still holds, and it is what makes this work rather than
+decorate: **model the iconic real object of the topic, never an abstract
+metaphor.** Almost every topic in these courses has one, because science and
+history both happened through objects.
 
-Delete the nesting dolls, ceramic heads, glass head, jars, prism, balance scale.
-They are handsome objects that mean nothing here. Keep the files in the repo if
-useful elsewhere, but they do not ship on the unit pages.
+AP Psychology, the apparatus and anatomy that made the finding:
+
+| Topic | Specimen |
+|---|---|
+| Research methods | brass laboratory balance |
+| Heredity and environment | the Watson and Crick double helix model |
+| Nervous system, the neuron | a single motor neuron |
+| The brain | the brain, with lobes as hotspots |
+| Sleep | an EEG electrode cap |
+| Sensation | the eye, the cochlea |
+| Perception | a Necker cube, the Muller Lyer figure |
+| Memory | the hippocampus |
+| Classical conditioning | Pavlov's salivation apparatus |
+| Operant conditioning | a Skinner box |
+| Psychology of social situations | Milgram's shock generator |
+| Attitudes and conformity | Asch's line judgment cards |
+| Psychodynamic theory | Freud's consulting couch |
+| Personality assessment | a Rorschach card |
+| Disorders, historically | a phrenology head |
+
+Global History, the artifact that carries the evidence:
+
+| Topic | Specimen |
+|---|---|
+| Paleolithic life | a hand axe, a Lascaux horse |
+| Neolithic revolution | a sickle, a grain jar |
+| Mesopotamia | Hammurabi's stele, a cuneiform tablet |
+| Egypt | the Rosetta Stone, a canopic jar |
+| Indus valley | a Harappan seal |
+| Shang China | an oracle bone, a ritual bronze |
+| Greece | a Doric capital, a hoplite helmet |
+| Rome | an aqueduct arch, a legionary gladius |
+| Han China | a Han crossbow, a silk bolt |
+| Belief systems | a Buddha figure, a Torah scroll, a mihrab |
+| Silk Roads | a Bactrian camel with panniers |
+| Indian Ocean trade | a dhow, an astrolabe |
+| Trans Saharan trade | a salt slab, a gold weight |
+| Mongols | a composite bow, a stirrup |
+| Black Death | a plague doctor mask |
+| Renaissance | a printing press, an armillary sphere |
+| Exploration | a caravel, a magnetic compass |
+| The Americas | the Aztec sun stone, an Inca quipu |
+
+Two consequences worth stating plainly:
+
+- These are things a student is actually expected to recognise on a Regents
+  stimulus or an AP question. Rotating an oracle bone is studying.
+- Each specimen carries a short explanation of **what you are looking at and why
+  this object is the one that matters**, alongside the terms. That caption is
+  content, written per topic, not filler.
+
+Hotspots are added where a specimen has nameable parts worth learning: the
+brain's lobes, the neuron's dendrites and axon and myelin, the caravel's lateen
+sail, the stele's relief and law text. Where an object has no parts worth
+naming, it simply rotates.
 
 ## 6. Look and feel
 
@@ -126,9 +170,11 @@ This is the heart of the product and does not exist yet.
 ## 9. Performance budget
 
 - First view usable in under a second on school wifi.
-- three.js and any model load **only** on the two pages that earn one, and only
-  after the text content is on screen.
-- Total for a typical unit page without a specimen: under 150 KB.
+- Text content renders first, always. The specimen loads after, and never
+  blocks reading.
+- One model per topic, loaded on demand, meshopt compressed. Budget 300 KB per
+  specimen, and never preload the next one on a phone.
+- A student on a slow connection still gets a complete, usable review page.
 
 ## 10. How I will know it worked
 

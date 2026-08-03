@@ -1,0 +1,79 @@
+[
+  {
+    "id": "psych-1.1",
+    "topic": "1.1 Interaction of Heredity and Environment",
+    "subject": "a vintage brass and painted metal double helix DNA molecular model on a stand, the kind built in a 1950s laboratory",
+    "style": "science museum artifact, aged brass and enamel",
+    "caption": "The Watson and Crick model. Genes set a range of possibilities; environment decides where inside that range you land.",
+    "hotspots": []
+  },
+  {
+    "id": "psych-1.2",
+    "topic": "1.2 Overview of the Nervous System",
+    "subject": "a single motor neuron, cell body with branching dendrites and one long myelinated axon ending in terminal buttons",
+    "style": "anatomical specimen, soft pink and pale violet tissue",
+    "caption": "One neuron. Everything the nervous system does is billions of these passing a signal in one direction only.",
+    "hotspots": [
+      { "id": "dendrites", "title": "Dendrites", "position": [-1.30, 0.55, 0.40],
+        "note": "Receive signals from other neurons. More branches means more incoming connections." },
+      { "id": "soma", "title": "Cell body", "position": [-0.55, 0.05, 0.65],
+        "note": "Sums the incoming signals. Cross the threshold and the neuron fires, all or nothing." },
+      { "id": "myelin", "title": "Myelin sheath", "position": [0.35, -0.15, 0.60],
+        "note": "Fatty insulation. It speeds the impulse up; when it breaks down you get multiple sclerosis." },
+      { "id": "terminal", "title": "Terminal buttons", "position": [1.30, -0.35, 0.45],
+        "note": "Release neurotransmitters into the synapse. The signal goes chemical here." }
+    ]
+  },
+  {
+    "id": "psych-1.3",
+    "topic": "1.3 The Neuron and Neural Firing",
+    "subject": "a laboratory oscilloscope with a green trace showing a single sharp action potential spike on its round screen",
+    "style": "mid century scientific instrument, grey enamel and brass dials",
+    "caption": "The action potential as Adrian recorded it. All or nothing: the spike is always the same size, only the rate changes.",
+    "hotspots": []
+  },
+  {
+    "id": "psych-1.4",
+    "topic": "1.4 The Brain",
+    "subject": "a human brain, three quarter lateral view, cerebellum and brainstem visible",
+    "style": "anatomical specimen",
+    "caption": "The lobes, the cerebellum, and the brainstem. Damage in one place changes one kind of behaviour, which is how we mapped it.",
+    "hotspots": [
+      { "id": "frontal", "title": "Frontal lobe", "position": [-1.30, 0.45, 0.85],
+        "note": "Planning, judgment, personality, and speech production (Broca). The Phineas Gage lobe." },
+      { "id": "parietal", "title": "Parietal lobe", "position": [0.10, 1.30, 0.30],
+        "note": "Touch, temperature, pain, and body position. Home of the somatosensory cortex." },
+      { "id": "occipital", "title": "Occipital lobe", "position": [1.35, 0.35, 0.10],
+        "note": "Vision. Damage here can blind you even with perfectly healthy eyes." },
+      { "id": "temporal", "title": "Temporal lobe", "position": [-0.35, -0.65, 1.10],
+        "note": "Hearing and language comprehension (Wernicke). Wraps around the hippocampus." },
+      { "id": "cerebellum", "title": "Cerebellum", "position": [1.05, -0.95, 0.35],
+        "note": "Balance, coordination, and procedural (muscle memory) learning." },
+      { "id": "brainstem", "title": "Brainstem", "position": [0.25, -1.35, 0.45],
+        "note": "Breathing, heartbeat, and arousal. The parts you never have to think about." }
+    ]
+  },
+  {
+    "id": "psych-1.5",
+    "topic": "1.5 Sleep",
+    "subject": "an EEG electrode cap, a mesh skull cap covered in small round silver electrodes with coloured wires gathered behind",
+    "style": "clinical sleep laboratory equipment",
+    "caption": "How we know sleep has stages. Aserinsky and Kleitman watched these traces and found REM in 1953.",
+    "hotspots": []
+  },
+  {
+    "id": "psych-1.6",
+    "topic": "1.6 Sensation",
+    "subject": "a human eyeball anatomical model, sectioned to show the lens, the iris and the retina at the back, with the optic nerve attached",
+    "style": "anatomical specimen, glossy and moist",
+    "caption": "Sensation is transduction: light becomes a neural signal at the retina. Everything after that is the brain guessing well.",
+    "hotspots": [
+      { "id": "lens", "title": "Lens", "position": [-1.25, 0.10, 0.55],
+        "note": "Changes shape to focus light on the retina. Accommodation is this muscle at work." },
+      { "id": "retina", "title": "Retina", "position": [1.15, 0.05, 0.55],
+        "note": "Rods for dim light and motion, cones for colour and detail. Transduction happens here." },
+      { "id": "optic", "title": "Optic nerve", "position": [1.20, -0.70, 0.10],
+        "note": "Carries the signal out. Where it leaves there are no receptors, which is your blind spot." }
+    ]
+  }
+]

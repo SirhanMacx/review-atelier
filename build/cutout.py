@@ -18,7 +18,7 @@ from PIL import Image, ImageFilter
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "assets" / "img" / "_raw"
-OUT = ROOT / "assets" / "img"
+OUT = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / "assets" / "img"
 
 NEAR = 9.0     # within this distance of the local plate colour: transparent
 FAR  = 42.0    # beyond it: fully opaque
@@ -73,6 +73,7 @@ def cut(path):
 
 
 def main():
+    OUT.mkdir(parents=True, exist_ok=True)
     files = sorted(p for p in SRC.glob("*.png") if not p.name.startswith("."))
     if not files:
         print(f"no PNGs in {SRC}")
